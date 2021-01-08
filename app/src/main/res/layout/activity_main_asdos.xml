@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2f2e2e"
+    android:orientation="vertical"
+    tools:context=".MainActivityAsdos">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selamat Datang,"
+        android:textColor="#ffffff"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:id="@+id/nama_asdos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama Asdos"
+        android:textColor="#ffffff"
+        android:layout_marginLeft="30dp"/>
+
+    <View
+        android:layout_width="290dp"
+        android:layout_height="1dp"
+        android:background="#838080"
+        android:visibility="visible"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        tools:layout_editor_absoluteX="75dp"
+        tools:layout_editor_absoluteY="419dp" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dashboard"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="100dp" />
+
+    </RelativeLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/history"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="333dp"
+            tools:layout_editor_absoluteY="28dp" />
+
+        <Button
+            android:id="@+id/btn_hist_presensi"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_buttom2"
+            android:gravity="center"
+            android:text="History Presensi mahasiswa"
+            android:textColor="#ffffff"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="30dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/userr"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="333dp"
+            tools:layout_editor_absoluteY="98dp" />
+
+        <Button
+            android:id="@+id/btn_profil_asdos"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_buttom2"
+            android:gravity="center"
+            android:text="Profil Asdos"
+            android:textColor="#ffffff"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="30dp"
+            tools:layout_editor_absoluteY="86dp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</LinearLayout>
