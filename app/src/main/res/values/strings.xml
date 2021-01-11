@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">TestingSkripsiNew</string>
     <string name="title_activity_view_maps">Map</string>
+    <string name="image_view">imageView</string>
 </resources>

@@ -9,6 +9,6 @@ public class HistoryAsdos_Hadir extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.history_asdos);
+        setContentView(R.layout.history_asdos_hadir);
     }
 }
