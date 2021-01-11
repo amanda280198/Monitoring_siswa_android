@@ -28,16 +28,16 @@
         "source": "C:\\Users\\joefa\\AndroidStudioProjects\\My Github\\Non Kantor\\Monitoring_siswa_android\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\joefa\\AndroidStudioProjects\\My Github\\Non Kantor\\Monitoring_siswa_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_logot.png.flat",
-        "source": "C:\\Users\\joefa\\AndroidStudioProjects\\My Github\\Non Kantor\\Monitoring_siswa_android\\app\\src\\main\\res\\drawable\\logot.png"
+        "merged": "C:\\Users\\joefa\\AndroidStudioProjects\\My Github\\Non Kantor\\Monitoring_siswa_android\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main_asdos.xml.flat",
+        "source": "C:\\Users\\joefa\\AndroidStudioProjects\\My Github\\Non Kantor\\Monitoring_siswa_android\\app\\src\\main\\res\\layout\\activity_main_asdos.xml"
     },
     {
         "merged": "C:\\Users\\joefa\\AndroidStudioProjects\\My Github\\Non Kantor\\Monitoring_siswa_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_left_arrow.png.flat",
         "source": "C:\\Users\\joefa\\AndroidStudioProjects\\My Github\\Non Kantor\\Monitoring_siswa_android\\app\\src\\main\\res\\drawable\\left_arrow.png"
     },
     {
-        "merged": "C:\\Users\\joefa\\AndroidStudioProjects\\My Github\\Non Kantor\\Monitoring_siswa_android\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main_asdos.xml.flat",
-        "source": "C:\\Users\\joefa\\AndroidStudioProjects\\My Github\\Non Kantor\\Monitoring_siswa_android\\app\\src\\main\\res\\layout\\activity_main_asdos.xml"
+        "merged": "C:\\Users\\joefa\\AndroidStudioProjects\\My Github\\Non Kantor\\Monitoring_siswa_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_logot.png.flat",
+        "source": "C:\\Users\\joefa\\AndroidStudioProjects\\My Github\\Non Kantor\\Monitoring_siswa_android\\app\\src\\main\\res\\drawable\\logot.png"
     },
     {
         "merged": "C:\\Users\\joefa\\AndroidStudioProjects\\My Github\\Non Kantor\\Monitoring_siswa_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_student_2.png.flat",
@@ -136,6 +136,10 @@
         "source": "C:\\Users\\joefa\\AndroidStudioProjects\\My Github\\Non Kantor\\Monitoring_siswa_android\\app\\src\\main\\res\\drawable\\check.png"
     },
     {
+        "merged": "C:\\Users\\joefa\\AndroidStudioProjects\\My Github\\Non Kantor\\Monitoring_siswa_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_logo_history.xml.flat",
+        "source": "C:\\Users\\joefa\\AndroidStudioProjects\\My Github\\Non Kantor\\Monitoring_siswa_android\\app\\src\\main\\res\\drawable\\ic_logo_history.xml"
+    },
+    {
         "merged": "C:\\Users\\joefa\\AndroidStudioProjects\\My Github\\Non Kantor\\Monitoring_siswa_android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\joefa\\AndroidStudioProjects\\My Github\\Non Kantor\\Monitoring_siswa_android\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
     },
@@ -194,6 +198,10 @@
     {
         "merged": "C:\\Users\\joefa\\AndroidStudioProjects\\My Github\\Non Kantor\\Monitoring_siswa_android\\app\\build\\intermediates\\res\\merged\\debug\\layout_item_dialog_check_out.xml.flat",
         "source": "C:\\Users\\joefa\\AndroidStudioProjects\\My Github\\Non Kantor\\Monitoring_siswa_android\\app\\src\\main\\res\\layout\\item_dialog_check_out.xml"
+    },
+    {
+        "merged": "C:\\Users\\joefa\\AndroidStudioProjects\\My Github\\Non Kantor\\Monitoring_siswa_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_logo_user.xml.flat",
+        "source": "C:\\Users\\joefa\\AndroidStudioProjects\\My Github\\Non Kantor\\Monitoring_siswa_android\\app\\src\\main\\res\\drawable\\ic_logo_user.xml"
     },
     {
         "merged": "C:\\Users\\joefa\\AndroidStudioProjects\\My Github\\Non Kantor\\Monitoring_siswa_android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_custom_buttom.xml.flat",

@@ -887,6 +887,8 @@ drawable googleg_standard_color_18
 drawable history
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable ic_logo_history
+drawable ic_logo_user
 drawable left_arrow
 drawable logot
 drawable notification_action_background
@@ -1200,10 +1202,12 @@ id textView2
 id textView3
 id textView4
 id textView5
+id textView6
 id text_home
 id tgl
 id time
 id title
+id titleDashboard
 id titleDividerNoCustom
 id title_template
 id toggle
@@ -1230,6 +1234,7 @@ id uniform
 id up
 id useLogo
 id username_asdos
+id view
 id visible
 id warna
 id wide
