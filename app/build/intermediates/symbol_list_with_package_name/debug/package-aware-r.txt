@@ -1017,6 +1017,7 @@ id btn_profil_asdos
 id btn_profil_user
 id btn_user
 id bulan
+id button
 id buttonPanel
 id button_back
 id cache_measures
@@ -1092,6 +1093,8 @@ id imageView4
 id imageView5
 id imageView6
 id imageView7
+id imageView8
+id imageView9
 id info
 id invisible
 id italic
@@ -1207,6 +1210,8 @@ id textView3
 id textView4
 id textView5
 id textView6
+id textView7
+id textView8
 id text_home
 id tgl
 id time
@@ -1246,7 +1251,6 @@ id view1
 id view2
 id view3
 id visible
-id warna
 id wide
 id withText
 id wrap
@@ -1369,8 +1373,16 @@ string common_google_play_services_wear_update_text
 string common_open_on_phone
 string common_signin_button_text
 string common_signin_button_text_long
+string default_web_client_id
+string firebase_database_url
+string gcm_defaultSenderId
+string google_api_key
+string google_app_id
+string google_crash_reporting_api_key
 string google_maps_key
+string google_storage_bucket
 string image_view
+string project_id
 string search_menu_title
 string status_bar_notification_info_overflow
 string title_activity_view_maps
