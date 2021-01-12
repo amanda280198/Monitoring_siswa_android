@@ -20,21 +20,21 @@ com/example/testingskripsinew/ViewMapsActivity.java
  com.example.testingskripsinew.ViewMapsActivity$2
 com/example/testingskripsinew/HistoryAsdos_Absen.java
  com.example.testingskripsinew.HistoryAsdos_Absen
-com/example/testingskripsinew/MainActivityUser.java
- com.example.testingskripsinew.MainActivityUser
+com/example/testingskripsinew/HistoryAsdos_Izin.java
+ com.example.testingskripsinew.HistoryAsdos_Izin
 com/example/testingskripsinew/ProfilAsdos.java
  com.example.testingskripsinew.ProfilAsdos
-com/example/testingskripsinew/LoginUser.java
- com.example.testingskripsinew.LoginUser
-com/example/testingskripsinew/MainActivityAsdos.java
- com.example.testingskripsinew.MainActivityAsdos
+com/example/testingskripsinew/PilihAkunActivity.java
+ com.example.testingskripsinew.PilihAkunActivity
+com/example/testingskripsinew/LoginAsdos.java
+ com.example.testingskripsinew.LoginAsdos
 com/example/testingskripsinew/HistoryAsdos_Keluar.java
  com.example.testingskripsinew.HistoryAsdos_Keluar
 com/example/testingskripsinew/Jarak.java
  com.example.testingskripsinew.Jarak
-com/example/testingskripsinew/LoginAsdos.java
- com.example.testingskripsinew.LoginAsdos
-com/example/testingskripsinew/PilihAkunActivity.java
- com.example.testingskripsinew.PilihAkunActivity
-com/example/testingskripsinew/HistoryAsdos_Izin.java
- com.example.testingskripsinew.HistoryAsdos_Izin
+com/example/testingskripsinew/MainActivityUser.java
+ com.example.testingskripsinew.MainActivityUser
+com/example/testingskripsinew/LoginUser.java
+ com.example.testingskripsinew.LoginUser
+com/example/testingskripsinew/MainActivityAsdos.java
+ com.example.testingskripsinew.MainActivityAsdos

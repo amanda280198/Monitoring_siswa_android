@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="4dp"
-        android:text="Selamat Dadang,"
+        android:text="Selamat Datang,"
         android:textColor="#ffffff"
         android:textSize="22dp"
         android:textStyle="bold"
@@ -96,7 +96,7 @@
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="@+id/guideline1"
         app:layout_constraintTop_toBottomOf="@+id/btn_hist_presensi"
-        tools:ignore="MissingConstraints" />
+        />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"

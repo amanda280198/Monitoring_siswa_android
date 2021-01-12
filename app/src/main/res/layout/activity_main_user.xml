@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,120 +8,149 @@
     android:orientation="vertical"
     tools:context=".MainActivityUser">
 
+
+    <Button
+        android:id="@+id/btn_profil_user"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/custom_buttom2"
+        android:drawableEnd="@drawable/ic_logo_user"
+        android:gravity="center"
+        android:onClick="btnProfilPribadi"
+        android:paddingStart="10dp"
+        android:paddingEnd="20dp"
+        android:text="Profil User"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/guideline5"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintTop_toBottomOf="@id/btn_histori_presensi_user"/>
+
+
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginBottom="5dp"
         android:text="Selamat Datang,"
         android:textColor="#ffffff"
         android:textSize="22dp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/nama_user"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintVertical_chainStyle="packed"/>
 
     <TextView
         android:id="@+id/nama_user"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
         android:text="Nama User"
-        android:textColor="#ffffff" />
+        android:textColor="#ffffff"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/view3"
+        app:layout_constraintStart_toStartOf="@+id/guideline1" />
 
     <View
+        android:id="@+id/view3"
         android:layout_width="290dp"
         android:layout_height="1dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="5dp"
         android:background="#838080"
         android:visibility="visible"
-        tools:layout_editor_absoluteX="75dp"
-        tools:layout_editor_absoluteY="419dp" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline1" />
 
-
-    <RelativeLayout
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/titleDashboard2"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center">
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:text="Dashboard"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btn_presensi"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintTop_toTopOf="@+id/guideline3"
+        app:layout_constraintVertical_bias="0.3"
+        app:layout_constraintVertical_chainStyle="packed"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="100dp"
-            android:gravity="center"
-            android:text="Dashboard"
-            android:textColor="#ffffff"
-            android:textSize="20dp"
-            android:textStyle="bold" />
+    <Button
+        android:id="@+id/btn_presensi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_buttom2"
+        android:drawableEnd="@drawable/ic_logo_presensi"
+        android:gravity="center"
+        android:onClick="btnPresensiPribadi"
+        android:paddingStart="10dp"
+        android:paddingEnd="20dp"
+        android:text="Presensi"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/btn_histori_presensi_user"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintTop_toBottomOf="@+id/titleDashboard2"
+        app:layout_constraintVertical_chainStyle="packed"/>
 
-    </RelativeLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="20dp">
-
-        <ImageView
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:src="@drawable/clipboard"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="277dp"
-            tools:layout_editor_absoluteY="12dp" />
-
-        <Button
-            android:id="@+id/btn_presensi"
-            android:layout_width="230dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/custom_buttom2"
-            android:gravity="center"
-            android:text="Presensi"
-            android:textColor="#ffffff"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="90dp"
-            tools:layout_editor_absoluteY="0dp" />
-
-        <ImageView
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:src="@drawable/history"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="277dp"
-            tools:layout_editor_absoluteY="79dp" />
-
-        <Button
-            android:id="@+id/btn_histori_presensi_user"
-            android:layout_width="230dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/custom_buttom2"
-            android:gravity="center"
-            android:text="History Presensi"
-            android:textColor="#ffffff"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="87dp"
-            tools:layout_editor_absoluteY="67dp" />
-
-        <ImageView
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:src="@drawable/userr"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="277dp"
-            tools:layout_editor_absoluteY="144dp" />
-
-        <Button
-            android:id="@+id/btn_profil_user"
-            android:layout_width="230dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/custom_buttom2"
-            android:gravity="center"
-            android:text="Profil User"
-            android:textColor="#ffffff"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="90dp"
-            tools:layout_editor_absoluteY="134dp" />
+    <Button
+        android:id="@+id/btn_histori_presensi_user"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_buttom2"
+        android:drawableEnd="@drawable/ic_logo_history"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:paddingStart="10dp"
+        android:paddingEnd="20dp"
+        android:onClick="btnHistoryPribadi"
+        android:text="History Presensi"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/btn_profil_user"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintTop_toBottomOf="@id/btn_presensi"
+        app:layout_constraintVertical_chainStyle="packed"/>
 
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.02" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.06" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.94" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.98" />
 
 
-</LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

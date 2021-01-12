@@ -888,6 +888,8 @@ drawable history
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_logo_history
+drawable ic_logo_logout
+drawable ic_logo_presensi
 drawable ic_logo_user
 drawable left_arrow
 drawable logot
@@ -1088,6 +1090,8 @@ id imageView2
 id imageView3
 id imageView4
 id imageView5
+id imageView6
+id imageView7
 id info
 id invisible
 id italic
@@ -1208,6 +1212,7 @@ id tgl
 id time
 id title
 id titleDashboard
+id titleDashboard2
 id titleDividerNoCustom
 id title_template
 id toggle
@@ -1220,6 +1225,8 @@ id total_keluar
 id transitionToEnd
 id transitionToStart
 id triangle
+id txtProfilAsdos
+id txtProfilPribadi
 id txt_absen
 id txt_checkin
 id txt_checkout
@@ -1235,6 +1242,9 @@ id up
 id useLogo
 id username_asdos
 id view
+id view1
+id view2
+id view3
 id visible
 id warna
 id wide

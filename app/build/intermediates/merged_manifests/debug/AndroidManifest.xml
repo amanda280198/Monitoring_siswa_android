@@ -32,14 +32,6 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.example.testingskripsinew.HistoryAsdos_Keluar" />
-        <activity android:name="com.example.testingskripsinew.HistoryAsdos_Absen" />
-        <activity android:name="com.example.testingskripsinew.HistoryAsdos_Izin" />
-        <activity android:name="com.example.testingskripsinew.HistoryAsdos" />
-        <activity android:name="com.example.testingskripsinew.ProfilAsdos" />
-        <activity android:name="com.example.testingskripsinew.MainActivityAsdos" />
-        <activity android:name="com.example.testingskripsinew.Jarak" />
-
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
@@ -53,8 +45,15 @@
             android:enabled="true"
             android:exported="true" />
 
-        <activity android:name="com.example.testingskripsinew.Profil" />
         <activity android:name="com.example.testingskripsinew.ReaderScanActivity" />
+        <activity android:name="com.example.testingskripsinew.HistoryUser" />
+        <activity android:name="com.example.testingskripsinew.HistoryAsdos_Keluar" />
+        <activity android:name="com.example.testingskripsinew.HistoryAsdos_Absen" />
+        <activity android:name="com.example.testingskripsinew.HistoryAsdos_Izin" />
+        <activity android:name="com.example.testingskripsinew.HistoryAsdos_Hadir" />
+        <activity android:name="com.example.testingskripsinew.ProfilAsdos" />
+        <activity android:name="com.example.testingskripsinew.ProfilUser" />
+        <activity android:name="com.example.testingskripsinew.MainActivityAsdos" />
         <activity android:name="com.example.testingskripsinew.MainActivityUser" />
         <activity android:name="com.example.testingskripsinew.LoginAsdos" />
         <activity android:name="com.example.testingskripsinew.LoginUser" />

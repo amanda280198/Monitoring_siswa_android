@@ -23,13 +23,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".HistoryAsdos_Keluar"></activity>
-        <activity android:name=".HistoryAsdos_Absen" />
-        <activity android:name=".HistoryAsdos_Izin" />
-        <activity android:name=".HistoryAsdos" />
-        <activity android:name=".ProfilAsdos" />
-        <activity android:name=".MainActivityAsdos" />
-        <activity android:name=".Jarak" />
+
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
@@ -44,8 +38,16 @@
             android:enabled="true"
             android:exported="true" />
 
-        <activity android:name=".Profil" />
+
         <activity android:name=".ReaderScanActivity" />
+        <activity android:name=".HistoryUser" />
+        <activity android:name=".HistoryAsdos_Keluar" />
+        <activity android:name=".HistoryAsdos_Absen" />
+        <activity android:name=".HistoryAsdos_Izin" />
+        <activity android:name=".HistoryAsdos_Hadir" />
+        <activity android:name=".ProfilAsdos" />
+        <activity android:name=".ProfilUser" />
+        <activity android:name=".MainActivityAsdos" />
         <activity android:name=".MainActivityUser" />
         <activity android:name=".LoginAsdos" />
         <activity android:name=".LoginUser" />

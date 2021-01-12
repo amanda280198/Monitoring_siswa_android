@@ -21,7 +21,7 @@ public class MainActivityAsdos extends AppCompatActivity {
     }
 
     public void btnProfilAsdos(View view) {
-        Intent i = new Intent(this, MainActivityUser.class);
+        Intent i = new Intent(this, ProfilAsdos.class);
         this.startActivity(i);
     }
 }
