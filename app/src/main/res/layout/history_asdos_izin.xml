@@ -14,9 +14,10 @@
         android:layout_height="45dp"
         android:background="#2F2E2E"
         android:src="@drawable/left_arrow"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="10dp"
-        tools:layout_editor_absoluteY="29dp" />
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -25,9 +26,11 @@
         android:textColor="#ffffff"
         android:textSize="30dp"
         android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="165dp"
-        tools:layout_editor_absoluteY="39dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/button_back"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintTop_toTopOf="@+id/button_back"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/tgl"
@@ -98,12 +101,12 @@
         android:id="@+id/btn_hadir"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/custom_buttom4"
         android:text="hadir"
         android:textColor="#ffffff"
-        android:background="@drawable/custom_buttom4"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="36dp"
-        tools:layout_editor_absoluteY="308dp"
-        tools:ignore="MissingConstraints" />
+        tools:layout_editor_absoluteY="308dp" />
 
     <Button
         android:id="@+id/btn_izin"
@@ -143,9 +146,9 @@
         android:layout_height="wrap_content"
         android:text="Total Izin :"
         android:textColor="#ffffff"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="36dp"
-        tools:layout_editor_absoluteY="380dp"
-        tools:ignore="MissingConstraints" />
+        tools:layout_editor_absoluteY="380dp" />
 
     <TextView
         android:id="@+id/total_izin"
@@ -163,9 +166,9 @@
         android:layout_height="wrap_content"
         android:text="Nama Mahasiswa"
         android:textColor="#ffffff"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="53dp"
-        tools:layout_editor_absoluteY="419dp"
-        tools:ignore="MissingConstraints" />
+        tools:layout_editor_absoluteY="419dp" />
 
 
     <TextView
@@ -216,5 +219,38 @@
         tools:layout_editor_absoluteX="53dp"
         tools:layout_editor_absoluteY="504dp" />
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.02" />
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.65" />
 </androidx.constraintlayout.widget.ConstraintLayout>
