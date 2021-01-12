@@ -890,6 +890,7 @@ drawable ic_launcher_foreground
 drawable ic_logo_history
 drawable ic_logo_logout
 drawable ic_logo_presensi
+drawable ic_logo_profil
 drawable ic_logo_user
 drawable left_arrow
 drawable logot
@@ -1000,6 +1001,8 @@ id beginning
 id blocking
 id bottom
 id bounce
+id btnHistory
+id btnNama
 id btn_absen
 id btn_asdos
 id btn_checkin
@@ -1017,7 +1020,6 @@ id btn_profil_asdos
 id btn_profil_user
 id btn_user
 id bulan
-id button
 id buttonPanel
 id button_back
 id cache_measures
@@ -1212,6 +1214,7 @@ id textView5
 id textView6
 id textView7
 id textView8
+id textView9
 id text_home
 id tgl
 id time
@@ -1230,6 +1233,7 @@ id total_keluar
 id transitionToEnd
 id transitionToStart
 id triangle
+id txtHistory
 id txtProfilAsdos
 id txtProfilPribadi
 id txt_absen
@@ -1250,6 +1254,7 @@ id view
 id view1
 id view2
 id view3
+id view4
 id visible
 id wide
 id withText

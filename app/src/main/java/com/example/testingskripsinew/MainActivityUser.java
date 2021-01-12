@@ -18,6 +18,8 @@ public class MainActivityUser extends AppCompatActivity {
     }
 
     public void btnHistoryPribadi(View view) {
+        Intent i = new Intent(this, HistoryUser.class);
+        this.startActivity(i);
     }
 
     public void btnProfilPribadi(View view) {

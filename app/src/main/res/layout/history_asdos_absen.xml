@@ -30,7 +30,7 @@
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="@+id/guideline1"
         app:layout_constraintTop_toTopOf="@+id/button_back"
-        tools:ignore="MissingConstraints" />
+         />
 
     <TextView
         android:id="@+id/tgl"
@@ -43,7 +43,7 @@
         app:layout_constraintEnd_toStartOf="@+id/tahun"
         app:layout_constraintStart_toEndOf="@+id/bulan"
         app:layout_constraintTop_toTopOf="@+id/bulan"
-        tools:ignore="MissingConstraints" />
+         />
 
     <TextView
         android:id="@+id/bulan"
