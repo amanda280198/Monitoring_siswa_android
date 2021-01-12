@@ -39,20 +39,28 @@
         android:text="Tgl ,"
         android:textColor="#ffffff"
         android:textSize="20dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="96dp"
-        tools:layout_editor_absoluteY="132dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/bulan"
+        app:layout_constraintEnd_toStartOf="@+id/tahun"
+        app:layout_constraintStart_toEndOf="@+id/bulan"
+        app:layout_constraintTop_toTopOf="@+id/bulan"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/bulan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
         android:text="Bulan"
         android:textColor="#ffffff"
         android:textSize="20dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="36dp"
-        tools:layout_editor_absoluteY="132dp" />
+        app:layout_constraintBottom_toTopOf="@+id/jam"
+        app:layout_constraintEnd_toStartOf="@+id/tgl"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintTop_toTopOf="@+id/guideline3"
+        app:layout_constraintVertical_bias="0.8"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/tahun"
@@ -61,41 +69,51 @@
         android:text="Tahun"
         android:textColor="#ffffff"
         android:textSize="20dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="132dp"
-        tools:layout_editor_absoluteY="132dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/tgl"
+        app:layout_constraintEnd_toStartOf="@+id/jam_praktikum"
+        app:layout_constraintStart_toEndOf="@+id/tgl"
+        app:layout_constraintTop_toTopOf="@+id/tgl"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/jam_praktikum"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
         android:text="Jam Praktikum"
         android:textColor="#ffffff"
         android:textSize="20dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="225dp"
-        tools:layout_editor_absoluteY="132dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/tahun"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tahun"
+        app:layout_constraintTop_toTopOf="@+id/tahun"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/jam"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:text="00 : 00"
         android:textColor="#ffffff"
         android:textSize="40dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="146dp"
-        tools:layout_editor_absoluteY="159dp" />
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintTop_toBottomOf="@+id/bulan"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:text="Presensi Mahasiswa"
         android:textColor="#4CCEC6"
         android:textSize="15dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="137dp"
-        tools:layout_editor_absoluteY="272dp" />
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintTop_toTopOf="@+id/guideline4"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/btn_hadir"
@@ -243,6 +261,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.65" />
+        app:layout_constraintGuide_percent="0.3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
