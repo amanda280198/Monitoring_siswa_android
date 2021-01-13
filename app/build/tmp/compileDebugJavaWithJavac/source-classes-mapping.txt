@@ -39,3 +39,5 @@ com/example/testingskripsinew/LoginUser.java
  com.example.testingskripsinew.LoginUser$1
 com/example/testingskripsinew/PilihAkunActivity.java
  com.example.testingskripsinew.PilihAkunActivity
+com/example/testingskripsinew/helper/MyApplication.java
+ com.example.testingskripsinew.helper.MyApplication

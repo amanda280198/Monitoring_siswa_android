@@ -23,6 +23,7 @@
         android:required="true" />
 
     <application
+        android:name="com.example.testingskripsinew.helper.MyApplication"
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
