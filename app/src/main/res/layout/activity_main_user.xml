@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#2f2e2e"
     android:orientation="vertical"
-    tools:context=".MainActivityUser">
+    tools:context=".user.MainActivityUser">
 
     <Button
         android:id="@+id/btn_profil_user"

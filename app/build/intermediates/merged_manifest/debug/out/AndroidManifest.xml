@@ -22,6 +22,9 @@
         android:glEsVersion="0x00020000"
         android:required="true" />
 
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+
     <application
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -31,7 +34,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:testOnly="true"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true" >
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
@@ -51,12 +55,12 @@
         <activity android:name="com.example.testingskripsinew.HistoryAsdos_Absen" />
         <activity android:name="com.example.testingskripsinew.HistoryAsdos_Izin" />
         <activity android:name="com.example.testingskripsinew.HistoryAsdos_Hadir" />
-        <activity android:name="com.example.testingskripsinew.ProfilAsdos" />
-        <activity android:name="com.example.testingskripsinew.ProfilUser" />
-        <activity android:name="com.example.testingskripsinew.MainActivityAsdos" />
-        <activity android:name="com.example.testingskripsinew.MainActivityUser" />
-        <activity android:name="com.example.testingskripsinew.LoginAsdos" />
-        <activity android:name="com.example.testingskripsinew.LoginUser" />
+        <activity android:name="com.example.testingskripsinew.asdos.ProfilAsdos" />
+        <activity android:name="com.example.testingskripsinew.user.ProfilUser" />
+        <activity android:name="com.example.testingskripsinew.asdos.MainActivityAsdos" />
+        <activity android:name="com.example.testingskripsinew.user.MainActivityUser" />
+        <activity android:name="com.example.testingskripsinew.asdos.LoginAsdos" />
+        <activity android:name="com.example.testingskripsinew.user.LoginUser" />
         <activity android:name="com.example.testingskripsinew.PilihAkunActivity" />
         <activity android:name="com.example.testingskripsinew.SplashScreen" >
             <intent-filter>
@@ -71,7 +75,28 @@
             android:directBootAware="true"
             android:exported="false" >
             <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.database.ktx.FirebaseDatabaseKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.storage.ktx.FirebaseStorageKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
                 android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
                 android:value="com.google.firebase.components.ComponentRegistrar" />
             <!--
                 This registrar is not defined in the dynamic-module-support sdk itself to allow non-firebase
@@ -84,6 +109,22 @@
         <uses-library
             android:name="org.apache.http.legacy"
             android:required="false" />
+
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+            android:enabled="true"
+            android:exported="false" >
+        </receiver>
+
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
 
         <activity
             android:name="com.google.android.gms.common.api.GoogleApiActivity"

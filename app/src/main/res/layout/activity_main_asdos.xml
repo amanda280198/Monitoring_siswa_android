@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#2f2e2e"
     android:orientation="vertical"
-    tools:context=".MainActivityAsdos">
+    tools:context=".asdos.MainActivityAsdos">
 
     <TextView
         android:id="@+id/textView6"
