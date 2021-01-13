@@ -85,16 +85,19 @@ dependencies {
     implementation 'com.github.bumptech.glide:glide:4.11.0'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
 
-    /* buat UI/UX*/
+    /* buat UI/UX */
     implementation 'de.hdodenhof:circleimageview:3.1.0'
     implementation 'com.airbnb.android:lottie:3.6.0'
 
-    /*untuk mengambil data lokasi terakhir*/
+    /* qr Code */
+    implementation 'com.google.zxing:core:3.4.0'
+
+    /* untuk mengambil data lokasi terakhir */
     implementation 'com.google.android.gms:play-services-location:17.1.0'
     implementation 'com.google.android.gms:play-services-maps:17.0.0'
 
-    //    RestAPI retrofit2 library
-    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
-    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
-    implementation 'com.google.code.gson:gson:2.8.6'
+//    // RestAPI retrofit2 library
+//    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+//    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+//    implementation 'com.google.code.gson:gson:2.8.6'
 }

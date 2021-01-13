@@ -64,13 +64,13 @@ public final class HistoryUserBinding implements ViewBinding {
   public final TextView namaUser;
 
   @NonNull
-  public final TextView npm;
-
-  @NonNull
   public final TextView status;
 
   @NonNull
   public final TextView textHome;
+
+  @NonNull
+  public final TextView textPengajar1;
 
   @NonNull
   public final TextView textView9;
@@ -89,8 +89,8 @@ public final class HistoryUserBinding implements ViewBinding {
       @NonNull ImageButton buttonBack, @NonNull Guideline guideline, @NonNull Guideline guideline1,
       @NonNull Guideline guideline2, @NonNull Guideline guideline3, @NonNull Guideline guideline4,
       @NonNull Guideline guideline5, @NonNull TextView hari, @NonNull TextView jam,
-      @NonNull TextView namaUser, @NonNull TextView npm, @NonNull TextView status,
-      @NonNull TextView textHome, @NonNull TextView textView9, @NonNull TextView tgl,
+      @NonNull TextView namaUser, @NonNull TextView status, @NonNull TextView textHome,
+      @NonNull TextView textPengajar1, @NonNull TextView textView9, @NonNull TextView tgl,
       @NonNull TextView txtHistory, @NonNull View view4) {
     this.rootView = rootView;
     this.btnHistori = btnHistori;
@@ -107,9 +107,9 @@ public final class HistoryUserBinding implements ViewBinding {
     this.hari = hari;
     this.jam = jam;
     this.namaUser = namaUser;
-    this.npm = npm;
     this.status = status;
     this.textHome = textHome;
+    this.textPengajar1 = textPengajar1;
     this.textView9 = textView9;
     this.tgl = tgl;
     this.txtHistory = txtHistory;
@@ -227,12 +227,6 @@ public final class HistoryUserBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.npm;
-      TextView npm = rootView.findViewById(id);
-      if (npm == null) {
-        break missingId;
-      }
-
       id = R.id.status;
       TextView status = rootView.findViewById(id);
       if (status == null) {
@@ -242,6 +236,12 @@ public final class HistoryUserBinding implements ViewBinding {
       id = R.id.text_home;
       TextView textHome = rootView.findViewById(id);
       if (textHome == null) {
+        break missingId;
+      }
+
+      id = R.id.textPengajar1;
+      TextView textPengajar1 = rootView.findViewById(id);
+      if (textPengajar1 == null) {
         break missingId;
       }
 
@@ -271,7 +271,7 @@ public final class HistoryUserBinding implements ViewBinding {
 
       return new HistoryUserBinding((ConstraintLayout) rootView, btnHistori, btnHistory, btnNama,
           bulan, buttonBack, guideline, guideline1, guideline2, guideline3, guideline4, guideline5,
-          hari, jam, namaUser, npm, status, textHome, textView9, tgl, txtHistory, view4);
+          hari, jam, namaUser, status, textHome, textPengajar1, textView9, tgl, txtHistory, view4);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

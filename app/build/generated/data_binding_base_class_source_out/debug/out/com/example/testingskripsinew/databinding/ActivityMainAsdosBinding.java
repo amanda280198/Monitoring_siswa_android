@@ -24,6 +24,9 @@ public final class ActivityMainAsdosBinding implements ViewBinding {
   public final Button btnHistPresensi;
 
   @NonNull
+  public final Button btnJadwalAsdos;
+
+  @NonNull
   public final Button btnProfilAsdos;
 
   @NonNull
@@ -54,12 +57,14 @@ public final class ActivityMainAsdosBinding implements ViewBinding {
   public final View view;
 
   private ActivityMainAsdosBinding(@NonNull ConstraintLayout rootView,
-      @NonNull Button btnHistPresensi, @NonNull Button btnProfilAsdos, @NonNull Guideline guideline,
-      @NonNull Guideline guideline1, @NonNull Guideline guideline2, @NonNull Guideline guideline3,
-      @NonNull Guideline guideline5, @NonNull TextView namaAsdos, @NonNull TextView textView6,
-      @NonNull TextView titleDashboard, @NonNull View view) {
+      @NonNull Button btnHistPresensi, @NonNull Button btnJadwalAsdos,
+      @NonNull Button btnProfilAsdos, @NonNull Guideline guideline, @NonNull Guideline guideline1,
+      @NonNull Guideline guideline2, @NonNull Guideline guideline3, @NonNull Guideline guideline5,
+      @NonNull TextView namaAsdos, @NonNull TextView textView6, @NonNull TextView titleDashboard,
+      @NonNull View view) {
     this.rootView = rootView;
     this.btnHistPresensi = btnHistPresensi;
+    this.btnJadwalAsdos = btnJadwalAsdos;
     this.btnProfilAsdos = btnProfilAsdos;
     this.guideline = guideline;
     this.guideline1 = guideline1;
@@ -102,6 +107,12 @@ public final class ActivityMainAsdosBinding implements ViewBinding {
       id = R.id.btn_hist_presensi;
       Button btnHistPresensi = rootView.findViewById(id);
       if (btnHistPresensi == null) {
+        break missingId;
+      }
+
+      id = R.id.btn_jadwal_asdos;
+      Button btnJadwalAsdos = rootView.findViewById(id);
+      if (btnJadwalAsdos == null) {
         break missingId;
       }
 
@@ -166,8 +177,8 @@ public final class ActivityMainAsdosBinding implements ViewBinding {
       }
 
       return new ActivityMainAsdosBinding((ConstraintLayout) rootView, btnHistPresensi,
-          btnProfilAsdos, guideline, guideline1, guideline2, guideline3, guideline5, namaAsdos,
-          textView6, titleDashboard, view);
+          btnJadwalAsdos, btnProfilAsdos, guideline, guideline1, guideline2, guideline3, guideline5,
+          namaAsdos, textView6, titleDashboard, view);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

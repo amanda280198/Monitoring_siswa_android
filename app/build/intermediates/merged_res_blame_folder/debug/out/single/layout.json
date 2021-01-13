@@ -4,10 +4,6 @@
         "source": "C:\\Users\\joefa\\AndroidStudioProjects\\My Github\\Non Kantor\\Monitoring_siswa_android\\app\\src\\main\\res\\layout\\item_dialog_checkin.xml"
     },
     {
-        "merged": "C:\\Users\\joefa\\AndroidStudioProjects\\My Github\\Non Kantor\\Monitoring_siswa_android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_user.xml",
-        "source": "C:\\Users\\joefa\\AndroidStudioProjects\\My Github\\Non Kantor\\Monitoring_siswa_android\\app\\src\\main\\res\\layout\\item_user.xml"
-    },
-    {
         "merged": "C:\\Users\\joefa\\AndroidStudioProjects\\My Github\\Non Kantor\\Monitoring_siswa_android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\history_asdos_hadir.xml",
         "source": "C:\\Users\\joefa\\AndroidStudioProjects\\My Github\\Non Kantor\\Monitoring_siswa_android\\app\\src\\main\\res\\layout\\history_asdos_hadir.xml"
     },
@@ -82,5 +78,9 @@
     {
         "merged": "C:\\Users\\joefa\\AndroidStudioProjects\\My Github\\Non Kantor\\Monitoring_siswa_android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_login_asdos.xml",
         "source": "C:\\Users\\joefa\\AndroidStudioProjects\\My Github\\Non Kantor\\Monitoring_siswa_android\\app\\src\\main\\res\\layout\\activity_login_asdos.xml"
+    },
+    {
+        "merged": "C:\\Users\\joefa\\AndroidStudioProjects\\My Github\\Non Kantor\\Monitoring_siswa_android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_detail.xml",
+        "source": "C:\\Users\\joefa\\AndroidStudioProjects\\My Github\\Non Kantor\\Monitoring_siswa_android\\app\\src\\main\\res\\layout\\activity_detail.xml"
     }
 ]

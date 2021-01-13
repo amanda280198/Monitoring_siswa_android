@@ -64,10 +64,10 @@ public final class HistoryAsdosAbsenBinding implements ViewBinding {
   public final TextView namaUser;
 
   @NonNull
-  public final TextView npm;
+  public final TextView tahun;
 
   @NonNull
-  public final TextView tahun;
+  public final TextView textPengajar1;
 
   @NonNull
   public final TextView tgl;
@@ -83,7 +83,7 @@ public final class HistoryAsdosAbsenBinding implements ViewBinding {
       @NonNull TextView bulan, @NonNull ImageButton buttonBack, @NonNull Guideline guideline,
       @NonNull Guideline guideline1, @NonNull Guideline guideline2, @NonNull Guideline guideline3,
       @NonNull Guideline guideline4, @NonNull TextView jam, @NonNull TextView jamPraktikum,
-      @NonNull TextView namaUser, @NonNull TextView npm, @NonNull TextView tahun,
+      @NonNull TextView namaUser, @NonNull TextView tahun, @NonNull TextView textPengajar1,
       @NonNull TextView tgl, @NonNull TextView totalAbsen, @NonNull TextView txtAbsen) {
     this.rootView = rootView;
     this.btnAbsen = btnAbsen;
@@ -100,8 +100,8 @@ public final class HistoryAsdosAbsenBinding implements ViewBinding {
     this.jam = jam;
     this.jamPraktikum = jamPraktikum;
     this.namaUser = namaUser;
-    this.npm = npm;
     this.tahun = tahun;
+    this.textPengajar1 = textPengajar1;
     this.tgl = tgl;
     this.totalAbsen = totalAbsen;
     this.txtAbsen = txtAbsen;
@@ -218,15 +218,15 @@ public final class HistoryAsdosAbsenBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.npm;
-      TextView npm = rootView.findViewById(id);
-      if (npm == null) {
-        break missingId;
-      }
-
       id = R.id.tahun;
       TextView tahun = rootView.findViewById(id);
       if (tahun == null) {
+        break missingId;
+      }
+
+      id = R.id.textPengajar1;
+      TextView textPengajar1 = rootView.findViewById(id);
+      if (textPengajar1 == null) {
         break missingId;
       }
 
@@ -250,7 +250,7 @@ public final class HistoryAsdosAbsenBinding implements ViewBinding {
 
       return new HistoryAsdosAbsenBinding((ConstraintLayout) rootView, btnAbsen, btnHadir, btnIzin,
           btnKeluar, bulan, buttonBack, guideline, guideline1, guideline2, guideline3, guideline4,
-          jam, jamPraktikum, namaUser, npm, tahun, tgl, totalAbsen, txtAbsen);
+          jam, jamPraktikum, namaUser, tahun, textPengajar1, tgl, totalAbsen, txtAbsen);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

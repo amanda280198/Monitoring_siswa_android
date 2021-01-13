@@ -36,7 +36,8 @@
         android:testOnly="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true" >
-        <activity android:name="com.example.testingskripsinew.ScheduleActivity" />
+        <activity android:name="com.example.testingskripsinew.jadwal.DetailActivity" />
+        <activity android:name="com.example.testingskripsinew.jadwal.ScheduleActivity" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"

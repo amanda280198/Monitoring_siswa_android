@@ -10,8 +10,6 @@ com/example/testingskripsinew/GeofenceHelper.java
  com.example.testingskripsinew.GeofenceHelper
 com/example/testingskripsinew/databinding/ActivityPilihAkunBinding.java
  com.example.testingskripsinew.databinding.ActivityPilihAkunBinding
-com/example/testingskripsinew/databinding/ItemUserBinding.java
- com.example.testingskripsinew.databinding.ItemUserBinding
 com/example/testingskripsinew/databinding/ActivityLoginAsdosBinding.java
  com.example.testingskripsinew.databinding.ActivityLoginAsdosBinding
 com/example/testingskripsinew/HistoryUser.java
@@ -26,6 +24,8 @@ com/example/testingskripsinew/databinding/ActivityMainUserBinding.java
  com.example.testingskripsinew.databinding.ActivityMainUserBinding
 com/example/testingskripsinew/databinding/ItemDialogCheckinBinding.java
  com.example.testingskripsinew.databinding.ItemDialogCheckinBinding
+com/example/testingskripsinew/databinding/ActivityDetailBinding.java
+ com.example.testingskripsinew.databinding.ActivityDetailBinding
 com/example/testingskripsinew/databinding/HistoryAsdosKeluarBinding.java
  com.example.testingskripsinew.databinding.HistoryAsdosKeluarBinding
 com/example/testingskripsinew/databinding/HistoryAsdosAbsenBinding.java
@@ -40,8 +40,8 @@ com/example/testingskripsinew/HistoryAsdos_Hadir.java
  com.example.testingskripsinew.HistoryAsdos_Hadir
 com/example/testingskripsinew/databinding/ActivityJarakBinding.java
  com.example.testingskripsinew.databinding.ActivityJarakBinding
-com/example/testingskripsinew/SplashScreen.java
- com.example.testingskripsinew.SplashScreen
+com/example/testingskripsinew/HistoryAsdos_Keluar.java
+ com.example.testingskripsinew.HistoryAsdos_Keluar
 com/example/testingskripsinew/GeofenceBroadcastReceiver.java
  com.example.testingskripsinew.GeofenceBroadcastReceiver
 com/example/testingskripsinew/databinding/ActivityProfilAsdosBinding.java
@@ -64,5 +64,5 @@ com/example/testingskripsinew/databinding/HistoryAsdosHadirBinding.java
  com.example.testingskripsinew.databinding.HistoryAsdosHadirBinding
 com/example/testingskripsinew/databinding/ActivityProfilUserBinding.java
  com.example.testingskripsinew.databinding.ActivityProfilUserBinding
-com/example/testingskripsinew/HistoryAsdos_Keluar.java
- com.example.testingskripsinew.HistoryAsdos_Keluar
+com/example/testingskripsinew/SplashScreen.java
+ com.example.testingskripsinew.SplashScreen

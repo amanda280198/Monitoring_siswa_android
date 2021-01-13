@@ -32,7 +32,7 @@
             card_view:layout_constraintTop_toTopOf="@+id/guideline6" />
 
         <TextView
-            android:id="@+id/namaLengkap"
+            android:id="@+id/namaMatkul"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="Mata Kuliah"
@@ -53,8 +53,8 @@
             android:textSize="@dimen/text_size_12"
             card_view:layout_constraintBottom_toTopOf="@+id/pengajar1"
             card_view:layout_constraintEnd_toStartOf="@+id/kelas"
-            card_view:layout_constraintStart_toStartOf="@+id/namaLengkap"
-            card_view:layout_constraintTop_toBottomOf="@+id/namaLengkap" />
+            card_view:layout_constraintStart_toStartOf="@+id/namaMatkul"
+            card_view:layout_constraintTop_toBottomOf="@+id/namaMatkul" />
 
         <TextView
             android:id="@+id/kelas"
@@ -75,12 +75,12 @@
             android:text="hari"
             android:textSize="@dimen/text_size_12"
             card_view:layout_constraintBottom_toBottomOf="@+id/kelas"
-            card_view:layout_constraintEnd_toStartOf="@+id/tanggal"
+            card_view:layout_constraintEnd_toStartOf="@+id/jam"
             card_view:layout_constraintStart_toStartOf="@+id/guideline1"
             card_view:layout_constraintTop_toTopOf="@+id/kelas" />
 
         <TextView
-            android:id="@+id/tanggal"
+            android:id="@+id/jam"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="tanggal"

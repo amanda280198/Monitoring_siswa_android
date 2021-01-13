@@ -26,7 +26,8 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         tools:targetApi="m">
-        <activity android:name=".ScheduleActivity"></activity>
+        <activity android:name=".jadwal.DetailActivity"></activity>
+        <activity android:name=".jadwal.ScheduleActivity" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"

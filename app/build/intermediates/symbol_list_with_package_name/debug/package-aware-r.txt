@@ -34,6 +34,8 @@ anim fragment_fade_exit
 anim fragment_fast_out_extra_slow_in
 anim fragment_open_enter
 anim fragment_open_exit
+anim item_animation_fall_down
+anim layout_animation_fall_down
 anim mtrl_bottom_sheet_slide_in
 anim mtrl_bottom_sheet_slide_out
 anim mtrl_card_lowers_interpolator
@@ -1819,6 +1821,7 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable ic_search
 drawable jadwal
 drawable left_arrow
 drawable logot
@@ -1935,6 +1938,7 @@ id action_menu_presenter
 id action_mode_bar
 id action_mode_bar_stub
 id action_mode_close_button
+id action_search
 id action_text
 id actions
 id activity_chooser_view_content
@@ -1976,6 +1980,7 @@ id btn_hist_presensi
 id btn_histori
 id btn_histori_presensi_user
 id btn_izin
+id btn_jadwal_asdos
 id btn_jadwal_user
 id btn_keluar
 id btn_login_asdos
@@ -2083,7 +2088,6 @@ id grouping
 id groups
 id guideline
 id guideline1
-id guideline12
 id guideline2
 id guideline3
 id guideline4
@@ -2122,6 +2126,7 @@ id inward
 id italic
 id item_touch_helper_previous_elevation
 id jam
+id jamTgl
 id jam_keluar
 id jam_masuk
 id jam_praktikum
@@ -2143,6 +2148,7 @@ id list_item
 id lottie_layer_name
 id map
 id masked
+id mata_kuliah
 id material_clock_display
 id material_clock_face
 id material_clock_hand
@@ -2197,7 +2203,7 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
-id namaLengkap
+id namaMatkul
 id nama_asdos
 id nama_user
 id nav_controller_view_tag
@@ -2237,6 +2243,7 @@ id position
 id postLayout
 id progress_circular
 id progress_horizontal
+id qrCodeImage
 id radio
 id ratio
 id rectangles
@@ -2320,7 +2327,6 @@ id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id tahun
-id tanggal
 id terrain
 id test_checkbox_android_button_tint
 id test_checkbox_app_button_tint
@@ -2329,6 +2335,8 @@ id test_radiobutton_app_button_tint
 id text
 id text2
 id textEnd
+id textPengajar1
+id textPengajar2
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
@@ -2378,8 +2386,6 @@ id transition_transform
 id triangle
 id txtHistory
 id txtKelas
-id txtP1
-id txtP2
 id txtProfilAsdos
 id txtProfilPribadi
 id txt_absen
@@ -2415,6 +2421,8 @@ id wrap_content
 id zero_corner_chip
 integer abc_config_activityDefaultDur
 integer abc_config_activityShortDur
+integer anim_duration_long
+integer anim_duration_medium
 integer app_bar_elevation_anim_duration
 integer bottom_sheet_slide_duration
 integer cancel_button_image_alpha
@@ -2475,6 +2483,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_detail
 layout activity_jarak
 layout activity_login_asdos
 layout activity_login_user
@@ -2511,7 +2520,6 @@ layout history_user
 layout item_dialog_check_out
 layout item_dialog_checkin
 layout item_jadwal
-layout item_user
 layout material_chip_input_combo
 layout material_clock_display
 layout material_clock_display_divider
@@ -2587,6 +2595,7 @@ layout text_view_with_line_height_from_layout
 layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
+menu menu_main
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
@@ -2617,6 +2626,7 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
+string action_search
 string app_name
 string appbar_scrolling_view_behavior
 string bottom_sheet_behavior
