@@ -1014,6 +1014,7 @@ id btn_histori_presensi_user
 id btn_izin
 id btn_keluar
 id btn_login_asdos
+id btn_login_user
 id btn_logout
 id btn_presensi
 id btn_profil_asdos
@@ -1260,6 +1261,8 @@ id wide
 id withText
 id wrap
 id wrap_content
+id xpass_user
+id xusername_user
 integer abc_config_activityDefaultDur
 integer abc_config_activityShortDur
 integer cancel_button_image_alpha

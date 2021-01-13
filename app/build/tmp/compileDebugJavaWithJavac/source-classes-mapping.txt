@@ -12,20 +12,20 @@ com/example/testingskripsinew/ReaderScanActivity.java
  com.example.testingskripsinew.ReaderScanActivity
 com/example/testingskripsinew/BuildConfig.java
  com.example.testingskripsinew.BuildConfig
-com/example/testingskripsinew/PilihAkunActivity.java
- com.example.testingskripsinew.PilihAkunActivity
+com/example/testingskripsinew/HistoryUser.java
+ com.example.testingskripsinew.HistoryUser
 com/example/testingskripsinew/ViewMapsActivity.java
  com.example.testingskripsinew.ViewMapsActivity
  com.example.testingskripsinew.ViewMapsActivity$1
  com.example.testingskripsinew.ViewMapsActivity$2
 com/example/testingskripsinew/HistoryAsdos_Absen.java
  com.example.testingskripsinew.HistoryAsdos_Absen
-com/example/testingskripsinew/HistoryAsdos_Izin.java
- com.example.testingskripsinew.HistoryAsdos_Izin
+com/example/testingskripsinew/MainActivityUser.java
+ com.example.testingskripsinew.MainActivityUser
 com/example/testingskripsinew/ProfilAsdos.java
  com.example.testingskripsinew.ProfilAsdos
-com/example/testingskripsinew/LoginUser.java
- com.example.testingskripsinew.LoginUser
+com/example/testingskripsinew/HistoryAsdos_Izin.java
+ com.example.testingskripsinew.HistoryAsdos_Izin
 com/example/testingskripsinew/MainActivityAsdos.java
  com.example.testingskripsinew.MainActivityAsdos
 com/example/testingskripsinew/HistoryAsdos_Keluar.java
@@ -34,7 +34,9 @@ com/example/testingskripsinew/Jarak.java
  com.example.testingskripsinew.Jarak
 com/example/testingskripsinew/LoginAsdos.java
  com.example.testingskripsinew.LoginAsdos
-com/example/testingskripsinew/MainActivityUser.java
- com.example.testingskripsinew.MainActivityUser
-com/example/testingskripsinew/HistoryUser.java
- com.example.testingskripsinew.HistoryUser
+com/example/testingskripsinew/LoginUser.java
+ com.example.testingskripsinew.LoginUser
+ com.example.testingskripsinew.LoginUser$1
+ com.example.testingskripsinew.LoginUser$1$1
+com/example/testingskripsinew/PilihAkunActivity.java
+ com.example.testingskripsinew.PilihAkunActivity

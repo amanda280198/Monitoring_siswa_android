@@ -14,7 +14,7 @@ public class LoginAsdos extends AppCompatActivity {
         setContentView(R.layout.activity_login_asdos);
     }
 
-    public void btnLogin(View view) {
+    public void btnLoginAsdos(View view) {
         Intent i = new Intent(this, MainActivityAsdos.class);
         this.startActivity(i);
     }

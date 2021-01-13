@@ -15,6 +15,8 @@ public class MainActivityUser extends AppCompatActivity {
     }
 
     public void btnPresensiPribadi(View view) {
+        Intent i = new Intent(this, ViewMapsActivity.class);
+        this.startActivity(i);
     }
 
     public void btnHistoryPribadi(View view) {

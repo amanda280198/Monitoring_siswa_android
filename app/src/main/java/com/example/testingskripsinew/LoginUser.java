@@ -1,11 +1,14 @@
 package com.example.testingskripsinew;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
@@ -17,21 +20,56 @@ import com.google.firebase.database.ValueEventListener;
 public class LoginUser extends AppCompatActivity {
     FirebaseDatabase database;
     DatabaseReference myRef;
+    EditText xusername_user, xpass_user;
+    Button btn_login_user;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_user);
-        //ini wajib di kenalin di oncreat
+
+        xusername_user = findViewById(R.id.xusername_user);
+        xpass_user = findViewById(R.id.xpass_user);
+        btn_login_user = findViewById(R.id.btn_login_user);
+
+
+        //ini wajib di kenalin di oncreate
         database = FirebaseDatabase.getInstance();
         // ini getReference buat alamat path nya
         myRef = database.getReference("dataAsdos");
+
+        btn_login_user.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                final String username = xusername_user.getText().toString();
+                String pass_user = xpass_user.getText().toString();
+
+                myRef = FirebaseDatabase.getInstance().getReference().child("dataUser")
+                        .child("dataUser").child(username);
+
+                myRef.addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                        if (snapshot.exists()) {
+                            Toast.makeText(getApplicationContext(), "Username ada :)", Toast.LENGTH_SHORT).show();
+                            //pindah activity
+                            Intent gotothome = new Intent(LoginUser.this, MainActivityUser.class);
+                            startActivity(gotothome);
+                        } else {
+                            Toast.makeText(getApplicationContext(), "Username tidak ada!", Toast.LENGTH_SHORT).show();
+                        }
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
+                        Toast.makeText(getApplicationContext(), "Database error!", Toast.LENGTH_SHORT).show();
+                    }
+                });
+            }
+        });
     }
-
-    public void btnLogin(View view) {
-        Intent i = new Intent(this, MainActivityUser.class);
-        this.startActivity(i);
-
+}
 //        // Read from the database
 //        myRef.child("065116120").child("nama")
 //                .addValueEventListener(new ValueEventListener() {
@@ -50,5 +88,3 @@ public class LoginUser extends AppCompatActivity {
 //                        Log.w("onLoginUser", "Failed to read value.", error.toException());
 //                    }
 //                });
-    }
-}
