@@ -2192,6 +2192,7 @@ id parentPanel
 id parentRelative
 id parent_matrix
 id pass_asdos
+id pass_user
 id password_toggle
 id path
 id pathRelative
@@ -2356,6 +2357,7 @@ id unlabeled
 id up
 id useLogo
 id username_asdos
+id username_user
 id vertical
 id view
 id view1
@@ -2370,8 +2372,6 @@ id withText
 id withinBounds
 id wrap
 id wrap_content
-id xpass_user
-id xusername_user
 id zero_corner_chip
 integer abc_config_activityDefaultDur
 integer abc_config_activityShortDur

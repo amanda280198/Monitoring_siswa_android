@@ -10,13 +10,6 @@ import com.example.testingskripsinew.utils.Data
 
 class ProfilUser : AppCompatActivity() {
     private lateinit var binding: ActivityProfilUserBinding
-    private lateinit var inUser: String
-    private lateinit var inNpm: String
-
-    companion object {
-        const val EXTRA_USER = "data_user"
-        const val EXTRA_NPM = "data_npm"
-    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

@@ -25,18 +25,18 @@ class LoginUser : AppCompatActivity() {
         myRef = database.getReference(Data.USER_DATA)
 
         binding.btnLoginUser.setOnClickListener {
-            val inUser = binding.xusernameUser.text.toString().trim { it <= ' ' }
-            val inPassword = binding.xpassUser.text.toString().trim { it <= ' ' }
+            val inUser = binding.usernameUser.text.toString().trim { it <= ' ' }
+            val inPassword = binding.passUser.text.toString().trim { it <= ' ' }
 
             var inputKosong = false
             when {
                 inUser.isEmpty() -> {
                     inputKosong = true
-                    binding.xusernameUser.error = getString(R.string.empty_alert)
+                    binding.usernameUser.error = getString(R.string.empty_alert)
                 }
                 inPassword.isEmpty() -> {
                     inputKosong = true
-                    binding.xpassUser.error = getString(R.string.empty_alert)
+                    binding.passUser.error = getString(R.string.empty_alert)
                 }
             }
             if (!inputKosong) {
@@ -46,11 +46,11 @@ class LoginUser : AppCompatActivity() {
 
     }
 
-    private fun getDataUser(username: String, passUser: String) {
-        myRef.child(username).addValueEventListener(object : ValueEventListener {
+    private fun getDataUser(userName: String, passUser: String) {
+        myRef.child(userName).addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
                 val value = snapshot.getValue(DataUser::class.java)
-                if (value?.npm == username && value.pass == passUser) {
+                if (value?.npm == userName && value.pass == passUser) {
                     val intent = Intent(this@LoginUser, MainActivityUser::class.java)
                     intent.putExtra(MainActivityUser.EXTRA_USER, value.nama)
                     intent.putExtra(MainActivityUser.EXTRA_NPM, value.npm)

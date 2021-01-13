@@ -47,9 +47,9 @@
         <activity android:name=".HistoryAsdos_Absen" />
         <activity android:name=".HistoryAsdos_Izin" />
         <activity android:name=".HistoryAsdos_Hadir" />
-        <activity android:name=".ProfilAsdos" />
+        <activity android:name=".asdos.ProfilAsdos" />
         <activity android:name=".user.ProfilUser" />
-        <activity android:name=".MainActivityAsdos" />
+        <activity android:name=".asdos.MainActivityAsdos" />
         <activity android:name=".user.MainActivityUser" />
         <activity android:name=".asdos.LoginAsdos" />
         <activity android:name=".user.LoginUser" />

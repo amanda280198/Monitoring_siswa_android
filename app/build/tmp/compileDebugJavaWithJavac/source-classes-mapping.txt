@@ -22,10 +22,6 @@ com/example/testingskripsinew/databinding/ActivityMainUserBinding.java
  com.example.testingskripsinew.databinding.ActivityMainUserBinding
 com/example/testingskripsinew/databinding/ItemDialogCheckinBinding.java
  com.example.testingskripsinew.databinding.ItemDialogCheckinBinding
-com/example/testingskripsinew/ProfilAsdos.java
- com.example.testingskripsinew.ProfilAsdos
-com/example/testingskripsinew/MainActivityAsdos.java
- com.example.testingskripsinew.MainActivityAsdos
 com/example/testingskripsinew/databinding/HistoryAsdosKeluarBinding.java
  com.example.testingskripsinew.databinding.HistoryAsdosKeluarBinding
 com/example/testingskripsinew/databinding/HistoryAsdosAbsenBinding.java

@@ -49,13 +49,13 @@
         android:text="Username"
         android:textSize="15dp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/xusername_user"
+        app:layout_constraintBottom_toTopOf="@+id/username_user"
         app:layout_constraintStart_toStartOf="@+id/guideline1"
         app:layout_constraintTop_toTopOf="@+id/guideline3"
         tools:ignore="MissingConstraints"  />
 
     <EditText
-        android:id="@+id/xusername_user"
+        android:id="@+id/username_user"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -75,13 +75,13 @@
         android:text="Password"
         android:textSize="15dp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/xpass_user"
+        app:layout_constraintBottom_toTopOf="@+id/pass_user"
         app:layout_constraintStart_toStartOf="@+id/guideline1"
-        app:layout_constraintTop_toBottomOf="@+id/xusername_user"
+        app:layout_constraintTop_toBottomOf="@+id/username_user"
         tools:ignore="MissingConstraints" />
 
     <EditText
-        android:id="@+id/xpass_user"
+        android:id="@+id/pass_user"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"

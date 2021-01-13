@@ -113,15 +113,15 @@
 57        <activity android:name="com.example.testingskripsinew.HistoryAsdos_Hadir" />
 57-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:49:9-56
 57-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:49:19-53
-58        <activity android:name="com.example.testingskripsinew.ProfilAsdos" />
-58-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:50:9-49
-58-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:50:19-46
+58        <activity android:name="com.example.testingskripsinew.asdos.ProfilAsdos" />
+58-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:50:9-55
+58-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:50:19-52
 59        <activity android:name="com.example.testingskripsinew.user.ProfilUser" />
 59-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:51:9-53
 59-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:51:19-50
-60        <activity android:name="com.example.testingskripsinew.MainActivityAsdos" />
-60-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:52:9-55
-60-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:52:19-52
+60        <activity android:name="com.example.testingskripsinew.asdos.MainActivityAsdos" />
+60-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:52:9-61
+60-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:52:19-58
 61        <activity android:name="com.example.testingskripsinew.user.MainActivityUser" />
 61-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:53:9-59
 61-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:53:19-56

@@ -317,18 +317,18 @@ activity#com.example.testingskripsinew.HistoryAsdos_Hadir
 ADDED from C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:49:9-56
 	android:name
 		ADDED from C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:49:19-53
-activity#com.example.testingskripsinew.ProfilAsdos
-ADDED from C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:50:9-49
+activity#com.example.testingskripsinew.asdos.ProfilAsdos
+ADDED from C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:50:9-55
 	android:name
-		ADDED from C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:50:19-46
+		ADDED from C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:50:19-52
 activity#com.example.testingskripsinew.user.ProfilUser
 ADDED from C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:51:9-53
 	android:name
 		ADDED from C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:51:19-50
-activity#com.example.testingskripsinew.MainActivityAsdos
-ADDED from C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:52:9-55
+activity#com.example.testingskripsinew.asdos.MainActivityAsdos
+ADDED from C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:52:9-61
 	android:name
-		ADDED from C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:52:19-52
+		ADDED from C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:52:19-58
 activity#com.example.testingskripsinew.user.MainActivityUser
 ADDED from C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:53:9-59
 	android:name

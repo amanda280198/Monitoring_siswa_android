@@ -55,9 +55,9 @@
         <activity android:name="com.example.testingskripsinew.HistoryAsdos_Absen" />
         <activity android:name="com.example.testingskripsinew.HistoryAsdos_Izin" />
         <activity android:name="com.example.testingskripsinew.HistoryAsdos_Hadir" />
-        <activity android:name="com.example.testingskripsinew.ProfilAsdos" />
+        <activity android:name="com.example.testingskripsinew.asdos.ProfilAsdos" />
         <activity android:name="com.example.testingskripsinew.user.ProfilUser" />
-        <activity android:name="com.example.testingskripsinew.MainActivityAsdos" />
+        <activity android:name="com.example.testingskripsinew.asdos.MainActivityAsdos" />
         <activity android:name="com.example.testingskripsinew.user.MainActivityUser" />
         <activity android:name="com.example.testingskripsinew.asdos.LoginAsdos" />
         <activity android:name="com.example.testingskripsinew.user.LoginUser" />
