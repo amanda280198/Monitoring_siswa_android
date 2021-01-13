@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.os.Handler;
 
 import com.example.testingskripsinew.jadwal.ScheduleActivity;
+import com.example.testingskripsinew.user.JarakActivity;
 
 public class SplashScreen extends AppCompatActivity {
     private static final int SPLASH_TIME_OUT = 3000;
@@ -17,8 +18,8 @@ public class SplashScreen extends AppCompatActivity {
 
         new Handler().postDelayed(() -> {
 
-            Intent i = new Intent(SplashScreen.this, PilihAkunActivity.class);
-//            Intent i = new Intent(SplashScreen.this, ScheduleActivity.class);
+//            Intent i = new Intent(SplashScreen.this, PilihAkunActivity.class);
+            Intent i = new Intent(SplashScreen.this, JarakActivity.class);
             SplashScreen.this.startActivity(i);
 
             SplashScreen.this.finish();

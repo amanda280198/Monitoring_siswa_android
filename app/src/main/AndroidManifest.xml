@@ -26,7 +26,7 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         tools:targetApi="m">
-        <activity android:name=".jadwal.DetailActivity"></activity>
+        <activity android:name=".jadwal.DetailActivity"/>
         <activity android:name=".jadwal.ScheduleActivity" />
 
         <meta-data
@@ -38,7 +38,7 @@
             android:label="@string/title_activity_view_maps" />
 
         <receiver
-            android:name=".GeofenceBroadcastReceiver"
+            android:name=".helper.GeofenceBroadcastReceiver"
             android:enabled="true"
             android:exported="true" />
 
@@ -48,12 +48,16 @@
         <activity android:name=".HistoryAsdos_Absen" />
         <activity android:name=".HistoryAsdos_Izin" />
         <activity android:name=".HistoryAsdos_Hadir" />
+
         <activity android:name=".asdos.ProfilAsdos" />
-        <activity android:name=".user.ProfilUser" />
         <activity android:name=".asdos.MainActivityAsdos" />
-        <activity android:name=".user.MainActivityUser" />
         <activity android:name=".asdos.LoginAsdos" />
+
+        <activity android:name=".user.ProfilUser" />
+        <activity android:name=".user.JarakActivity" />
+        <activity android:name=".user.MainActivityUser" />
         <activity android:name=".user.LoginUser" />
+
         <activity android:name=".PilihAkunActivity" />
         <activity android:name=".SplashScreen">
             <intent-filter>

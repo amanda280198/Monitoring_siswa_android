@@ -48,7 +48,7 @@
             android:label="@string/title_activity_view_maps" />
 
         <receiver
-            android:name="com.example.testingskripsinew.GeofenceBroadcastReceiver"
+            android:name="com.example.testingskripsinew.helper.GeofenceBroadcastReceiver"
             android:enabled="true"
             android:exported="true" />
 
@@ -59,10 +59,11 @@
         <activity android:name="com.example.testingskripsinew.HistoryAsdos_Izin" />
         <activity android:name="com.example.testingskripsinew.HistoryAsdos_Hadir" />
         <activity android:name="com.example.testingskripsinew.asdos.ProfilAsdos" />
-        <activity android:name="com.example.testingskripsinew.user.ProfilUser" />
         <activity android:name="com.example.testingskripsinew.asdos.MainActivityAsdos" />
-        <activity android:name="com.example.testingskripsinew.user.MainActivityUser" />
         <activity android:name="com.example.testingskripsinew.asdos.LoginAsdos" />
+        <activity android:name="com.example.testingskripsinew.user.ProfilUser" />
+        <activity android:name="com.example.testingskripsinew.user.JarakActivity" />
+        <activity android:name="com.example.testingskripsinew.user.MainActivityUser" />
         <activity android:name="com.example.testingskripsinew.user.LoginUser" />
         <activity android:name="com.example.testingskripsinew.PilihAkunActivity" />
         <activity android:name="com.example.testingskripsinew.SplashScreen" >

@@ -35,7 +35,8 @@ class MainActivityUser : AppCompatActivity() {
     }
 
     fun btnPresensiPribadi(view: View?) {
-        val i = Intent(this, ViewMapsActivity::class.java)
+        val i = Intent(this, JarakActivity::class.java)
+//        val i = Intent(this, ViewMapsActivity::class.java)
         this.startActivity(i)
     }
 
