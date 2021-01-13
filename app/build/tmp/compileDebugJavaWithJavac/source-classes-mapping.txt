@@ -1,43 +1,66 @@
-com/example/testingskripsinew/HistoryAsdos_Hadir.java
- com.example.testingskripsinew.HistoryAsdos_Hadir
-com/example/testingskripsinew/ProfilUser.java
- com.example.testingskripsinew.ProfilUser
+com/example/testingskripsinew/databinding/ActivityLoginUserBinding.java
+ com.example.testingskripsinew.databinding.ActivityLoginUserBinding
+com/example/testingskripsinew/databinding/ActivityReaderScanBinding.java
+ com.example.testingskripsinew.databinding.ActivityReaderScanBinding
+com/example/testingskripsinew/databinding/HistoryUserBinding.java
+ com.example.testingskripsinew.databinding.HistoryUserBinding
 com/example/testingskripsinew/GeofenceHelper.java
  com.example.testingskripsinew.GeofenceHelper
-com/example/testingskripsinew/SplashScreen.java
- com.example.testingskripsinew.SplashScreen
-com/example/testingskripsinew/GeofenceBroadcastReceiver.java
- com.example.testingskripsinew.GeofenceBroadcastReceiver
-com/example/testingskripsinew/ReaderScanActivity.java
- com.example.testingskripsinew.ReaderScanActivity
-com/example/testingskripsinew/BuildConfig.java
- com.example.testingskripsinew.BuildConfig
+com/example/testingskripsinew/databinding/ActivityPilihAkunBinding.java
+ com.example.testingskripsinew.databinding.ActivityPilihAkunBinding
+com/example/testingskripsinew/databinding/ActivityLoginAsdosBinding.java
+ com.example.testingskripsinew.databinding.ActivityLoginAsdosBinding
 com/example/testingskripsinew/HistoryUser.java
  com.example.testingskripsinew.HistoryUser
 com/example/testingskripsinew/ViewMapsActivity.java
  com.example.testingskripsinew.ViewMapsActivity
  com.example.testingskripsinew.ViewMapsActivity$1
  com.example.testingskripsinew.ViewMapsActivity$2
-com/example/testingskripsinew/HistoryAsdos_Absen.java
- com.example.testingskripsinew.HistoryAsdos_Absen
-com/example/testingskripsinew/MainActivityUser.java
- com.example.testingskripsinew.MainActivityUser
+com/example/testingskripsinew/databinding/ActivityMainAsdosBinding.java
+ com.example.testingskripsinew.databinding.ActivityMainAsdosBinding
+com/example/testingskripsinew/databinding/ActivityMainUserBinding.java
+ com.example.testingskripsinew.databinding.ActivityMainUserBinding
+com/example/testingskripsinew/databinding/ItemDialogCheckinBinding.java
+ com.example.testingskripsinew.databinding.ItemDialogCheckinBinding
 com/example/testingskripsinew/ProfilAsdos.java
  com.example.testingskripsinew.ProfilAsdos
-com/example/testingskripsinew/HistoryAsdos_Izin.java
- com.example.testingskripsinew.HistoryAsdos_Izin
 com/example/testingskripsinew/MainActivityAsdos.java
  com.example.testingskripsinew.MainActivityAsdos
-com/example/testingskripsinew/HistoryAsdos_Keluar.java
- com.example.testingskripsinew.HistoryAsdos_Keluar
+com/example/testingskripsinew/databinding/HistoryAsdosKeluarBinding.java
+ com.example.testingskripsinew.databinding.HistoryAsdosKeluarBinding
+com/example/testingskripsinew/databinding/HistoryAsdosAbsenBinding.java
+ com.example.testingskripsinew.databinding.HistoryAsdosAbsenBinding
 com/example/testingskripsinew/Jarak.java
  com.example.testingskripsinew.Jarak
-com/example/testingskripsinew/LoginAsdos.java
- com.example.testingskripsinew.LoginAsdos
-com/example/testingskripsinew/LoginUser.java
- com.example.testingskripsinew.LoginUser
- com.example.testingskripsinew.LoginUser$1
-com/example/testingskripsinew/PilihAkunActivity.java
- com.example.testingskripsinew.PilihAkunActivity
-com/example/testingskripsinew/helper/MyApplication.java
- com.example.testingskripsinew.helper.MyApplication
+com/example/testingskripsinew/HistoryAsdos_Izin.java
+ com.example.testingskripsinew.HistoryAsdos_Izin
+com/example/testingskripsinew/databinding/ActivityViewMapsBinding.java
+ com.example.testingskripsinew.databinding.ActivityViewMapsBinding
+com/example/testingskripsinew/HistoryAsdos_Hadir.java
+ com.example.testingskripsinew.HistoryAsdos_Hadir
+com/example/testingskripsinew/databinding/ActivityJarakBinding.java
+ com.example.testingskripsinew.databinding.ActivityJarakBinding
+com/example/testingskripsinew/SplashScreen.java
+ com.example.testingskripsinew.SplashScreen
+com/example/testingskripsinew/GeofenceBroadcastReceiver.java
+ com.example.testingskripsinew.GeofenceBroadcastReceiver
+com/example/testingskripsinew/databinding/ActivityProfilAsdosBinding.java
+ com.example.testingskripsinew.databinding.ActivityProfilAsdosBinding
+com/example/testingskripsinew/ReaderScanActivity.java
+ com.example.testingskripsinew.ReaderScanActivity
+com/example/testingskripsinew/BuildConfig.java
+ com.example.testingskripsinew.BuildConfig
+com/example/testingskripsinew/HistoryAsdos_Absen.java
+ com.example.testingskripsinew.HistoryAsdos_Absen
+com/example/testingskripsinew/databinding/ActivitySplashScreenBinding.java
+ com.example.testingskripsinew.databinding.ActivitySplashScreenBinding
+com/example/testingskripsinew/databinding/HistoryAsdosIzinBinding.java
+ com.example.testingskripsinew.databinding.HistoryAsdosIzinBinding
+com/example/testingskripsinew/databinding/ItemDialogCheckOutBinding.java
+ com.example.testingskripsinew.databinding.ItemDialogCheckOutBinding
+com/example/testingskripsinew/databinding/HistoryAsdosHadirBinding.java
+ com.example.testingskripsinew.databinding.HistoryAsdosHadirBinding
+com/example/testingskripsinew/databinding/ActivityProfilUserBinding.java
+ com.example.testingskripsinew.databinding.ActivityProfilUserBinding
+com/example/testingskripsinew/HistoryAsdos_Keluar.java
+ com.example.testingskripsinew.HistoryAsdos_Keluar
