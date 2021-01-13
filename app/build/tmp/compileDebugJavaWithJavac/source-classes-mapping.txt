@@ -37,6 +37,5 @@ com/example/testingskripsinew/LoginAsdos.java
 com/example/testingskripsinew/LoginUser.java
  com.example.testingskripsinew.LoginUser
  com.example.testingskripsinew.LoginUser$1
- com.example.testingskripsinew.LoginUser$1$1
 com/example/testingskripsinew/PilihAkunActivity.java
  com.example.testingskripsinew.PilihAkunActivity

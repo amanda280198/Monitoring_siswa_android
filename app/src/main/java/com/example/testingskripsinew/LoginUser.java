@@ -3,10 +3,7 @@ package com.example.testingskripsinew;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -38,35 +35,34 @@ public class LoginUser extends AppCompatActivity {
         // ini getReference buat alamat path nya
         myRef = database.getReference("dataAsdos");
 
-        btn_login_user.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+        btn_login_user.setOnClickListener(view -> {
 
-                final String username = xusername_user.getText().toString();
-                String pass_user = xpass_user.getText().toString();
+            String username = xusername_user.getText().toString();
+            String pass_user = xpass_user.getText().toString();
 
-                myRef = FirebaseDatabase.getInstance().getReference().child("dataUser")
-                        .child("dataUser").child(username);
+            myRef = FirebaseDatabase.getInstance().getReference().child("dataUser")
+                    .child(username);
 
-                myRef.addListenerForSingleValueEvent(new ValueEventListener() {
-                    @Override
-                    public void onDataChange(@NonNull DataSnapshot snapshot) {
-                        if (snapshot.exists()) {
-                            Toast.makeText(getApplicationContext(), "Username ada :)", Toast.LENGTH_SHORT).show();
-                            //pindah activity
-                            Intent gotothome = new Intent(LoginUser.this, MainActivityUser.class);
-                            startActivity(gotothome);
-                        } else {
-                            Toast.makeText(getApplicationContext(), "Username tidak ada!", Toast.LENGTH_SHORT).show();
-                        }
+            myRef.addListenerForSingleValueEvent(new ValueEventListener() {
+                @Override
+                public void onDataChange(@NonNull DataSnapshot snapshot) {
+                    if (snapshot.exists()) {
+                        Toast.makeText(getApplicationContext(), "Username ada :)", Toast.LENGTH_SHORT).show();
+                        String value = snapshot.getValue(String.class);
+                        Toast.makeText(LoginUser.this, value, Toast.LENGTH_SHORT).show();
+                        //pindah activity
+//                        Intent gotothome = new Intent(LoginUser.this, MainActivityUser.class);
+//                        startActivity(gotothome);
+                    } else {
+                        Toast.makeText(getApplicationContext(), "Username tidak ada!", Toast.LENGTH_SHORT).show();
                     }
+                }
 
-                    @Override
-                    public void onCancelled(@NonNull DatabaseError error) {
-                        Toast.makeText(getApplicationContext(), "Database error!", Toast.LENGTH_SHORT).show();
-                    }
-                });
-            }
+                @Override
+                public void onCancelled(@NonNull DatabaseError error) {
+                    Toast.makeText(getApplicationContext(), "Database error!", Toast.LENGTH_SHORT).show();
+                }
+            });
         });
     }
 }
