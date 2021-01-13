@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.example.testingskripsinew.HistoryUser
+import com.example.testingskripsinew.ScheduleActivity
 import com.example.testingskripsinew.ViewMapsActivity
 import com.example.testingskripsinew.databinding.ActivityMainUserBinding
 import com.example.testingskripsinew.utils.Data
@@ -45,5 +46,10 @@ class MainActivityUser : AppCompatActivity() {
         this.startActivity(i)
         Data.namaUser = inUser
         Data.npmUser = inNpm
+    }
+
+    fun btnJadwalUser(view: View) {
+        val i = Intent(this, ScheduleActivity::class.java)
+        this.startActivity(i)
     }
 }

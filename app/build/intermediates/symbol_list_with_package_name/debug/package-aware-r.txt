@@ -1084,6 +1084,7 @@ color cardview_shadow_end_color
 color cardview_shadow_start_color
 color checkbox_themeable_attribute_color
 color colorAccent
+color colorLight
 color colorPrimary
 color colorPrimaryDark
 color common_google_signin_btn_text_dark
@@ -1256,6 +1257,8 @@ color switch_thumb_normal_material_dark
 color switch_thumb_normal_material_light
 color test_mtrl_calendar_day
 color test_mtrl_calendar_day_selected
+color textColor
+color textColorLight
 color tooltip_background_dark
 color tooltip_background_light
 dimen abc_action_bar_content_inset_material
@@ -1641,11 +1644,23 @@ dimen notification_small_icon_size_as_large
 dimen notification_subtext_size
 dimen notification_top_pad
 dimen notification_top_pad_large_text
+dimen separator_size_10
+dimen separator_size_16
+dimen separator_size_4
+dimen separator_size_8
 dimen subtitle_corner_radius
 dimen subtitle_outline_width
 dimen subtitle_shadow_offset
 dimen subtitle_shadow_radius
 dimen test_mtrl_calendar_day_cornerSize
+dimen text_size_10
+dimen text_size_11
+dimen text_size_12
+dimen text_size_13
+dimen text_size_14
+dimen text_size_15
+dimen text_size_16
+dimen text_size_9
 dimen tooltip_corner_radius
 dimen tooltip_horizontal_padding
 dimen tooltip_margin
@@ -1795,6 +1810,7 @@ drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_logo_history
+drawable ic_logo_jadwal
 drawable ic_logo_logout
 drawable ic_logo_presensi
 drawable ic_logo_profil
@@ -1803,6 +1819,7 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable jadwal
 drawable left_arrow
 drawable logot
 drawable material_cursor_drawable
@@ -1848,6 +1865,11 @@ drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable user
 drawable userr
+font poppins
+font poppins_bold
+font poppins_light
+font poppins_medium
+font poppins_semibold
 id ALT
 id BOTTOM_END
 id BOTTOM_START
@@ -1928,6 +1950,7 @@ id all
 id always
 id animateToEnd
 id animateToStart
+id appBarLayout
 id asConfigured
 id async
 id auto
@@ -1953,6 +1976,7 @@ id btn_hist_presensi
 id btn_histori
 id btn_histori_presensi_user
 id btn_izin
+id btn_jadwal_user
 id btn_keluar
 id btn_login_asdos
 id btn_login_user
@@ -2059,10 +2083,14 @@ id grouping
 id groups
 id guideline
 id guideline1
+id guideline12
 id guideline2
 id guideline3
 id guideline4
 id guideline5
+id guideline6
+id guideline7
+id guideline9
 id hardware
 id hari
 id header_title
@@ -2099,6 +2127,7 @@ id jam_masuk
 id jam_praktikum
 id jumpToEnd
 id jumpToStart
+id kelas
 id labelGroup
 id labeled
 id largeLabel
@@ -2168,6 +2197,7 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
+id namaLengkap
 id nama_asdos
 id nama_user
 id nav_controller_view_tag
@@ -2181,6 +2211,8 @@ id notification_background
 id notification_main_column
 id notification_main_column_container
 id npm
+id npmPengajar1
+id npmPengajar2
 id off
 id on
 id outline
@@ -2197,6 +2229,8 @@ id password_toggle
 id path
 id pathRelative
 id peekHeight
+id pengajar1
+id pengajar2
 id percent
 id pin
 id position
@@ -2215,6 +2249,7 @@ id right_icon
 id right_side
 id rounded
 id row_index_key
+id rvListjadwal
 id satellite
 id save_non_transition_alpha
 id save_overlay_view
@@ -2285,6 +2320,7 @@ id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id tahun
+id tanggal
 id terrain
 id test_checkbox_android_button_tint
 id test_checkbox_app_button_tint
@@ -2324,6 +2360,7 @@ id titleDashboard2
 id titleDividerNoCustom
 id title_template
 id toggle
+id toolbar
 id top
 id topPanel
 id total_absen
@@ -2340,6 +2377,9 @@ id transition_scene_layoutid_cache
 id transition_transform
 id triangle
 id txtHistory
+id txtKelas
+id txtP1
+id txtP2
 id txtProfilAsdos
 id txtProfilPribadi
 id txt_absen
@@ -2444,6 +2484,7 @@ layout activity_pilih_akun
 layout activity_profil_asdos
 layout activity_profil_user
 layout activity_reader_scan
+layout activity_schedule
 layout activity_splash_screen
 layout activity_view_maps
 layout custom_dialog
@@ -2469,6 +2510,8 @@ layout history_asdos_keluar
 layout history_user
 layout item_dialog_check_out
 layout item_dialog_checkin
+layout item_jadwal
+layout item_user
 layout material_chip_input_combo
 layout material_clock_display
 layout material_clock_display_divider
@@ -2688,6 +2731,9 @@ style Animation_AppCompat_Tooltip
 style Animation_Design_BottomSheetDialog
 style Animation_MaterialComponents_BottomSheetDialog
 style AppTheme
+style AppTheme_AppBarOverlay
+style AppTheme_NoActionBar
+style AppTheme_PopupOverlay
 style Base_AlertDialog_AppCompat
 style Base_AlertDialog_AppCompat_Light
 style Base_Animation_AppCompat_Dialog
@@ -2909,7 +2955,9 @@ style Base_Widget_MaterialComponents_TextView
 style CardView
 style CardView_Dark
 style CardView_Light
+style EditTextCustom
 style EmptyTheme
+style FullScreen
 style MaterialAlertDialog_MaterialComponents
 style MaterialAlertDialog_MaterialComponents_Body_Text
 style MaterialAlertDialog_MaterialComponents_Picker_Date_Calendar
@@ -2920,6 +2968,10 @@ style MaterialAlertDialog_MaterialComponents_Title_Panel
 style MaterialAlertDialog_MaterialComponents_Title_Panel_CenterStacked
 style MaterialAlertDialog_MaterialComponents_Title_Text
 style MaterialAlertDialog_MaterialComponents_Title_Text_CenterStacked
+style MyTemaH1
+style MyTemaH2
+style MyTemaH3
+style MyTemaH4
 style Platform_AppCompat
 style Platform_AppCompat_Light
 style Platform_MaterialComponents

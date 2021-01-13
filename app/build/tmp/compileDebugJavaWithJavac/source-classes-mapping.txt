@@ -2,12 +2,16 @@ com/example/testingskripsinew/databinding/ActivityLoginUserBinding.java
  com.example.testingskripsinew.databinding.ActivityLoginUserBinding
 com/example/testingskripsinew/databinding/ActivityReaderScanBinding.java
  com.example.testingskripsinew.databinding.ActivityReaderScanBinding
+com/example/testingskripsinew/databinding/ActivityScheduleBinding.java
+ com.example.testingskripsinew.databinding.ActivityScheduleBinding
 com/example/testingskripsinew/databinding/HistoryUserBinding.java
  com.example.testingskripsinew.databinding.HistoryUserBinding
 com/example/testingskripsinew/GeofenceHelper.java
  com.example.testingskripsinew.GeofenceHelper
 com/example/testingskripsinew/databinding/ActivityPilihAkunBinding.java
  com.example.testingskripsinew.databinding.ActivityPilihAkunBinding
+com/example/testingskripsinew/databinding/ItemUserBinding.java
+ com.example.testingskripsinew.databinding.ItemUserBinding
 com/example/testingskripsinew/databinding/ActivityLoginAsdosBinding.java
  com.example.testingskripsinew.databinding.ActivityLoginAsdosBinding
 com/example/testingskripsinew/HistoryUser.java
@@ -54,6 +58,8 @@ com/example/testingskripsinew/databinding/HistoryAsdosIzinBinding.java
  com.example.testingskripsinew.databinding.HistoryAsdosIzinBinding
 com/example/testingskripsinew/databinding/ItemDialogCheckOutBinding.java
  com.example.testingskripsinew.databinding.ItemDialogCheckOutBinding
+com/example/testingskripsinew/databinding/ItemJadwalBinding.java
+ com.example.testingskripsinew.databinding.ItemJadwalBinding
 com/example/testingskripsinew/databinding/HistoryAsdosHadirBinding.java
  com.example.testingskripsinew.databinding.HistoryAsdosHadirBinding
 com/example/testingskripsinew/databinding/ActivityProfilUserBinding.java

@@ -24,6 +24,9 @@ public final class ActivityMainUserBinding implements ViewBinding {
   public final Button btnHistoriPresensiUser;
 
   @NonNull
+  public final Button btnJadwalUser;
+
+  @NonNull
   public final Button btnPresensi;
 
   @NonNull
@@ -54,12 +57,14 @@ public final class ActivityMainUserBinding implements ViewBinding {
   public final View view3;
 
   private ActivityMainUserBinding(@NonNull ConstraintLayout rootView,
-      @NonNull Button btnHistoriPresensiUser, @NonNull Button btnPresensi,
-      @NonNull Button btnProfilUser, @NonNull Guideline guideline, @NonNull Guideline guideline1,
-      @NonNull Guideline guideline2, @NonNull Guideline guideline3, @NonNull Guideline guideline5,
-      @NonNull TextView namaUser, @NonNull TextView titleDashboard2, @NonNull View view3) {
+      @NonNull Button btnHistoriPresensiUser, @NonNull Button btnJadwalUser,
+      @NonNull Button btnPresensi, @NonNull Button btnProfilUser, @NonNull Guideline guideline,
+      @NonNull Guideline guideline1, @NonNull Guideline guideline2, @NonNull Guideline guideline3,
+      @NonNull Guideline guideline5, @NonNull TextView namaUser, @NonNull TextView titleDashboard2,
+      @NonNull View view3) {
     this.rootView = rootView;
     this.btnHistoriPresensiUser = btnHistoriPresensiUser;
+    this.btnJadwalUser = btnJadwalUser;
     this.btnPresensi = btnPresensi;
     this.btnProfilUser = btnProfilUser;
     this.guideline = guideline;
@@ -102,6 +107,12 @@ public final class ActivityMainUserBinding implements ViewBinding {
       id = R.id.btn_histori_presensi_user;
       Button btnHistoriPresensiUser = rootView.findViewById(id);
       if (btnHistoriPresensiUser == null) {
+        break missingId;
+      }
+
+      id = R.id.btn_jadwal_user;
+      Button btnJadwalUser = rootView.findViewById(id);
+      if (btnJadwalUser == null) {
         break missingId;
       }
 
@@ -166,8 +177,8 @@ public final class ActivityMainUserBinding implements ViewBinding {
       }
 
       return new ActivityMainUserBinding((ConstraintLayout) rootView, btnHistoriPresensiUser,
-          btnPresensi, btnProfilUser, guideline, guideline1, guideline2, guideline3, guideline5,
-          namaUser, titleDashboard2, view3);
+          btnJadwalUser, btnPresensi, btnProfilUser, guideline, guideline1, guideline2, guideline3,
+          guideline5, namaUser, titleDashboard2, view3);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

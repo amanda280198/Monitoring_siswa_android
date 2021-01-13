@@ -17,8 +17,8 @@ class ProfilAsdos : AppCompatActivity() {
         binding = ActivityProfilAsdosBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.namaAsdos.text = Data.namaUser
-        binding.npm.text = Data.npmUser
+        binding.namaAsdos.text = Data.namaAsdos
+        binding.npm.text = Data.npmAsdos
     }
 
     fun btnBack(view: View?) {

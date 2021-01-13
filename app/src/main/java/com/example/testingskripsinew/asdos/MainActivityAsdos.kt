@@ -36,7 +36,9 @@ class MainActivityAsdos : AppCompatActivity() {
     fun btnProfilAsdos(view: View?) {
         val i = Intent(this, ProfilAsdos::class.java)
         this.startActivity(i)
-        Data.namaUser = inUser
-        Data.npmUser = inNpm
+        Data.namaAsdos = inUser
+        Data.npmAsdos = inNpm
     }
+
+    fun btnJadwalAsdos(view: View) {}
 }
