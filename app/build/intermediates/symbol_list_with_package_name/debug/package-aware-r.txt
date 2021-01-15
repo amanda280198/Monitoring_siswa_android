@@ -1019,6 +1019,8 @@ id btn_logout
 id btn_presensi
 id btn_profil_asdos
 id btn_profil_user
+id btn_register
+id btn_signUp
 id btn_user
 id bulan
 id buttonPanel
@@ -1028,6 +1030,7 @@ id center
 id center_vertical
 id chain
 id chains
+id check_box
 id checkbox
 id checked
 id chronometer
@@ -1061,6 +1064,9 @@ id easeInOut
 id easeOut
 id edit_query
 id end
+id etNPM
+id etNama
+id etPassword
 id expand_activities_button
 id expanded_menu
 id flip
@@ -1090,6 +1096,7 @@ id ignore
 id ignoreRequest
 id image
 id imageView
+id imageView11
 id imageView2
 id imageView3
 id imageView4
@@ -1234,6 +1241,7 @@ id total_keluar
 id transitionToEnd
 id transitionToStart
 id triangle
+id txt1
 id txtHistory
 id txtProfilAsdos
 id txtProfilPribadi
@@ -1243,6 +1251,7 @@ id txt_checkout
 id txt_jarak
 id txt_lat
 id txt_long
+id txt_register
 id txt_statusjarak
 id txt_statuslat
 id txt_statuslong
@@ -1313,6 +1322,7 @@ layout activity_pilih_akun
 layout activity_profil_asdos
 layout activity_profil_user
 layout activity_reader_scan
+layout activity_register
 layout activity_splash_screen
 layout activity_view_maps
 layout custom_dialog

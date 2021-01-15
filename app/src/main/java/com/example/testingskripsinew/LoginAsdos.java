@@ -18,4 +18,9 @@ public class LoginAsdos extends AppCompatActivity {
         Intent i = new Intent(this, MainActivityAsdos.class);
         this.startActivity(i);
     }
+
+    public void btnRegister(View view) {
+        Intent iAsdos = new Intent(this, Register.class);
+        this.startActivity(iAsdos);
+    }
 }

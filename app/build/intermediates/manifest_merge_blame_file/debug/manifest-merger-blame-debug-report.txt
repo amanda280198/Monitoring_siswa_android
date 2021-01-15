@@ -46,7 +46,7 @@
 23-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:17:9-32
 24
 25    <application
-25-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:19:5-62:19
+25-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:19:5-61:19
 26        android:allowBackup="true"
 26-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:20:9-35
 27        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -63,143 +63,147 @@
 33        android:testOnly="true"
 34        android:theme="@style/AppTheme" >
 34-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:25:9-40
-35        <meta-data
-35-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:28:9-30:55
-36            android:name="com.google.android.geo.API_KEY"
-36-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:29:13-58
-37            android:value="@string/google_maps_key" />
-37-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:30:13-52
-38
-39        <activity
-39-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:32:9-34:64
-40            android:name="com.example.testingskripsinew.ViewMapsActivity"
-40-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:33:13-45
-41            android:label="@string/title_activity_view_maps" />
-41-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:34:13-61
-42
-43        <receiver
-43-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:36:9-39:39
-44            android:name="com.example.testingskripsinew.GeofenceBroadcastReceiver"
-44-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:37:13-54
-45            android:enabled="true"
-45-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:38:13-35
-46            android:exported="true" />
-46-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:39:13-36
-47
-48        <activity android:name="com.example.testingskripsinew.ReaderScanActivity" />
-48-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:42:9-56
-48-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:42:19-53
-49        <activity android:name="com.example.testingskripsinew.HistoryUser" />
-49-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:43:9-49
-49-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:43:19-46
-50        <activity android:name="com.example.testingskripsinew.HistoryAsdos_Keluar" />
-50-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:44:9-57
-50-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:44:19-54
-51        <activity android:name="com.example.testingskripsinew.HistoryAsdos_Absen" />
-51-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:45:9-56
-51-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:45:19-53
-52        <activity android:name="com.example.testingskripsinew.HistoryAsdos_Izin" />
-52-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:46:9-55
-52-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:46:19-52
-53        <activity android:name="com.example.testingskripsinew.HistoryAsdos_Hadir" />
-53-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:47:9-56
-53-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:47:19-53
-54        <activity android:name="com.example.testingskripsinew.ProfilAsdos" />
-54-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:48:9-49
-54-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:48:19-46
-55        <activity android:name="com.example.testingskripsinew.ProfilUser" />
-55-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:49:9-48
-55-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:49:19-45
-56        <activity android:name="com.example.testingskripsinew.MainActivityAsdos" />
-56-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:50:9-55
-56-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:50:19-52
-57        <activity android:name="com.example.testingskripsinew.MainActivityUser" />
-57-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:51:9-54
-57-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:51:19-51
-58        <activity android:name="com.example.testingskripsinew.LoginAsdos" />
-58-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:52:9-48
-58-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:52:19-45
-59        <activity android:name="com.example.testingskripsinew.LoginUser" />
-59-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:53:9-47
-59-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:53:19-44
-60        <activity android:name="com.example.testingskripsinew.PilihAkunActivity" />
-60-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:54:9-55
-60-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:54:19-52
-61        <activity android:name="com.example.testingskripsinew.SplashScreen" >
-61-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:55:9-61:20
-61-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:55:19-47
-62            <intent-filter>
-62-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:56:13-60:29
-63                <action android:name="android.intent.action.MAIN" />
-63-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:57:17-69
-63-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:57:25-66
-64
-65                <category android:name="android.intent.category.LAUNCHER" />
-65-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:59:17-77
-65-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:59:27-74
-66            </intent-filter>
-67        </activity>
-68
-69        <service
-69-->[com.google.firebase:firebase-database:19.6.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\1ac55671c19017fc13671c13ed97e475\jetified-firebase-database-19.6.0\AndroidManifest.xml:29:9-35:19
-70            android:name="com.google.firebase.components.ComponentDiscoveryService"
-70-->[com.google.firebase:firebase-database:19.6.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\1ac55671c19017fc13671c13ed97e475\jetified-firebase-database-19.6.0\AndroidManifest.xml:30:13-84
-71            android:directBootAware="true"
-71-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\d783eb5e4d25e462c5ff8a9ddfc544e8\jetified-firebase-common-19.5.0\AndroidManifest.xml:35:13-43
-72            android:exported="false" >
-72-->[com.google.firebase:firebase-database:19.6.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\1ac55671c19017fc13671c13ed97e475\jetified-firebase-database-19.6.0\AndroidManifest.xml:31:13-37
-73            <meta-data
-73-->[com.google.firebase:firebase-database:19.6.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\1ac55671c19017fc13671c13ed97e475\jetified-firebase-database-19.6.0\AndroidManifest.xml:32:13-34:85
-74                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
-74-->[com.google.firebase:firebase-database:19.6.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\1ac55671c19017fc13671c13ed97e475\jetified-firebase-database-19.6.0\AndroidManifest.xml:33:17-109
-75                android:value="com.google.firebase.components.ComponentRegistrar" />
-75-->[com.google.firebase:firebase-database:19.6.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\1ac55671c19017fc13671c13ed97e475\jetified-firebase-database-19.6.0\AndroidManifest.xml:34:17-82
-76            <!--
-77                This registrar is not defined in the dynamic-module-support sdk itself to allow non-firebase
-78                clients to use it as well, by defining this registrar in their own core/common library.
-79            -->
-80            <meta-data
-80-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\d783eb5e4d25e462c5ff8a9ddfc544e8\jetified-firebase-common-19.5.0\AndroidManifest.xml:43:13-45:85
-81                android:name="com.google.firebase.components:com.google.firebase.dynamicloading.DynamicLoadingRegistrar"
-81-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\d783eb5e4d25e462c5ff8a9ddfc544e8\jetified-firebase-common-19.5.0\AndroidManifest.xml:44:17-121
-82                android:value="com.google.firebase.components.ComponentRegistrar" />
-82-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\d783eb5e4d25e462c5ff8a9ddfc544e8\jetified-firebase-common-19.5.0\AndroidManifest.xml:45:17-82
-83        </service> <!-- Needs to be explicitly declared on P+ -->
-84        <uses-library
-84-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\20c77c3286ed68db6c45d651dc5a413c\jetified-play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
-85            android:name="org.apache.http.legacy"
-85-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\20c77c3286ed68db6c45d651dc5a413c\jetified-play-services-maps-17.0.0\AndroidManifest.xml:34:13-50
-86            android:required="false" />
-86-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\20c77c3286ed68db6c45d651dc5a413c\jetified-play-services-maps-17.0.0\AndroidManifest.xml:35:13-37
-87
-88        <activity
-88-->[com.google.android.gms:play-services-base:17.3.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\00a2f9009d332c8b1187a270435bdde5\jetified-play-services-base-17.3.0\AndroidManifest.xml:23:9-26:75
-89            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-89-->[com.google.android.gms:play-services-base:17.3.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\00a2f9009d332c8b1187a270435bdde5\jetified-play-services-base-17.3.0\AndroidManifest.xml:24:13-79
-90            android:exported="false"
-90-->[com.google.android.gms:play-services-base:17.3.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\00a2f9009d332c8b1187a270435bdde5\jetified-play-services-base-17.3.0\AndroidManifest.xml:25:13-37
-91            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-91-->[com.google.android.gms:play-services-base:17.3.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\00a2f9009d332c8b1187a270435bdde5\jetified-play-services-base-17.3.0\AndroidManifest.xml:26:13-72
-92
-93        <provider
-93-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\d783eb5e4d25e462c5ff8a9ddfc544e8\jetified-firebase-common-19.5.0\AndroidManifest.xml:26:9-31:39
-94            android:name="com.google.firebase.provider.FirebaseInitProvider"
-94-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\d783eb5e4d25e462c5ff8a9ddfc544e8\jetified-firebase-common-19.5.0\AndroidManifest.xml:27:13-77
-95            android:authorities="com.example.testingskripsinew.firebaseinitprovider"
-95-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\d783eb5e4d25e462c5ff8a9ddfc544e8\jetified-firebase-common-19.5.0\AndroidManifest.xml:28:13-72
-96            android:directBootAware="true"
-96-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\d783eb5e4d25e462c5ff8a9ddfc544e8\jetified-firebase-common-19.5.0\AndroidManifest.xml:29:13-43
-97            android:exported="false"
-97-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\d783eb5e4d25e462c5ff8a9ddfc544e8\jetified-firebase-common-19.5.0\AndroidManifest.xml:30:13-37
-98            android:initOrder="100" />
-98-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\d783eb5e4d25e462c5ff8a9ddfc544e8\jetified-firebase-common-19.5.0\AndroidManifest.xml:31:13-36
-99
-100        <meta-data
-100-->[com.google.android.gms:play-services-basement:17.3.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\fbcd13b61b79d186a0add127294730b0\jetified-play-services-basement-17.3.0\AndroidManifest.xml:23:9-25:69
-101            android:name="com.google.android.gms.version"
-101-->[com.google.android.gms:play-services-basement:17.3.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\fbcd13b61b79d186a0add127294730b0\jetified-play-services-basement-17.3.0\AndroidManifest.xml:24:13-58
-102            android:value="@integer/google_play_services_version" />
-102-->[com.google.android.gms:play-services-basement:17.3.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\fbcd13b61b79d186a0add127294730b0\jetified-play-services-basement-17.3.0\AndroidManifest.xml:25:13-66
-103    </application>
-104
-105</manifest>
+35        <activity android:name="com.example.testingskripsinew.Register" />
+35-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:26:9-55
+35-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:26:19-43
+36
+37        <meta-data
+37-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:28:9-30:55
+38            android:name="com.google.android.geo.API_KEY"
+38-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:29:13-58
+39            android:value="@string/google_maps_key" />
+39-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:30:13-52
+40
+41        <activity
+41-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:32:9-34:64
+42            android:name="com.example.testingskripsinew.ViewMapsActivity"
+42-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:33:13-45
+43            android:label="@string/title_activity_view_maps" />
+43-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:34:13-61
+44
+45        <receiver
+45-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:36:9-39:39
+46            android:name="com.example.testingskripsinew.GeofenceBroadcastReceiver"
+46-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:37:13-54
+47            android:enabled="true"
+47-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:38:13-35
+48            android:exported="true" />
+48-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:39:13-36
+49
+50        <activity android:name="com.example.testingskripsinew.ReaderScanActivity" />
+50-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:41:9-56
+50-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:41:19-53
+51        <activity android:name="com.example.testingskripsinew.HistoryUser" />
+51-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:42:9-49
+51-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:42:19-46
+52        <activity android:name="com.example.testingskripsinew.HistoryAsdos_Keluar" />
+52-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:43:9-57
+52-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:43:19-54
+53        <activity android:name="com.example.testingskripsinew.HistoryAsdos_Absen" />
+53-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:44:9-56
+53-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:44:19-53
+54        <activity android:name="com.example.testingskripsinew.HistoryAsdos_Izin" />
+54-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:45:9-55
+54-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:45:19-52
+55        <activity android:name="com.example.testingskripsinew.HistoryAsdos_Hadir" />
+55-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:46:9-56
+55-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:46:19-53
+56        <activity android:name="com.example.testingskripsinew.ProfilAsdos" />
+56-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:47:9-49
+56-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:47:19-46
+57        <activity android:name="com.example.testingskripsinew.ProfilUser" />
+57-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:48:9-48
+57-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:48:19-45
+58        <activity android:name="com.example.testingskripsinew.MainActivityAsdos" />
+58-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:49:9-55
+58-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:49:19-52
+59        <activity android:name="com.example.testingskripsinew.MainActivityUser" />
+59-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:50:9-54
+59-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:50:19-51
+60        <activity android:name="com.example.testingskripsinew.LoginAsdos" />
+60-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:51:9-48
+60-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:51:19-45
+61        <activity android:name="com.example.testingskripsinew.LoginUser" />
+61-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:52:9-47
+61-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:52:19-44
+62        <activity android:name="com.example.testingskripsinew.PilihAkunActivity" />
+62-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:53:9-55
+62-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:53:19-52
+63        <activity android:name="com.example.testingskripsinew.SplashScreen" >
+63-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:54:9-60:20
+63-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:54:19-47
+64            <intent-filter>
+64-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:55:13-59:29
+65                <action android:name="android.intent.action.MAIN" />
+65-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:56:17-69
+65-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:56:25-66
+66
+67                <category android:name="android.intent.category.LAUNCHER" />
+67-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:58:17-77
+67-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:58:27-74
+68            </intent-filter>
+69        </activity>
+70
+71        <service
+71-->[com.google.firebase:firebase-database:19.6.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\1ac55671c19017fc13671c13ed97e475\jetified-firebase-database-19.6.0\AndroidManifest.xml:29:9-35:19
+72            android:name="com.google.firebase.components.ComponentDiscoveryService"
+72-->[com.google.firebase:firebase-database:19.6.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\1ac55671c19017fc13671c13ed97e475\jetified-firebase-database-19.6.0\AndroidManifest.xml:30:13-84
+73            android:directBootAware="true"
+73-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\d783eb5e4d25e462c5ff8a9ddfc544e8\jetified-firebase-common-19.5.0\AndroidManifest.xml:35:13-43
+74            android:exported="false" >
+74-->[com.google.firebase:firebase-database:19.6.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\1ac55671c19017fc13671c13ed97e475\jetified-firebase-database-19.6.0\AndroidManifest.xml:31:13-37
+75            <meta-data
+75-->[com.google.firebase:firebase-database:19.6.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\1ac55671c19017fc13671c13ed97e475\jetified-firebase-database-19.6.0\AndroidManifest.xml:32:13-34:85
+76                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+76-->[com.google.firebase:firebase-database:19.6.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\1ac55671c19017fc13671c13ed97e475\jetified-firebase-database-19.6.0\AndroidManifest.xml:33:17-109
+77                android:value="com.google.firebase.components.ComponentRegistrar" />
+77-->[com.google.firebase:firebase-database:19.6.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\1ac55671c19017fc13671c13ed97e475\jetified-firebase-database-19.6.0\AndroidManifest.xml:34:17-82
+78            <!--
+79                This registrar is not defined in the dynamic-module-support sdk itself to allow non-firebase
+80                clients to use it as well, by defining this registrar in their own core/common library.
+81            -->
+82            <meta-data
+82-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\d783eb5e4d25e462c5ff8a9ddfc544e8\jetified-firebase-common-19.5.0\AndroidManifest.xml:43:13-45:85
+83                android:name="com.google.firebase.components:com.google.firebase.dynamicloading.DynamicLoadingRegistrar"
+83-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\d783eb5e4d25e462c5ff8a9ddfc544e8\jetified-firebase-common-19.5.0\AndroidManifest.xml:44:17-121
+84                android:value="com.google.firebase.components.ComponentRegistrar" />
+84-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\d783eb5e4d25e462c5ff8a9ddfc544e8\jetified-firebase-common-19.5.0\AndroidManifest.xml:45:17-82
+85        </service> <!-- Needs to be explicitly declared on P+ -->
+86        <uses-library
+86-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\20c77c3286ed68db6c45d651dc5a413c\jetified-play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
+87            android:name="org.apache.http.legacy"
+87-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\20c77c3286ed68db6c45d651dc5a413c\jetified-play-services-maps-17.0.0\AndroidManifest.xml:34:13-50
+88            android:required="false" />
+88-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\20c77c3286ed68db6c45d651dc5a413c\jetified-play-services-maps-17.0.0\AndroidManifest.xml:35:13-37
+89
+90        <activity
+90-->[com.google.android.gms:play-services-base:17.3.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\00a2f9009d332c8b1187a270435bdde5\jetified-play-services-base-17.3.0\AndroidManifest.xml:23:9-26:75
+91            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+91-->[com.google.android.gms:play-services-base:17.3.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\00a2f9009d332c8b1187a270435bdde5\jetified-play-services-base-17.3.0\AndroidManifest.xml:24:13-79
+92            android:exported="false"
+92-->[com.google.android.gms:play-services-base:17.3.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\00a2f9009d332c8b1187a270435bdde5\jetified-play-services-base-17.3.0\AndroidManifest.xml:25:13-37
+93            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+93-->[com.google.android.gms:play-services-base:17.3.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\00a2f9009d332c8b1187a270435bdde5\jetified-play-services-base-17.3.0\AndroidManifest.xml:26:13-72
+94
+95        <provider
+95-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\d783eb5e4d25e462c5ff8a9ddfc544e8\jetified-firebase-common-19.5.0\AndroidManifest.xml:26:9-31:39
+96            android:name="com.google.firebase.provider.FirebaseInitProvider"
+96-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\d783eb5e4d25e462c5ff8a9ddfc544e8\jetified-firebase-common-19.5.0\AndroidManifest.xml:27:13-77
+97            android:authorities="com.example.testingskripsinew.firebaseinitprovider"
+97-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\d783eb5e4d25e462c5ff8a9ddfc544e8\jetified-firebase-common-19.5.0\AndroidManifest.xml:28:13-72
+98            android:directBootAware="true"
+98-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\d783eb5e4d25e462c5ff8a9ddfc544e8\jetified-firebase-common-19.5.0\AndroidManifest.xml:29:13-43
+99            android:exported="false"
+99-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\d783eb5e4d25e462c5ff8a9ddfc544e8\jetified-firebase-common-19.5.0\AndroidManifest.xml:30:13-37
+100            android:initOrder="100" />
+100-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\d783eb5e4d25e462c5ff8a9ddfc544e8\jetified-firebase-common-19.5.0\AndroidManifest.xml:31:13-36
+101
+102        <meta-data
+102-->[com.google.android.gms:play-services-basement:17.3.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\fbcd13b61b79d186a0add127294730b0\jetified-play-services-basement-17.3.0\AndroidManifest.xml:23:9-25:69
+103            android:name="com.google.android.gms.version"
+103-->[com.google.android.gms:play-services-basement:17.3.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\fbcd13b61b79d186a0add127294730b0\jetified-play-services-basement-17.3.0\AndroidManifest.xml:24:13-58
+104            android:value="@integer/google_play_services_version" />
+104-->[com.google.android.gms:play-services-basement:17.3.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\fbcd13b61b79d186a0add127294730b0\jetified-play-services-basement-17.3.0\AndroidManifest.xml:25:13-66
+105    </application>
+106
+107</manifest>
