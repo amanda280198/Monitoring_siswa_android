@@ -32,6 +32,10 @@ class ScheduleActivity : AppCompatActivity() {
         initData()
         onGetData()
         onShowTime()
+
+        if (Data.status == "asdos"){
+            binding.textJudul.text = getString(R.string.text_title)
+        }
     }
 
     private fun initData() {

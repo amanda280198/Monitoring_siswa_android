@@ -48,7 +48,7 @@ public final class ActivityMainAsdosBinding implements ViewBinding {
   public final TextView namaAsdos;
 
   @NonNull
-  public final TextView textView6;
+  public final TextView textJudul;
 
   @NonNull
   public final TextView titleDashboard;
@@ -60,7 +60,7 @@ public final class ActivityMainAsdosBinding implements ViewBinding {
       @NonNull Button btnHistPresensi, @NonNull Button btnJadwalAsdos,
       @NonNull Button btnProfilAsdos, @NonNull Guideline guideline, @NonNull Guideline guideline1,
       @NonNull Guideline guideline2, @NonNull Guideline guideline3, @NonNull Guideline guideline5,
-      @NonNull TextView namaAsdos, @NonNull TextView textView6, @NonNull TextView titleDashboard,
+      @NonNull TextView namaAsdos, @NonNull TextView textJudul, @NonNull TextView titleDashboard,
       @NonNull View view) {
     this.rootView = rootView;
     this.btnHistPresensi = btnHistPresensi;
@@ -72,7 +72,7 @@ public final class ActivityMainAsdosBinding implements ViewBinding {
     this.guideline3 = guideline3;
     this.guideline5 = guideline5;
     this.namaAsdos = namaAsdos;
-    this.textView6 = textView6;
+    this.textJudul = textJudul;
     this.titleDashboard = titleDashboard;
     this.view = view;
   }
@@ -158,9 +158,9 @@ public final class ActivityMainAsdosBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.textView6;
-      TextView textView6 = rootView.findViewById(id);
-      if (textView6 == null) {
+      id = R.id.textJudul;
+      TextView textJudul = rootView.findViewById(id);
+      if (textJudul == null) {
         break missingId;
       }
 
@@ -178,7 +178,7 @@ public final class ActivityMainAsdosBinding implements ViewBinding {
 
       return new ActivityMainAsdosBinding((ConstraintLayout) rootView, btnHistPresensi,
           btnJadwalAsdos, btnProfilAsdos, guideline, guideline1, guideline2, guideline3, guideline5,
-          namaAsdos, textView6, titleDashboard, view);
+          namaAsdos, textJudul, titleDashboard, view);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

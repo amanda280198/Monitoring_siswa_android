@@ -32,7 +32,6 @@ import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.CircleOptions
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
-import kotlinx.android.synthetic.main.activity_jarak.*
 import java.util.*
 import kotlin.math.*
 
@@ -52,7 +51,7 @@ class JarakActivity : AppCompatActivity(), OnMapReadyCallback {
 
         private const val FINE_LOCATION_ACCESS_REQUEST_CODE = 10001
         private const val BACKGROUND_LOCATION_ACCESS_REQUEST_CODE = 10002
-        private const val GEOFENCE_RADIUS = 30.0
+        private const val GEOFENCE_RADIUS = 10.0
         private const val GEOFENCE_ID = "SOME_GEOFENCE_ID"
         const val TAG = "MapsActivity"
     }
@@ -113,7 +112,7 @@ class JarakActivity : AppCompatActivity(), OnMapReadyCallback {
 
                     with(binding) {
                         group.visibility = View.VISIBLE
-                        status_jarak.text = jarak
+                        binding.statusJarak.text = jarak
                     }
 
                     stopScanLocation()
@@ -133,9 +132,10 @@ class JarakActivity : AppCompatActivity(), OnMapReadyCallback {
             val addresses = geocoder.getFromLocation(lat, lon, 1)
             val address = addresses[0].getAddressLine(0)
             Log.d("alamat", "lokasi $address")
-//            binding.tvDaerah.text = address
             binding.statusLong.text = lon.toString()
             binding.statusLat.text = lat.toString()
+            binding.alerText.text = getString(R.string.alert_txt_succes)
+            binding.txtTitle.text = getString(R.string.alert_txt_title_succes)
 
         } catch (e: Exception) {
             e.printStackTrace()
@@ -251,8 +251,7 @@ class JarakActivity : AppCompatActivity(), OnMapReadyCallback {
         // Add a marker in Sydney and move the camera
         val rumahAing = LatLng(-6.56942189233, 106.778845096)
 //        mMap.addMarker(MarkerOptions().position(rumahAing).title("Marker in Rumah Aing"))
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(rumahAing, 16F))
-
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(rumahAing, 20f))
         enableUserLocation()
 
         val zone1 = LatLng(-6.567361229824218, 106.77843511104584)
@@ -263,6 +262,17 @@ class JarakActivity : AppCompatActivity(), OnMapReadyCallback {
 //        testZona(zone2)
 //        testZona(zone3)
 
+//        onSetLongMapClick()
+
+    }
+
+    private fun testZona(latLng: LatLng) {
+//        mMap.addMarker(MarkerOptions().position(latLng))
+        addMarker(latLng)
+        addCircle(latLng, GEOFENCE_RADIUS)
+    }
+
+    private fun onSetLongMapClick() {
         mMap.setOnMapLongClickListener { latLng ->
             if (Build.VERSION.SDK_INT >= 29) {
                 if (ContextCompat.checkSelfPermission(
@@ -294,12 +304,6 @@ class JarakActivity : AppCompatActivity(), OnMapReadyCallback {
                 handleMapLongClick(latLng)
             }
         }
-    }
-
-    private fun testZona(latLng: LatLng) {
-//        mMap.addMarker(MarkerOptions().position(latLng))
-        addMarker(latLng)
-        addCircle(latLng, GEOFENCE_RADIUS)
     }
 
     private fun handleMapLongClick(latLng: LatLng?) {

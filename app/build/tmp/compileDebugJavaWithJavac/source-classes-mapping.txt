@@ -6,6 +6,8 @@ com/example/testingskripsinew/databinding/ActivityScheduleBinding.java
  com.example.testingskripsinew.databinding.ActivityScheduleBinding
 com/example/testingskripsinew/databinding/HistoryUserBinding.java
  com.example.testingskripsinew.databinding.HistoryUserBinding
+com/example/testingskripsinew/databinding/ActivityKelasBinding.java
+ com.example.testingskripsinew.databinding.ActivityKelasBinding
 com/example/testingskripsinew/databinding/ActivityPilihAkunBinding.java
  com.example.testingskripsinew.databinding.ActivityPilihAkunBinding
 com/example/testingskripsinew/databinding/ActivityLoginAsdosBinding.java
@@ -14,6 +16,8 @@ com/example/testingskripsinew/HistoryUser.java
  com.example.testingskripsinew.HistoryUser
 com/example/testingskripsinew/databinding/ActivityMainAsdosBinding.java
  com.example.testingskripsinew.databinding.ActivityMainAsdosBinding
+com/example/testingskripsinew/databinding/ActivityHistoryBinding.java
+ com.example.testingskripsinew.databinding.ActivityHistoryBinding
 com/example/testingskripsinew/databinding/ActivityMainUserBinding.java
  com.example.testingskripsinew.databinding.ActivityMainUserBinding
 com/example/testingskripsinew/databinding/ItemDialogCheckinBinding.java
@@ -36,8 +40,8 @@ com/example/testingskripsinew/SplashScreen.java
  com.example.testingskripsinew.SplashScreen
 com/example/testingskripsinew/databinding/ActivityProfilAsdosBinding.java
  com.example.testingskripsinew.databinding.ActivityProfilAsdosBinding
-com/example/testingskripsinew/ReaderScanActivity.java
- com.example.testingskripsinew.ReaderScanActivity
+com/example/testingskripsinew/databinding/BottomSheetBarcodeDataBinding.java
+ com.example.testingskripsinew.databinding.BottomSheetBarcodeDataBinding
 com/example/testingskripsinew/BuildConfig.java
  com.example.testingskripsinew.BuildConfig
 com/example/testingskripsinew/HistoryAsdos_Absen.java
@@ -46,6 +50,8 @@ com/example/testingskripsinew/databinding/ActivitySplashScreenBinding.java
  com.example.testingskripsinew.databinding.ActivitySplashScreenBinding
 com/example/testingskripsinew/databinding/HistoryAsdosIzinBinding.java
  com.example.testingskripsinew.databinding.HistoryAsdosIzinBinding
+com/example/testingskripsinew/databinding/ItemHadirBinding.java
+ com.example.testingskripsinew.databinding.ItemHadirBinding
 com/example/testingskripsinew/databinding/ItemDialogCheckOutBinding.java
  com.example.testingskripsinew.databinding.ItemDialogCheckOutBinding
 com/example/testingskripsinew/databinding/ItemJadwalBinding.java

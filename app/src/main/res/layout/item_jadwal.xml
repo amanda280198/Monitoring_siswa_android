@@ -38,20 +38,20 @@
             android:text="Mata Kuliah"
             android:textColor="@color/textColor"
             android:textSize="@dimen/text_size_16"
-            card_view:layout_constraintBottom_toTopOf="@+id/txtKelas"
+            card_view:layout_constraintBottom_toTopOf="@+id/txt_npm"
             card_view:layout_constraintEnd_toEndOf="parent"
             card_view:layout_constraintStart_toStartOf="@+id/guideline3"
             card_view:layout_constraintTop_toTopOf="@+id/guideline6"
             card_view:layout_constraintVertical_chainStyle="packed" />
 
         <TextView
-            android:id="@+id/txtKelas"
+            android:id="@+id/txt_npm"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
             android:text="Kelas"
             android:textSize="@dimen/text_size_12"
-            card_view:layout_constraintBottom_toTopOf="@+id/pengajar1"
+            card_view:layout_constraintBottom_toTopOf="@+id/tv_cekin"
             card_view:layout_constraintEnd_toStartOf="@+id/kelas"
             card_view:layout_constraintStart_toStartOf="@+id/namaMatkul"
             card_view:layout_constraintTop_toBottomOf="@+id/namaMatkul" />
@@ -63,9 +63,9 @@
             android:layout_marginStart="4dp"
             android:text="5A"
             android:textSize="@dimen/text_size_12"
-            card_view:layout_constraintBottom_toBottomOf="@+id/txtKelas"
-            card_view:layout_constraintStart_toEndOf="@+id/txtKelas"
-            card_view:layout_constraintTop_toTopOf="@+id/txtKelas" />
+            card_view:layout_constraintBottom_toBottomOf="@+id/txt_npm"
+            card_view:layout_constraintStart_toEndOf="@+id/txt_npm"
+            card_view:layout_constraintTop_toTopOf="@+id/txt_npm" />
 
         <TextView
             android:id="@+id/hari"
@@ -122,7 +122,7 @@
             card_view:layout_constraintBottom_toTopOf="@+id/pengajar2"
             card_view:layout_constraintEnd_toStartOf="@+id/guideline2"
             card_view:layout_constraintStart_toStartOf="@+id/guideline3"
-            card_view:layout_constraintTop_toBottomOf="@+id/txtKelas" />
+            card_view:layout_constraintTop_toBottomOf="@+id/txt_npm" />
 
         <TextView
             android:id="@+id/pengajar2"
@@ -132,10 +132,8 @@
             android:textSize="@dimen/text_size_11"
             card_view:layout_constraintBottom_toTopOf="@+id/guideline7"
             card_view:layout_constraintEnd_toStartOf="@+id/guideline2"
-            card_view:layout_constraintHorizontal_bias="0.0"
             card_view:layout_constraintStart_toStartOf="@+id/guideline3"
-            card_view:layout_constraintTop_toBottomOf="@+id/pengajar1"
-            card_view:layout_constraintVertical_bias="0.0" />
+            card_view:layout_constraintTop_toBottomOf="@+id/tv_cekin" />
 
         <TextView
             android:id="@+id/npmPengajar1"
@@ -143,7 +141,7 @@
             android:layout_height="wrap_content"
             android:text="065117136"
             android:textSize="@dimen/text_size_11"
-            card_view:layout_constraintBottom_toBottomOf="@+id/pengajar1"
+            card_view:layout_constraintBottom_toBottomOf="@+id/tv_cekin"
             card_view:layout_constraintEnd_toEndOf="parent"
             card_view:layout_constraintStart_toStartOf="@+id/guideline2"
             card_view:layout_constraintTop_toTopOf="@+id/pengajar1" />

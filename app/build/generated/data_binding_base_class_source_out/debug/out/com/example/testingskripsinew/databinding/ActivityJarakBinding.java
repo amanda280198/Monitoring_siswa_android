@@ -25,10 +25,10 @@ public final class ActivityJarakBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final Button btnCheckin;
+  public final TextView alerText;
 
   @NonNull
-  public final Button btnCheckout;
+  public final Button btnCheckin;
 
   @NonNull
   public final ImageButton buttonBack;
@@ -67,9 +67,6 @@ public final class ActivityJarakBinding implements ViewBinding {
   public final TextView statusLong;
 
   @NonNull
-  public final TextView textView10;
-
-  @NonNull
   public final TextView txtJarak;
 
   @NonNull
@@ -78,17 +75,20 @@ public final class ActivityJarakBinding implements ViewBinding {
   @NonNull
   public final TextView txtLong;
 
-  private ActivityJarakBinding(@NonNull ConstraintLayout rootView, @NonNull Button btnCheckin,
-      @NonNull Button btnCheckout, @NonNull ImageButton buttonBack,
+  @NonNull
+  public final TextView txtTitle;
+
+  private ActivityJarakBinding(@NonNull ConstraintLayout rootView, @NonNull TextView alerText,
+      @NonNull Button btnCheckin, @NonNull ImageButton buttonBack,
       @NonNull FloatingActionButton fabCheckIn, @NonNull Group group, @NonNull Guideline guideline,
       @NonNull Guideline guideline1, @NonNull Guideline guideline2, @NonNull Guideline guideline3,
       @NonNull Guideline guideline4, @NonNull RippleBackground rippleBackground,
       @NonNull TextView statusJarak, @NonNull TextView statusLat, @NonNull TextView statusLong,
-      @NonNull TextView textView10, @NonNull TextView txtJarak, @NonNull TextView txtLat,
-      @NonNull TextView txtLong) {
+      @NonNull TextView txtJarak, @NonNull TextView txtLat, @NonNull TextView txtLong,
+      @NonNull TextView txtTitle) {
     this.rootView = rootView;
+    this.alerText = alerText;
     this.btnCheckin = btnCheckin;
-    this.btnCheckout = btnCheckout;
     this.buttonBack = buttonBack;
     this.fabCheckIn = fabCheckIn;
     this.group = group;
@@ -101,10 +101,10 @@ public final class ActivityJarakBinding implements ViewBinding {
     this.statusJarak = statusJarak;
     this.statusLat = statusLat;
     this.statusLong = statusLong;
-    this.textView10 = textView10;
     this.txtJarak = txtJarak;
     this.txtLat = txtLat;
     this.txtLong = txtLong;
+    this.txtTitle = txtTitle;
   }
 
   @Override
@@ -134,15 +134,15 @@ public final class ActivityJarakBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.btn_checkin;
-      Button btnCheckin = rootView.findViewById(id);
-      if (btnCheckin == null) {
+      id = R.id.aler_text;
+      TextView alerText = rootView.findViewById(id);
+      if (alerText == null) {
         break missingId;
       }
 
-      id = R.id.btn_checkout;
-      Button btnCheckout = rootView.findViewById(id);
-      if (btnCheckout == null) {
+      id = R.id.btn_checkin;
+      Button btnCheckin = rootView.findViewById(id);
+      if (btnCheckin == null) {
         break missingId;
       }
 
@@ -218,12 +218,6 @@ public final class ActivityJarakBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.textView10;
-      TextView textView10 = rootView.findViewById(id);
-      if (textView10 == null) {
-        break missingId;
-      }
-
       id = R.id.txt_jarak;
       TextView txtJarak = rootView.findViewById(id);
       if (txtJarak == null) {
@@ -242,10 +236,16 @@ public final class ActivityJarakBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityJarakBinding((ConstraintLayout) rootView, btnCheckin, btnCheckout,
-          buttonBack, fabCheckIn, group, guideline, guideline1, guideline2, guideline3, guideline4,
-          rippleBackground, statusJarak, statusLat, statusLong, textView10, txtJarak, txtLat,
-          txtLong);
+      id = R.id.txt_title;
+      TextView txtTitle = rootView.findViewById(id);
+      if (txtTitle == null) {
+        break missingId;
+      }
+
+      return new ActivityJarakBinding((ConstraintLayout) rootView, alerText, btnCheckin, buttonBack,
+          fabCheckIn, group, guideline, guideline1, guideline2, guideline3, guideline4,
+          rippleBackground, statusJarak, statusLat, statusLong, txtJarak, txtLat, txtLong,
+          txtTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -11,6 +11,7 @@ import androidx.cardview.widget.CardView;
 import androidx.constraintlayout.widget.Guideline;
 import androidx.viewbinding.ViewBinding;
 import com.example.testingskripsinew.R;
+import com.github.angads25.toggle.widget.LabeledSwitch;
 import de.hdodenhof.circleimageview.CircleImageView;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -63,14 +64,17 @@ public final class ItemJadwalBinding implements ViewBinding {
   public final TextView pengajar2;
 
   @NonNull
-  public final TextView txtKelas;
+  public final LabeledSwitch switchIzin;
+
+  @NonNull
+  public final TextView txtNpm;
 
   private ItemJadwalBinding(@NonNull CardView rootView, @NonNull Guideline guideline1,
       @NonNull Guideline guideline2, @NonNull Guideline guideline3, @NonNull Guideline guideline6,
       @NonNull Guideline guideline7, @NonNull TextView hari, @NonNull CircleImageView imageView,
       @NonNull TextView jam, @NonNull TextView kelas, @NonNull TextView namaMatkul,
       @NonNull TextView npmPengajar1, @NonNull TextView npmPengajar2, @NonNull TextView pengajar1,
-      @NonNull TextView pengajar2, @NonNull TextView txtKelas) {
+      @NonNull TextView pengajar2, @NonNull LabeledSwitch switchIzin, @NonNull TextView txtNpm) {
     this.rootView = rootView;
     this.guideline1 = guideline1;
     this.guideline2 = guideline2;
@@ -86,7 +90,8 @@ public final class ItemJadwalBinding implements ViewBinding {
     this.npmPengajar2 = npmPengajar2;
     this.pengajar1 = pengajar1;
     this.pengajar2 = pengajar2;
-    this.txtKelas = txtKelas;
+    this.switchIzin = switchIzin;
+    this.txtNpm = txtNpm;
   }
 
   @Override
@@ -200,15 +205,21 @@ public final class ItemJadwalBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.txtKelas;
-      TextView txtKelas = rootView.findViewById(id);
-      if (txtKelas == null) {
+      id = R.id.switchIzin;
+      LabeledSwitch switchIzin = rootView.findViewById(id);
+      if (switchIzin == null) {
+        break missingId;
+      }
+
+      id = R.id.txt_npm;
+      TextView txtNpm = rootView.findViewById(id);
+      if (txtNpm == null) {
         break missingId;
       }
 
       return new ItemJadwalBinding((CardView) rootView, guideline1, guideline2, guideline3,
           guideline6, guideline7, hari, imageView, jam, kelas, namaMatkul, npmPengajar1,
-          npmPengajar2, pengajar1, pengajar2, txtKelas);
+          npmPengajar2, pengajar1, pengajar2, switchIzin, txtNpm);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

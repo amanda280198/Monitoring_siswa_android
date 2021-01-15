@@ -8,27 +8,32 @@
         android:minSdkVersion="21"
         android:targetSdkVersion="30" />
 
+    <uses-feature android:name="android.hardware.camera.any" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.ACCESS_LOCATION" />
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="com.sharingdisini.gosokasik.permission.MAPS_RECEIVE" />
-    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
-
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" /> <!-- <uses-permission android:name="com.sharingdisini.gosokasik.permission.MAPS_RECEIVE" /> -->
+    <!-- <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> -->
     <uses-feature
         android:glEsVersion="0x00020000"
         android:required="true" />
 
-    <uses-permission android:name="android.permission.WAKE_LOCK" />
-    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+    <queries>
+        <intent>
+            <action android:name="androidx.camera.extensions.action.VENDOR_ACTION" />
+        </intent>
+    </queries>
 
     <application
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
+        android:hardwareAccelerated="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
@@ -36,23 +41,11 @@
         android:testOnly="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true" >
+        <activity android:name="com.example.testingskripsinew.user.KelasActivity" />
+        <activity android:name="com.example.testingskripsinew.riwayat.HistoryActivity" />
         <activity android:name="com.example.testingskripsinew.jadwal.DetailActivity" />
         <activity android:name="com.example.testingskripsinew.jadwal.ScheduleActivity" />
-
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="@string/google_maps_key" />
-
-        <activity
-            android:name="com.example.testingskripsinew.ViewMapsActivity"
-            android:label="@string/title_activity_view_maps" />
-
-        <receiver
-            android:name="com.example.testingskripsinew.helper.GeofenceBroadcastReceiver"
-            android:enabled="true"
-            android:exported="true" />
-
-        <activity android:name="com.example.testingskripsinew.ReaderScanActivity" />
+        <activity android:name="com.example.testingskripsinew.user.ReaderScanActivity" />
         <activity android:name="com.example.testingskripsinew.HistoryUser" />
         <activity android:name="com.example.testingskripsinew.HistoryAsdos_Keluar" />
         <activity android:name="com.example.testingskripsinew.HistoryAsdos_Absen" />
@@ -74,13 +67,22 @@
             </intent-filter>
         </activity>
 
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="com.google.mlkit.vision.DEPENDENCIES"
+            android:value="barcode" />
+
+        <receiver
+            android:name="com.example.testingskripsinew.helper.GeofenceBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true" />
+
         <service
             android:name="com.google.firebase.components.ComponentDiscoveryService"
             android:directBootAware="true"
             android:exported="false" >
-            <meta-data
-                android:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsKtxRegistrar"
-                android:value="com.google.firebase.components.ComponentRegistrar" />
             <meta-data
                 android:name="com.google.firebase.components:com.google.firebase.database.ktx.FirebaseDatabaseKtxRegistrar"
                 android:value="com.google.firebase.components.ComponentRegistrar" />
@@ -96,12 +98,6 @@
             <meta-data
                 android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
                 android:value="com.google.firebase.components.ComponentRegistrar" />
-            <meta-data
-                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
-                android:value="com.google.firebase.components.ComponentRegistrar" />
-            <meta-data
-                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
-                android:value="com.google.firebase.components.ComponentRegistrar" />
             <!--
                 This registrar is not defined in the dynamic-module-support sdk itself to allow non-firebase
                 clients to use it as well, by defining this registrar in their own core/common library.
@@ -113,22 +109,30 @@
         <uses-library
             android:name="org.apache.http.legacy"
             android:required="false" />
+        <uses-library
+            android:name="androidx.camera.extensions.impl"
+            android:required="false" />
 
-        <receiver
-            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
-            android:enabled="true"
+        <service
+            android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService"
+            android:directBootAware="true"
             android:exported="false" >
-        </receiver>
+            <meta-data
+                android:name="com.google.firebase.components:com.google.mlkit.vision.barcode.internal.BarcodeRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+        </service>
 
-        <service
-            android:name="com.google.android.gms.measurement.AppMeasurementService"
-            android:enabled="true"
-            android:exported="false" />
-        <service
-            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
-            android:enabled="true"
+        <provider
+            android:name="com.google.mlkit.common.internal.MlKitInitProvider"
+            android:authorities="com.example.testingskripsinew.mlkitinitprovider"
             android:exported="false"
-            android:permission="android.permission.BIND_JOB_SERVICE" />
+            android:initOrder="99" />
 
         <activity
             android:name="com.google.android.gms.common.api.GoogleApiActivity"
@@ -145,6 +149,23 @@
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
+
+        <service
+            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+            android:exported="false" >
+            <meta-data
+                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+                android:value="cct" />
+        </service>
+        <service
+            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" >
+        </service>
+
+        <receiver
+            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+            android:exported="false" />
     </application>
 
 </manifest>

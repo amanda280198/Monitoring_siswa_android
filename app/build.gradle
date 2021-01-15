@@ -1,8 +1,10 @@
-apply plugin: 'com.android.application'
-apply plugin: 'kotlin-android'
-apply plugin: 'com.google.gms.google-services'
-apply plugin: 'kotlin-android-extensions'
-apply plugin: 'kotlin-kapt'
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'com.google.gms.google-services'
+    id 'kotlin-android-extensions'
+    id 'kotlin-kapt'
+}
 
 android {
     compileSdkVersion 30
@@ -77,7 +79,6 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
     /* firebase */
-    implementation 'com.google.firebase:firebase-analytics-ktx:18.0.0'
     implementation 'com.google.firebase:firebase-database-ktx:19.6.0'
     implementation 'com.google.firebase:firebase-storage-ktx:19.2.1'
 
@@ -88,7 +89,7 @@ dependencies {
     /* buat UI/UX */
     implementation 'de.hdodenhof:circleimageview:3.1.0'
     implementation 'com.airbnb.android:lottie:3.6.0'
-
+    implementation 'com.github.angads25:toggle:1.1.0'
     implementation 'com.skyfishjy.ripplebackground:library:1.0.1'
 
     /* qr Code */
@@ -97,4 +98,18 @@ dependencies {
     /* untuk mengambil data lokasi terakhir */
     implementation 'com.google.android.gms:play-services-location:17.1.0'
     implementation 'com.google.android.gms:play-services-maps:17.0.0'
+
+    /* ML Kit Barcode Scanning */
+    implementation 'com.google.mlkit:barcode-scanning:16.1.0'
+
+    /* CameraX Dependencies */
+    def camerax_version = "1.0.0-beta10"
+    implementation "androidx.camera:camera-core:${camerax_version}"
+    implementation "androidx.camera:camera-camera2:${camerax_version}"
+    implementation "androidx.camera:camera-lifecycle:${camerax_version}"
+    implementation "androidx.camera:camera-view:1.0.0-alpha20"
+    implementation "androidx.camera:camera-extensions:1.0.0-alpha20"
+
+    /* Library to get URL Meta Data */
+    implementation 'org.jsoup:jsoup:1.13.1'
 }
