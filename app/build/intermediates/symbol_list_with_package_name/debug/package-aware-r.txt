@@ -1984,6 +1984,8 @@ id btn_logout
 id btn_presensi
 id btn_profil_asdos
 id btn_profil_user
+id btn_register
+id btn_signUp
 id btn_user
 id bulan
 id buttonPanel
@@ -1996,6 +1998,7 @@ id center_horizontal
 id center_vertical
 id chain
 id chains
+id check_box
 id checkbox
 id checked
 id chip
@@ -2054,11 +2057,17 @@ id easeOut
 id edit_query
 id elastic
 id end
+<<<<<<< HEAD
 id endToStart
 id end_padder
 id enterAlways
 id enterAlwaysCollapsed
 id exitUntilCollapsed
+=======
+id etNPM
+id etNama
+id etPassword
+>>>>>>> ui_manda
 id expand_activities_button
 id expanded_menu
 id fade
@@ -2108,6 +2117,7 @@ id ignore
 id ignoreRequest
 id image
 id imageView
+id imageView11
 id imageView2
 id imageView3
 id imageView4
@@ -2376,6 +2386,7 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id txt1
 id txtHistory
 id txtKelas
 id txtP1
@@ -2388,6 +2399,7 @@ id txt_checkout
 id txt_jarak
 id txt_lat
 id txt_long
+id txt_register
 id txt_statusjarak
 id txt_statuslat
 id txt_statuslong
@@ -2484,7 +2496,11 @@ layout activity_pilih_akun
 layout activity_profil_asdos
 layout activity_profil_user
 layout activity_reader_scan
+<<<<<<< HEAD
 layout activity_schedule
+=======
+layout activity_register
+>>>>>>> ui_manda
 layout activity_splash_screen
 layout activity_view_maps
 layout custom_dialog

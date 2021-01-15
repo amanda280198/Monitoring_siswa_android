@@ -1,5 +1,6 @@
 -- Merging decision tree log ---
 manifest
+<<<<<<< HEAD
 ADDED from C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:2:1-66:12
 INJECTED from C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:2:1-66:12
 INJECTED from C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:2:1-66:12
@@ -97,11 +98,54 @@ MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\joefa\.
 INJECTED from C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:2:1-66:12
 INJECTED from C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:2:1-66:12
 INJECTED from C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:2:1-66:12
+=======
+ADDED from C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:2:1-63:12
+INJECTED from C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:2:1-63:12
+INJECTED from C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:2:1-63:12
+INJECTED from C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:2:1-63:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\e9a7396e1444c212720c909ece4c39d7\constraintlayout-2.0.4\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\f65e7d690d0436991c66205f0487ed30\appcompat-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\5fbb0f54a3a9a3d78ad9f050770dbb69\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-location:17.1.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\e546153ea277b1d361acd88e327784ce\jetified-play-services-location-17.1.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-database:19.6.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\1ac55671c19017fc13671c13ed97e475\jetified-firebase-database-19.6.0\AndroidManifest.xml:15:1-38:12
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\20c77c3286ed68db6c45d651dc5a413c\jetified-play-services-maps-17.0.0\AndroidManifest.xml:17:1-38:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\e9b32f1278a4b3f1620db3345b7e4d0b\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-auth-interop:18.0.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\ce9c1c22fab5d58895273b0322acf1df\jetified-firebase-auth-interop-18.0.0\AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.firebase:firebase-database-collection:17.0.1] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\ac5a89ddd684363d15117fbf360b22fd\jetified-firebase-database-collection-17.0.1\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-base:17.3.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\00a2f9009d332c8b1187a270435bdde5\jetified-play-services-base-17.3.0\AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\77bdf2400892bf70aad7490c23f9d9c2\jetified-play-services-places-placereport-17.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.firebase:firebase-common:19.5.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\d783eb5e4d25e462c5ff8a9ddfc544e8\jetified-firebase-common-19.5.0\AndroidManifest.xml:15:1-49:12
+MERGED from [com.google.android.gms:play-services-tasks:17.1.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\1f95f28f0318f4b9cef55a6733e2c1e8\jetified-play-services-tasks-17.1.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:17.3.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\fbcd13b61b79d186a0add127294730b0\jetified-play-services-basement-17.3.0\AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\1ec30c166f15e178e079379197761518\fragment-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\82bb583f0faf8eb0f3dc9e0e707cb382\jetified-appcompat-resources-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\78a0eaa00907390817aec93ff5e492d8\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\f046aa3367043922c8e066525c0df9e1\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\828e9e3cd00c64963bd14381033de3d1\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\4dce118352c589f77d67c64c910f8568\jetified-activity-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\54224c02eb0fcc5851c7966bfab3929d\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\4be8cd57484bdd323af627c0bacddf66\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\9a1b06c267579a91bb4231252b8deea4\customview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.3.1] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\cdfea8f3da9d3d8e26bbb73a40c2de98\core-1.3.1\AndroidManifest.xml:17:1-26:12
+MERGED from [com.google.firebase:firebase-components:16.1.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\9c5efc998b3b3fda4e9566c0b82686cd\jetified-firebase-components-16.1.0\AndroidManifest.xml:15:1-23:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\9e093b173e0d75d429119beb7e212738\versionedparcelable-1.1.0\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\70dd64f3963e6f2d1be72ce921f5016a\lifecycle-runtime-2.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\ba607578b7f0b2be5a26f4a5663aaed8\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\11d0bad460fa83ee17823ee5dec559b6\jetified-savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\616513930b2d8570c7c0caf2b6f7c974\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\18ea51404843894a6b33202520cfa6b9\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\1f88a34bd3df3bc12fd8542ddf50c1fa\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\55b73ed8661a8bc109a236a63617686e\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:2:1-63:12
+INJECTED from C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:2:1-63:12
+INJECTED from C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:2:1-63:12
+>>>>>>> ui_manda
 	package
 		ADDED from C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:4:5-44
 		INJECTED from C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml
 	android:versionName
+<<<<<<< HEAD
 		INJECTED from C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml
 		ADDED from C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:2:1-66:12
 		INJECTED from C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml
@@ -111,6 +155,15 @@ INJECTED from C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitori
 		INJECTED from C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml
 		ADDED from C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:2:1-66:12
 		INJECTED from C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml
+=======
+		INJECTED from C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:2:1-63:12
+		INJECTED from C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:2:1-63:12
+		INJECTED from C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml
+>>>>>>> ui_manda
 	xmlns:android
 		ADDED from C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.ACCESS_FINE_LOCATION
@@ -190,6 +243,7 @@ MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\joefa\.g
 	android:required
 		ADDED from C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:18:9-32
 application
+<<<<<<< HEAD
 ADDED from C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:20:5-64:19
 MERGED from [com.google.firebase:firebase-analytics-ktx:18.0.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\66408c9c60c55b8e2de6b4304bd7e7b7\jetified-firebase-analytics-ktx-18.0.0\AndroidManifest.xml:7:5-15:19
 MERGED from [com.google.firebase:firebase-analytics-ktx:18.0.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\66408c9c60c55b8e2de6b4304bd7e7b7\jetified-firebase-analytics-ktx-18.0.0\AndroidManifest.xml:7:5-15:19
@@ -255,6 +309,33 @@ MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] C:\Users\joefa\.gradle
 MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\6791a19b15c4972aa329bbf48e5c58d2\jetified-gifdecoder-4.11.0\AndroidManifest.xml:9:5-20
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\d63517e07c55109eae65581e70bdea91\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\d63517e07c55109eae65581e70bdea91\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+=======
+ADDED from C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:19:5-61:19
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\e9a7396e1444c212720c909ece4c39d7\constraintlayout-2.0.4\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\e9a7396e1444c212720c909ece4c39d7\constraintlayout-2.0.4\AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.gms:play-services-location:17.1.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\e546153ea277b1d361acd88e327784ce\jetified-play-services-location-17.1.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:17.1.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\e546153ea277b1d361acd88e327784ce\jetified-play-services-location-17.1.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-database:19.6.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\1ac55671c19017fc13671c13ed97e475\jetified-firebase-database-19.6.0\AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.firebase:firebase-database:19.6.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\1ac55671c19017fc13671c13ed97e475\jetified-firebase-database-19.6.0\AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\20c77c3286ed68db6c45d651dc5a413c\jetified-play-services-maps-17.0.0\AndroidManifest.xml:30:5-36:19
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\20c77c3286ed68db6c45d651dc5a413c\jetified-play-services-maps-17.0.0\AndroidManifest.xml:30:5-36:19
+MERGED from [com.google.firebase:firebase-auth-interop:18.0.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\ce9c1c22fab5d58895273b0322acf1df\jetified-firebase-auth-interop-18.0.0\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-auth-interop:18.0.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\ce9c1c22fab5d58895273b0322acf1df\jetified-firebase-auth-interop-18.0.0\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.android.gms:play-services-base:17.3.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\00a2f9009d332c8b1187a270435bdde5\jetified-play-services-base-17.3.0\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:17.3.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\00a2f9009d332c8b1187a270435bdde5\jetified-play-services-base-17.3.0\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\77bdf2400892bf70aad7490c23f9d9c2\jetified-play-services-places-placereport-17.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\77bdf2400892bf70aad7490c23f9d9c2\jetified-play-services-places-placereport-17.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.firebase:firebase-common:19.5.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\d783eb5e4d25e462c5ff8a9ddfc544e8\jetified-firebase-common-19.5.0\AndroidManifest.xml:25:5-47:19
+MERGED from [com.google.firebase:firebase-common:19.5.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\d783eb5e4d25e462c5ff8a9ddfc544e8\jetified-firebase-common-19.5.0\AndroidManifest.xml:25:5-47:19
+MERGED from [com.google.android.gms:play-services-tasks:17.1.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\1f95f28f0318f4b9cef55a6733e2c1e8\jetified-play-services-tasks-17.1.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:17.1.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\1f95f28f0318f4b9cef55a6733e2c1e8\jetified-play-services-tasks-17.1.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:17.3.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\fbcd13b61b79d186a0add127294730b0\jetified-play-services-basement-17.3.0\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:17.3.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\fbcd13b61b79d186a0add127294730b0\jetified-play-services-basement-17.3.0\AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.core:core:1.3.1] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\cdfea8f3da9d3d8e26bbb73a40c2de98\core-1.3.1\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.3.1] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\cdfea8f3da9d3d8e26bbb73a40c2de98\core-1.3.1\AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\9e093b173e0d75d429119beb7e212738\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\9e093b173e0d75d429119beb7e212738\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+>>>>>>> ui_manda
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.3.2] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\d344523c0bed2f656efac8cdd793fb3a\core-1.3.2\AndroidManifest.xml:24:18-86
 	android:supportsRtl
@@ -270,6 +351,7 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\jo
 	android:allowBackup
 		ADDED from C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:21:9-35
 	android:theme
+<<<<<<< HEAD
 		ADDED from C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:26:9-40
 	android:usesCleartextTraffic
 		ADDED from C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:27:9-44
@@ -277,6 +359,13 @@ activity#com.example.testingskripsinew.ScheduleActivity
 ADDED from C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:29:9-63
 	android:name
 		ADDED from C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:29:19-51
+=======
+		ADDED from C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:25:9-40
+activity#com.example.testingskripsinew.Register
+ADDED from C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:26:9-55
+	android:name
+		ADDED from C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:26:19-43
+>>>>>>> ui_manda
 meta-data#com.google.android.geo.API_KEY
 ADDED from C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:31:9-33:55
 	android:value
@@ -298,6 +387,7 @@ ADDED from C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_
 	android:name
 		ADDED from C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:40:13-54
 activity#com.example.testingskripsinew.ReaderScanActivity
+<<<<<<< HEAD
 ADDED from C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:44:9-56
 	android:name
 		ADDED from C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:44:19-53
@@ -363,6 +453,73 @@ category#android.intent.category.LAUNCHER
 ADDED from C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:61:17-77
 	android:name
 		ADDED from C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:61:27-74
+=======
+ADDED from C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:41:9-56
+	android:name
+		ADDED from C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:41:19-53
+activity#com.example.testingskripsinew.HistoryUser
+ADDED from C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:42:9-49
+	android:name
+		ADDED from C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:42:19-46
+activity#com.example.testingskripsinew.HistoryAsdos_Keluar
+ADDED from C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:43:9-57
+	android:name
+		ADDED from C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:43:19-54
+activity#com.example.testingskripsinew.HistoryAsdos_Absen
+ADDED from C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:44:9-56
+	android:name
+		ADDED from C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:44:19-53
+activity#com.example.testingskripsinew.HistoryAsdos_Izin
+ADDED from C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:45:9-55
+	android:name
+		ADDED from C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:45:19-52
+activity#com.example.testingskripsinew.HistoryAsdos_Hadir
+ADDED from C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:46:9-56
+	android:name
+		ADDED from C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:46:19-53
+activity#com.example.testingskripsinew.ProfilAsdos
+ADDED from C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:47:9-49
+	android:name
+		ADDED from C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:47:19-46
+activity#com.example.testingskripsinew.ProfilUser
+ADDED from C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:48:9-48
+	android:name
+		ADDED from C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:48:19-45
+activity#com.example.testingskripsinew.MainActivityAsdos
+ADDED from C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:49:9-55
+	android:name
+		ADDED from C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:49:19-52
+activity#com.example.testingskripsinew.MainActivityUser
+ADDED from C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:50:9-54
+	android:name
+		ADDED from C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:50:19-51
+activity#com.example.testingskripsinew.LoginAsdos
+ADDED from C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:51:9-48
+	android:name
+		ADDED from C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:51:19-45
+activity#com.example.testingskripsinew.LoginUser
+ADDED from C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:52:9-47
+	android:name
+		ADDED from C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:52:19-44
+activity#com.example.testingskripsinew.PilihAkunActivity
+ADDED from C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:53:9-55
+	android:name
+		ADDED from C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:53:19-52
+activity#com.example.testingskripsinew.SplashScreen
+ADDED from C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:54:9-60:20
+	android:name
+		ADDED from C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:54:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:55:13-59:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:56:17-69
+	android:name
+		ADDED from C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:56:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:58:17-77
+	android:name
+		ADDED from C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:58:27-74
+>>>>>>> ui_manda
 uses-sdk
 INJECTED from C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml
