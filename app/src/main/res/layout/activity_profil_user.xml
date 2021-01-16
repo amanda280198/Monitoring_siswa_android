@@ -39,7 +39,7 @@
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginTop="16dp"
-        android:src="@drawable/teacher"
+        android:src="@drawable/student_2"
         app:layout_constraintBottom_toTopOf="@+id/nama_user"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintHorizontal_bias="0.495"

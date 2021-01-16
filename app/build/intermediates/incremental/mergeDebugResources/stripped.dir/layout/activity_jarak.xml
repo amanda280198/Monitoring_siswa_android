@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context=".Jarak">
+
+    <ImageButton
+        android:id="@+id/button_back"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:background="#2F2E2E"
+        android:src="@drawable/left_arrow"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Posisi anda di kampus.."
+        android:textColor="#4CCEC6"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toBottomOf="@+id/button_back"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintTop_toTopOf="@+id/button_back"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txt_lat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Latittude   :"
+        android:textColor="#ffffff"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_long"
+        app:layout_constraintTop_toTopOf="@+id/guideline3"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="64dp" />
+
+    <TextView
+        android:id="@+id/txt_statuslat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:textColor="#ffffff"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_lat"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toEndOf="@+id/txt_lat"
+        app:layout_constraintTop_toTopOf="@+id/txt_lat"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txt_long"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Longitude :"
+        android:textColor="#ffffff"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_jarak"
+        app:layout_constraintTop_toBottomOf="@+id/txt_lat"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="64dp" />
+
+    <TextView
+        android:id="@+id/txt_statuslong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:textColor="#ffffff"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_long"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toEndOf="@+id/txt_long"
+        app:layout_constraintTop_toTopOf="@+id/txt_long"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txt_jarak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Posisi        :"
+        android:textColor="#ffffff"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_checkin"
+        app:layout_constraintTop_toBottomOf="@+id/txt_long"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="64dp" />
+
+    <TextView
+        android:id="@+id/txt_statusjarak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:textColor="#ffffff"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_jarak"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toEndOf="@+id/txt_jarak"
+        app:layout_constraintTop_toTopOf="@+id/txt_jarak"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_checkin"
+        android:layout_width="120dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/custom_buttom3"
+        android:text="Check-in"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/txt_jarak"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="60dp" />
+
+    <Button
+        android:id="@+id/btn_checkout"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_buttom3"
+        android:text="Check-out"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_checkin"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toEndOf="@+id/btn_checkin"
+        app:layout_constraintTop_toTopOf="@+id/btn_checkin"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.02" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.61" />
+</androidx.constraintlayout.widget.ConstraintLayout>

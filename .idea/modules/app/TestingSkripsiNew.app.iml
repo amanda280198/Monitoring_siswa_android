@@ -24,6 +24,31 @@
         <option name="ASSETS_FOLDER_RELATIVE_PATH" value="/src/main/assets" />
       </configuration>
     </facet>
+    <facet type="kotlin-language" name="Kotlin">
+      <configuration version="3" platform="JVM 1.6" allPlatforms="JVM [1.6]" useProjectSettings="false">
+        <compilerSettings>
+          <option name="additionalArguments" value="-Xallow-no-source-files" />
+        </compilerSettings>
+        <compilerArguments>
+          <option name="destination" value="$MODULE_DIR$/../../../app/build/tmp/kotlin-classes/debug" />
+          <option name="classpath" value="$MODULE_DIR$/../../../app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar;C:/Users/Amanda Ramadita/.gradle/caches/transforms-2/files-2.1/a1c30b2718bbb689b8aafb57102b5128/constraintlayout-2.0.4-api.jar;C:/Users/Amanda Ramadita/.gradle/caches/transforms-2/files-2.1/1a371ac81326c8c95cbdf0ed74c8339b/appcompat-1.2.0-api.jar;C:/Users/Amanda Ramadita/.gradle/caches/transforms-2/files-2.1/488afeab45a213e39ba6c2da528660c6/cardview-1.0.0-api.jar;C:/Users/Amanda Ramadita/.gradle/caches/transforms-2/files-2.1/99a0068b708acb4d5886126250469062/jetified-firebase-database-19.6.0-api.jar;C:/Users/Amanda Ramadita/.gradle/caches/transforms-2/files-2.1/42d7f50b3d1e7ceca662b2b4babe1cbc/jetified-play-services-maps-17.0.0-api.jar;C:/Users/Amanda Ramadita/.gradle/caches/transforms-2/files-2.1/8307a9c3d1c47443733b940a2ff73b34/jetified-play-services-location-17.1.0-api.jar;C:/Users/Amanda Ramadita/.gradle/caches/transforms-2/files-2.1/1e822f9f7de4e37b3789f4205af23759/jetified-firebase-auth-interop-18.0.0-api.jar;C:/Users/Amanda Ramadita/.gradle/caches/transforms-2/files-2.1/b7a3aed1287987e8f6374f21cecbbcf3/jetified-firebase-database-collection-17.0.1-api.jar;C:/Users/Amanda Ramadita/.gradle/caches/transforms-2/files-2.1/24ea9d6eb729785187a20b222fba4112/jetified-play-services-base-17.3.0-api.jar;C:/Users/Amanda Ramadita/.gradle/caches/transforms-2/files-2.1/d7002a161ac2525a084844c1863b13d9/jetified-play-services-places-placereport-17.0.0-api.jar;C:/Users/Amanda Ramadita/.gradle/caches/transforms-2/files-2.1/92ec7878f5b5c7022052ae645ebd8e1a/jetified-firebase-common-19.5.0-api.jar;C:/Users/Amanda Ramadita/.gradle/caches/transforms-2/files-2.1/9456bcdd5c50cfcadf3ad54f3c6dbc67/jetified-play-services-tasks-17.1.0-api.jar;C:/Users/Amanda Ramadita/.gradle/caches/transforms-2/files-2.1/6c7ac23bdf3027933aa795a270889ee9/jetified-play-services-basement-17.3.0-api.jar;C:/Users/Amanda Ramadita/.gradle/caches/transforms-2/files-2.1/4bcd1f2876df9758efe941884dc70513/fragment-1.1.0-api.jar;C:/Users/Amanda Ramadita/.gradle/caches/transforms-2/files-2.1/42541b16d5c4ffcbd274aec38816842b/jetified-appcompat-resources-1.2.0-api.jar;C:/Users/Amanda Ramadita/.gradle/caches/transforms-2/files-2.1/ab63bcd1f70f2e53d908d13e4ab57cea/drawerlayout-1.0.0-api.jar;C:/Users/Amanda Ramadita/.gradle/caches/transforms-2/files-2.1/a6942dc8fd7e5a471860df4462cf51a0/viewpager-1.0.0-api.jar;C:/Users/Amanda Ramadita/.gradle/caches/transforms-2/files-2.1/4ea994131c94084e76042dd26f16e5ca/loader-1.0.0-api.jar;C:/Users/Amanda Ramadita/.gradle/caches/transforms-2/files-2.1/9f3f43bfa047aeef244a98c3bd34c6fd/jetified-activity-1.0.0-api.jar;C:/Users/Amanda Ramadita/.gradle/caches/transforms-2/files-2.1/c5c9aaa2ace01792d2772a0d1d397f64/vectordrawable-animated-1.1.0-api.jar;C:/Users/Amanda Ramadita/.gradle/caches/transforms-2/files-2.1/24a39b1be42200d349a20d03d5000315/vectordrawable-1.1.0-api.jar;C:/Users/Amanda Ramadita/.gradle/caches/transforms-2/files-2.1/66db383d6bdb93319c7dfcaf80e4164b/customview-1.0.0-api.jar;C:/Users/Amanda Ramadita/.gradle/caches/transforms-2/files-2.1/9eef602b1e5382600a2930f072b917d5/core-1.3.1-api.jar;C:/Users/Amanda Ramadita/.gradle/caches/transforms-2/files-2.1/544be23db170ac004a0c95713d3885b6/cursoradapter-1.0.0-api.jar;C:/Users/Amanda Ramadita/.gradle/caches/transforms-2/files-2.1/f8db50ab69e19d87ccd851e873bfeb32/jetified-firebase-components-16.1.0-api.jar;C:/Users/Amanda Ramadita/.gradle/caches/transforms-2/files-2.1/7ef4afc57b3e2fd50ae2e4fc9f1b8c28/lifecycle-runtime-2.1.0-api.jar;C:/Users/Amanda Ramadita/.gradle/caches/transforms-2/files-2.1/617e8f76e81e8f42dd467250223ebbf6/versionedparcelable-1.1.0-api.jar;C:/Users/Amanda Ramadita/.gradle/caches/modules-2/files-2.1/androidx.collection/collection/1.1.0/1f27220b47669781457de0d600849a5de0e89909/collection-1.1.0.jar;C:/Users/Amanda Ramadita/.gradle/caches/transforms-2/files-2.1/5893f83757c80878e78957d7782ab859/lifecycle-viewmodel-2.1.0-api.jar;C:/Users/Amanda Ramadita/.gradle/caches/transforms-2/files-2.1/a8043a0a83340e889f360f10fd7c3ff8/jetified-savedstate-1.0.0-api.jar;C:/Users/Amanda Ramadita/.gradle/caches/transforms-2/files-2.1/9f4ee175f630b25128df7f65692a8d29/lifecycle-livedata-2.0.0-api.jar;C:/Users/Amanda Ramadita/.gradle/caches/transforms-2/files-2.1/a4b8e0392845cc44c11451a00313ba5f/lifecycle-livedata-core-2.0.0-api.jar;C:/Users/Amanda Ramadita/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-common/2.1.0/c67e7807d9cd6c329b9d0218b2ec4e505dd340b7/lifecycle-common-2.1.0.jar;C:/Users/Amanda Ramadita/.gradle/caches/transforms-2/files-2.1/ee74f9a49948a4424bb1d3bd6f8b4429/core-runtime-2.0.0-api.jar;C:/Users/Amanda Ramadita/.gradle/caches/modules-2/files-2.1/androidx.arch.core/core-common/2.1.0/b3152fc64428c9354344bd89848ecddc09b6f07e/core-common-2.1.0.jar;C:/Users/Amanda Ramadita/.gradle/caches/transforms-2/files-2.1/00bd231ef773156de567382ad4bb279d/interpolator-1.0.0-api.jar;C:/Users/Amanda Ramadita/.gradle/caches/modules-2/files-2.1/androidx.annotation/annotation/1.1.0/e3a6fb2f40e3a3842e6b7472628ba4ce416ea4c8/annotation-1.1.0.jar;C:/Users/Amanda Ramadita/.gradle/caches/modules-2/files-2.1/androidx.constraintlayout/constraintlayout-solver/2.0.4/1f001d7db280a89a6c26b26a66eb064bb6d5efeb/constraintlayout-solver-2.0.4.jar;C:/Users/Amanda Ramadita/.gradle/caches/transforms-2/files-2.1/53b82d18af827c4a68bda738b444ecf8/jetified-kotlin-stdlib-1.3.72.jar;C:/Users/Amanda Ramadita/.gradle/caches/transforms-2/files-2.1/a7f4e01b02cd5d7821b7b62fcea25e28/jetified-kotlin-stdlib-common-1.3.72.jar;C:/Users/Amanda Ramadita/.gradle/caches/transforms-2/files-2.1/983a2be8d87e9d2e95e945d9e1935e9d/jetified-annotations-13.0.jar;C:/Users/Amanda Ramadita/.gradle/caches/transforms-2/files-2.1/126b51e99f705da3fbef40666206ac26/jetified-firebase-annotations-16.0.0.jar;C:/Android/sdk/platforms/android-30/android.jar;C:/Android/sdk/build-tools/30.0.3/core-lambda-stubs.jar" />
+          <option name="noStdlib" value="true" />
+          <option name="noReflect" value="true" />
+          <option name="moduleName" value="app_debug" />
+          <option name="languageVersion" value="1.3" />
+          <option name="apiVersion" value="1.3" />
+          <option name="pluginOptions">
+            <array />
+          </option>
+          <option name="pluginClasspaths">
+            <array />
+          </option>
+          <option name="errors">
+            <ArgumentParseErrors />
+          </option>
+        </compilerArguments>
+      </configuration>
+    </facet>
   </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
     <output url="file://$MODULE_DIR$/../../../app/build/intermediates/javac/debug/classes" />
@@ -48,6 +73,9 @@
     <orderEntry type="library" name="Gradle: androidx.arch.core:core-common:2.1.0" level="project" />
     <orderEntry type="library" name="Gradle: androidx.annotation:annotation:1.1.0" level="project" />
     <orderEntry type="library" name="Gradle: androidx.constraintlayout:constraintlayout-solver:2.0.4" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.3.72" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.3.72" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains:annotations:13.0" level="project" />
     <orderEntry type="library" name="Gradle: com.google.firebase:firebase-annotations:16.0.0" level="project" />
     <orderEntry type="library" name="Gradle: androidx.constraintlayout:constraintlayout:2.0.4@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.appcompat:appcompat:1.2.0@aar" level="project" />

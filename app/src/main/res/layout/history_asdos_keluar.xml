@@ -22,9 +22,10 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Today"
+        android:text="Histori Presensi"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
         android:textColor="#ffffff"
-        android:textSize="30dp"
+        android:textSize="25dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/button_back"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
@@ -122,41 +123,21 @@
         android:background="@drawable/custom_buttom4"
         android:text="hadir"
         android:textColor="#ffffff"
+        app:layout_constraintEnd_toStartOf="@+id/btn_tdk_hadir"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="36dp"
         tools:layout_editor_absoluteY="308dp" />
 
     <Button
-        android:id="@+id/btn_izin"
+        android:id="@+id/btn_tdk_hadir"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/custom_buttom4"
-        android:text="izin"
+        android:text="tidak hadir"
         android:textColor="#ffffff"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toEndOf="@id/btn_hadir"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="116dp"
-        tools:layout_editor_absoluteY="308dp" />
-
-    <Button
-        android:id="@+id/btn_absen"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/custom_buttom4"
-        android:text="absen"
-        android:textColor="#ffffff"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="197dp"
-        tools:layout_editor_absoluteY="308dp" />
-
-    <Button
-        android:id="@+id/btn_keluar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/custom_buttom4"
-        android:text="keluar"
-        android:textColor="#ffffff"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="278dp"
         tools:layout_editor_absoluteY="308dp" />
 
     <TextView
