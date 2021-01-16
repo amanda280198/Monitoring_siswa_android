@@ -4,7 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import com.example.testingskripsinew.HistoryUser
+import com.example.testingskripsinew.HistoryPribadi_Hadir
 import com.example.testingskripsinew.ScheduleActivity
 import com.example.testingskripsinew.ViewMapsActivity
 import com.example.testingskripsinew.databinding.ActivityMainUserBinding
@@ -37,7 +37,7 @@ class MainActivityUser : AppCompatActivity() {
     }
 
     fun btnHistoryPribadi(view: View?) {
-        val i = Intent(this, HistoryUser::class.java)
+        val i = Intent(this, HistoryPribadi_Hadir::class.java)
         this.startActivity(i)
     }
 

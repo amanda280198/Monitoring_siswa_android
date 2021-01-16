@@ -41,10 +41,9 @@
             android:exported="true" />
 
         <activity android:name=".ReaderScanActivity" />
-        <activity android:name=".HistoryUser" />
-        <activity android:name=".HistoryAsdos_Keluar" />
+        <activity android:name=".HistoryPribadi_Absen" />
+        <activity android:name=".HistoryPribadi_Hadir" />
         <activity android:name=".HistoryAsdos_Absen" />
-        <activity android:name=".HistoryAsdos_Izin" />
         <activity android:name=".HistoryAsdos_Hadir" />
         <activity android:name=".ProfilAsdos" />
         <activity android:name=".ProfilUser" />

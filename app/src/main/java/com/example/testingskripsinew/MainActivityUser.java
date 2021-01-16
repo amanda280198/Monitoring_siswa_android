@@ -20,7 +20,7 @@ public class MainActivityUser extends AppCompatActivity {
     }
 
     public void btnHistoryPribadi(View view) {
-        Intent i = new Intent(this, HistoryUser.class);
+        Intent i = new Intent(this, HistoryPribadi_Hadir.class);
         this.startActivity(i);
     }
 

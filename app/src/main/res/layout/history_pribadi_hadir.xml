@@ -6,12 +6,13 @@
     android:layout_height="match_parent"
     android:background="#2F2E2E"
     android:orientation="vertical"
-    tools:context=".HistoryAsdos_Izin">
+    tools:context=".HistoryPribadi_Hadir">
 
     <ImageButton
         android:id="@+id/button_back"
         android:layout_width="50dp"
         android:layout_height="45dp"
+        android:onClick="btnBack"
         android:background="#2F2E2E"
         android:src="@drawable/left_arrow"
         app:layout_constraintBottom_toTopOf="@+id/guideline3"
@@ -22,9 +23,10 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Today"
+        android:text="Histori Presensi"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
         android:textColor="#ffffff"
-        android:textSize="30dp"
+        android:textSize="25dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/button_back"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
@@ -104,6 +106,7 @@
         tools:ignore="MissingConstraints" />
 
     <TextView
+        android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -119,64 +122,51 @@
         android:id="@+id/btn_hadir"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/custom_buttom4"
+        android:background="#4CCEC6"
         android:text="hadir"
-        android:textColor="#ffffff"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="36dp"
-        tools:layout_editor_absoluteY="308dp" />
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/textView12"
+        app:layout_constraintEnd_toStartOf="@+id/btn_tdk_hadir"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
     <Button
-        android:id="@+id/btn_izin"
+        android:id="@+id/btn_tdk_hadir"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/custom_buttom4"
-        android:text="izin"
+        android:background="#C4C4C4"
+        android:gravity="center"
+        android:text="tidak hadir"
         android:textColor="#ffffff"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="116dp"
-        tools:layout_editor_absoluteY="308dp" />
-
-    <Button
-        android:id="@+id/btn_absen"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/custom_buttom4"
-        android:text="absen"
-        android:textColor="#ffffff"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="197dp"
-        tools:layout_editor_absoluteY="308dp" />
-
-    <Button
-        android:id="@+id/btn_keluar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/custom_buttom4"
-        android:text="keluar"
-        android:textColor="#ffffff"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="278dp"
-        tools:layout_editor_absoluteY="308dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView12"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toEndOf="@id/btn_hadir"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
     <TextView
+        android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Total Izin :"
+        android:text="Total Hadir :"
         android:textColor="#ffffff"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="36dp"
-        tools:layout_editor_absoluteY="380dp" />
+        app:layout_constraintBottom_toTopOf="@+id/nama_user"
+        app:layout_constraintEnd_toStartOf="@+id/total_hadir_pribadi"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintTop_toBottomOf="@+id/btn_hadir"
+        tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/total_izin"
+        android:id="@+id/total_hadir_pribadi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="-"
         android:textColor="#ffffff"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="124dp"
-        tools:layout_editor_absoluteY="380dp" />
+        app:layout_constraintBottom_toTopOf="@+id/nama_user"
+        app:layout_constraintStart_toEndOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/btn_hadir"
+        app:layout_constraintEnd_toStartOf="@id/btn_tdk_hadir"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/nama_user"
@@ -184,10 +174,11 @@
         android:layout_height="wrap_content"
         android:text="Nama Mahasiswa"
         android:textColor="#ffffff"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="53dp"
-        tools:layout_editor_absoluteY="419dp" />
-
+        app:layout_constraintBottom_toTopOf="@+id/view5"
+        app:layout_constraintEnd_toStartOf="@+id/npm"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintTop_toBottomOf="@id/textView12"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/npm"
@@ -195,47 +186,47 @@
         android:layout_height="wrap_content"
         android:text="NPM"
         android:textColor="#ffffff"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="187dp"
-        tools:layout_editor_absoluteY="418dp" />
+        app:layout_constraintBottom_toTopOf="@id/view5"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toEndOf="@id/nama_user"
+        app:layout_constraintTop_toBottomOf="@id/total_hadir_pribadi" />
+
 
     <TextView
+        android:id="@+id/txt_cekin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Diminta pada jam "
+        android:text="Check-in jam"
         android:textColor="#ffffff"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="53dp"
-        tools:layout_editor_absoluteY="446dp" />
+        app:layout_constraintBottom_toTopOf="@id/view5"
+        app:layout_constraintEnd_toStartOf="@+id/jam_masuk"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintTop_toBottomOf="@+id/nama_user" />
 
     <TextView
         android:id="@+id/jam_masuk"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Jam Telat"
-        android:textColor="#FFC107"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="173dp"
-        tools:layout_editor_absoluteY="445dp" />
-
-    <TextView
-        android:id="@+id/alasan_izin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Alasan Izin"
-        android:textColor="#ffffff"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="56dp"
-        tools:layout_editor_absoluteY="475dp" />
+        android:text="07 : 00 AM"
+        android:textColor="#4CCEC6"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintBottom_toTopOf="@id/view5"
+        app:layout_constraintStart_toEndOf="@+id/txt_cekin"
+        app:layout_constraintTop_toBottomOf="@id/npm"
+        tools:layout_editor_absoluteY="426dp" />
 
     <View
-        android:layout_width="340dp"
+        android:id="@+id/view5"
+        android:layout_width="350dp"
         android:layout_height="1dp"
         android:background="#D5D0D0"
         android:visibility="visible"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="53dp"
-        tools:layout_editor_absoluteY="504dp" />
+        app:layout_constraintBottom_toTopOf="@+id/guideline5"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintTop_toBottomOf="@+id/textView11"
+        app:layout_constraintVertical_bias="0.45" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
@@ -271,4 +262,12 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.98" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
