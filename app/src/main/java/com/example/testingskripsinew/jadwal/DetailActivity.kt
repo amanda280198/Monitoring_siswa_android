@@ -51,7 +51,7 @@ class DetailActivity : AppCompatActivity() {
         binding.npmPengajar2.text = npmPengajar2
         binding.hari.text = hari
         binding.jamTgl.text = jam
-        binding.kelas.text = "Semester dan Kelas $kelas"
+        binding.kelas.text = "Kelas $kelas"
 
         if (status == Data.ASDOS){
             val bitmap = generateQRCode(kodeMatkul)
