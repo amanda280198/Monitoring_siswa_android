@@ -42,10 +42,13 @@ public final class ItemJadwalBinding implements ViewBinding {
   public final CircleImageView imageView;
 
   @NonNull
+  public final TextView jam;
+
+  @NonNull
   public final TextView kelas;
 
   @NonNull
-  public final TextView namaLengkap;
+  public final TextView namaMatkul;
 
   @NonNull
   public final TextView npmPengajar1;
@@ -60,17 +63,14 @@ public final class ItemJadwalBinding implements ViewBinding {
   public final TextView pengajar2;
 
   @NonNull
-  public final TextView tanggal;
-
-  @NonNull
-  public final TextView txtKelas;
+  public final TextView txtNpm;
 
   private ItemJadwalBinding(@NonNull CardView rootView, @NonNull Guideline guideline1,
       @NonNull Guideline guideline2, @NonNull Guideline guideline3, @NonNull Guideline guideline6,
       @NonNull Guideline guideline7, @NonNull TextView hari, @NonNull CircleImageView imageView,
-      @NonNull TextView kelas, @NonNull TextView namaLengkap, @NonNull TextView npmPengajar1,
-      @NonNull TextView npmPengajar2, @NonNull TextView pengajar1, @NonNull TextView pengajar2,
-      @NonNull TextView tanggal, @NonNull TextView txtKelas) {
+      @NonNull TextView jam, @NonNull TextView kelas, @NonNull TextView namaMatkul,
+      @NonNull TextView npmPengajar1, @NonNull TextView npmPengajar2, @NonNull TextView pengajar1,
+      @NonNull TextView pengajar2, @NonNull TextView txtNpm) {
     this.rootView = rootView;
     this.guideline1 = guideline1;
     this.guideline2 = guideline2;
@@ -79,14 +79,14 @@ public final class ItemJadwalBinding implements ViewBinding {
     this.guideline7 = guideline7;
     this.hari = hari;
     this.imageView = imageView;
+    this.jam = jam;
     this.kelas = kelas;
-    this.namaLengkap = namaLengkap;
+    this.namaMatkul = namaMatkul;
     this.npmPengajar1 = npmPengajar1;
     this.npmPengajar2 = npmPengajar2;
     this.pengajar1 = pengajar1;
     this.pengajar2 = pengajar2;
-    this.tanggal = tanggal;
-    this.txtKelas = txtKelas;
+    this.txtNpm = txtNpm;
   }
 
   @Override
@@ -158,15 +158,21 @@ public final class ItemJadwalBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.jam;
+      TextView jam = rootView.findViewById(id);
+      if (jam == null) {
+        break missingId;
+      }
+
       id = R.id.kelas;
       TextView kelas = rootView.findViewById(id);
       if (kelas == null) {
         break missingId;
       }
 
-      id = R.id.namaLengkap;
-      TextView namaLengkap = rootView.findViewById(id);
-      if (namaLengkap == null) {
+      id = R.id.namaMatkul;
+      TextView namaMatkul = rootView.findViewById(id);
+      if (namaMatkul == null) {
         break missingId;
       }
 
@@ -194,21 +200,15 @@ public final class ItemJadwalBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.tanggal;
-      TextView tanggal = rootView.findViewById(id);
-      if (tanggal == null) {
-        break missingId;
-      }
-
-      id = R.id.txtKelas;
-      TextView txtKelas = rootView.findViewById(id);
-      if (txtKelas == null) {
+      id = R.id.txt_npm;
+      TextView txtNpm = rootView.findViewById(id);
+      if (txtNpm == null) {
         break missingId;
       }
 
       return new ItemJadwalBinding((CardView) rootView, guideline1, guideline2, guideline3,
-          guideline6, guideline7, hari, imageView, kelas, namaLengkap, npmPengajar1, npmPengajar2,
-          pengajar1, pengajar2, tanggal, txtKelas);
+          guideline6, guideline7, hari, imageView, jam, kelas, namaMatkul, npmPengajar1,
+          npmPengajar2, pengajar1, pengajar2, txtNpm);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

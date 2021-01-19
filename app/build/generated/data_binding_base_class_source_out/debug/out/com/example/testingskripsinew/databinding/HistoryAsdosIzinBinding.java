@@ -70,10 +70,10 @@ public final class HistoryAsdosIzinBinding implements ViewBinding {
   public final TextView namaUser;
 
   @NonNull
-  public final TextView npm;
+  public final TextView tahun;
 
   @NonNull
-  public final TextView tahun;
+  public final TextView textPengajar1;
 
   @NonNull
   public final TextView tgl;
@@ -87,7 +87,7 @@ public final class HistoryAsdosIzinBinding implements ViewBinding {
       @NonNull Guideline guideline, @NonNull Guideline guideline1, @NonNull Guideline guideline2,
       @NonNull Guideline guideline3, @NonNull Guideline guideline4, @NonNull TextView jam,
       @NonNull TextView jamMasuk, @NonNull TextView jamPraktikum, @NonNull TextView namaUser,
-      @NonNull TextView npm, @NonNull TextView tahun, @NonNull TextView tgl,
+      @NonNull TextView tahun, @NonNull TextView textPengajar1, @NonNull TextView tgl,
       @NonNull TextView totalIzin) {
     this.rootView = rootView;
     this.alasanIzin = alasanIzin;
@@ -106,8 +106,8 @@ public final class HistoryAsdosIzinBinding implements ViewBinding {
     this.jamMasuk = jamMasuk;
     this.jamPraktikum = jamPraktikum;
     this.namaUser = namaUser;
-    this.npm = npm;
     this.tahun = tahun;
+    this.textPengajar1 = textPengajar1;
     this.tgl = tgl;
     this.totalIzin = totalIzin;
   }
@@ -235,15 +235,15 @@ public final class HistoryAsdosIzinBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.npm;
-      TextView npm = rootView.findViewById(id);
-      if (npm == null) {
-        break missingId;
-      }
-
       id = R.id.tahun;
       TextView tahun = rootView.findViewById(id);
       if (tahun == null) {
+        break missingId;
+      }
+
+      id = R.id.textPengajar1;
+      TextView textPengajar1 = rootView.findViewById(id);
+      if (textPengajar1 == null) {
         break missingId;
       }
 
@@ -261,7 +261,7 @@ public final class HistoryAsdosIzinBinding implements ViewBinding {
 
       return new HistoryAsdosIzinBinding((ConstraintLayout) rootView, alasanIzin, btnAbsen,
           btnHadir, btnIzin, btnKeluar, bulan, buttonBack, guideline, guideline1, guideline2,
-          guideline3, guideline4, jam, jamMasuk, jamPraktikum, namaUser, npm, tahun, tgl,
+          guideline3, guideline4, jam, jamMasuk, jamPraktikum, namaUser, tahun, textPengajar1, tgl,
           totalIzin);
     }
     String missingId = rootView.getResources().getResourceName(id);

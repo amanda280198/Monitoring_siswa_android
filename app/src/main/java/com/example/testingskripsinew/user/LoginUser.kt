@@ -54,6 +54,7 @@ class LoginUser : AppCompatActivity() {
                     val intent = Intent(this@LoginUser, MainActivityUser::class.java)
                     intent.putExtra(MainActivityUser.EXTRA_USER, value.nama)
                     intent.putExtra(MainActivityUser.EXTRA_NPM, value.npm)
+                    intent.putExtra(MainActivityUser.EXTRA_STATUS, value.status)
                     startActivity(intent)
                 } else {
                     Toast.makeText(this@LoginUser, "Maaf Data Tidak Tersedia", Toast.LENGTH_SHORT)

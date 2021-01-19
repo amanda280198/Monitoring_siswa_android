@@ -3,4 +3,10 @@
     <string name="title_activity_view_maps">Map</string>
     <string name="image_view">imageView</string>
     <string name="empty_alert">Tidak Boleh Kosong</string>
+    <string name="action_search">Search</string>
+    <string name="text_title">List Jadwal Pengajar</string>
+    <string name="turn_flash_on_off">Turn Flash On/Off</string>
+    <string name="alert_txt">pastikan posisi anda berada pada <br>area lingkaran hijau</br></string>
+    <string name="alert_txt_succes">Anda bisa gabung di kelas</string>
+    <string name="alert_txt_title_succes">Lokasi Anda Sesuai</string>
 </resources>

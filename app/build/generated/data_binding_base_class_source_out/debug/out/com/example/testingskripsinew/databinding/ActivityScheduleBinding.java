@@ -32,7 +32,7 @@ public final class ActivityScheduleBinding implements ViewBinding {
   public final RecyclerView rvListjadwal;
 
   @NonNull
-  public final TextView textView6;
+  public final TextView textJudul;
 
   @NonNull
   public final TextView textView7;
@@ -42,13 +42,13 @@ public final class ActivityScheduleBinding implements ViewBinding {
 
   private ActivityScheduleBinding(@NonNull ConstraintLayout rootView,
       @NonNull AppBarLayout appBarLayout, @NonNull Guideline guideline9,
-      @NonNull RecyclerView rvListjadwal, @NonNull TextView textView6, @NonNull TextView textView7,
+      @NonNull RecyclerView rvListjadwal, @NonNull TextView textJudul, @NonNull TextView textView7,
       @NonNull Toolbar toolbar) {
     this.rootView = rootView;
     this.appBarLayout = appBarLayout;
     this.guideline9 = guideline9;
     this.rvListjadwal = rvListjadwal;
-    this.textView6 = textView6;
+    this.textJudul = textJudul;
     this.textView7 = textView7;
     this.toolbar = toolbar;
   }
@@ -98,9 +98,9 @@ public final class ActivityScheduleBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.textView6;
-      TextView textView6 = rootView.findViewById(id);
-      if (textView6 == null) {
+      id = R.id.textJudul;
+      TextView textJudul = rootView.findViewById(id);
+      if (textJudul == null) {
         break missingId;
       }
 
@@ -117,7 +117,7 @@ public final class ActivityScheduleBinding implements ViewBinding {
       }
 
       return new ActivityScheduleBinding((ConstraintLayout) rootView, appBarLayout, guideline9,
-          rvListjadwal, textView6, textView7, toolbar);
+          rvListjadwal, textJudul, textView7, toolbar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -10,18 +10,17 @@
 9        android:targetSdkVersion="30" />
 9-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml
 10
-11    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-11-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:6:5-79
-11-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:6:22-76
-12    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-12-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:7:5-81
-12-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:7:22-78
-13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-13-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:8:5-79
-13-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:8:22-76
+11    <uses-feature android:name="android.hardware.camera.any" />
+11-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:6:5-64
+11-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:6:19-61
+12
+13    <uses-permission android:name="android.permission.CAMERA" />
+13-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:8:5-65
+13-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:8:22-62
 14    <uses-permission android:name="android.permission.ACCESS_LOCATION" />
 14-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:9:5-74
 14-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:9:22-71
+<<<<<<< HEAD
 15    <uses-permission android:name="android.permission.INTERNET" />
 15-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:10:5-67
 15-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:10:22-64
@@ -147,138 +146,271 @@
 69                <action android:name="android.intent.action.MAIN" />
 69-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:59:17-69
 69-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:59:25-66
+=======
+15    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+15-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:10:5-79
+15-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:10:22-76
+16    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+16-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:11:5-81
+16-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:11:22-78
+17    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+17-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:12:5-85
+17-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:12:22-82
+18    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+18-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:13:5-79
+18-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:13:22-76
+19    <uses-permission android:name="android.permission.INTERNET" />
+19-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:14:5-67
+19-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:14:22-64
+20    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" /> <!-- <uses-permission android:name="com.sharingdisini.gosokasik.permission.MAPS_RECEIVE" /> -->
+20-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:15:5-98
+20-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:15:22-95
+21    <!-- <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> -->
+22    <uses-feature
+22-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:17:5-19:35
+23        android:glEsVersion="0x00020000"
+23-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:18:9-41
+24        android:required="true" />
+24-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:19:9-32
+25
+26    <queries>
+26-->[androidx.camera:camera-extensions:1.0.0-alpha20] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\c29cd382b4959da28e8839735d44578c\jetified-camera-extensions-1.0.0-alpha20\AndroidManifest.xml:24:5-28:15
+27        <intent>
+27-->[androidx.camera:camera-extensions:1.0.0-alpha20] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\c29cd382b4959da28e8839735d44578c\jetified-camera-extensions-1.0.0-alpha20\AndroidManifest.xml:25:9-27:18
+28            <action android:name="androidx.camera.extensions.action.VENDOR_ACTION" />
+28-->[androidx.camera:camera-extensions:1.0.0-alpha20] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\c29cd382b4959da28e8839735d44578c\jetified-camera-extensions-1.0.0-alpha20\AndroidManifest.xml:26:13-86
+28-->[androidx.camera:camera-extensions:1.0.0-alpha20] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\c29cd382b4959da28e8839735d44578c\jetified-camera-extensions-1.0.0-alpha20\AndroidManifest.xml:26:21-83
+29        </intent>
+30    </queries>
+31
+32    <application
+32-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:21:5-70:19
+33        android:allowBackup="true"
+33-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:22:9-35
+34        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+34-->[androidx.core:core:1.3.2] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\d344523c0bed2f656efac8cdd793fb3a\core-1.3.2\AndroidManifest.xml:24:18-86
+35        android:debuggable="true"
+36        android:hardwareAccelerated="true"
+36-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:23:9-43
+37        android:icon="@mipmap/ic_launcher"
+37-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:24:9-43
+38        android:label="@string/app_name"
+38-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:25:9-41
+39        android:roundIcon="@mipmap/ic_launcher_round"
+39-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:26:9-54
+40        android:supportsRtl="true"
+40-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:27:9-35
+41        android:testOnly="true"
+42        android:theme="@style/AppTheme"
+42-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:28:9-40
+43        android:usesCleartextTraffic="true" >
+43-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:29:9-44
+44        <activity android:name="com.example.testingskripsinew.asdos.MonitoringKelasActivity" />
+44-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:31:9-67
+44-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:31:19-64
+45        <activity android:name="com.example.testingskripsinew.user.KelasActivity" />
+45-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:32:9-56
+45-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:32:19-53
+46        <activity android:name="com.example.testingskripsinew.riwayat.HistoryActivity" />
+46-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:33:9-61
+46-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:33:19-58
+47        <activity android:name="com.example.testingskripsinew.jadwal.DetailActivity" />
+47-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:34:9-59
+47-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:34:19-56
+48        <activity android:name="com.example.testingskripsinew.jadwal.ScheduleActivity" />
+48-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:35:9-61
+48-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:35:19-58
+49        <activity android:name="com.example.testingskripsinew.user.ReaderScanActivity" />
+49-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:36:9-61
+49-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:36:19-58
+50        <activity android:name="com.example.testingskripsinew.HistoryUser" />
+50-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:37:9-49
+50-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:37:19-46
+51        <activity android:name="com.example.testingskripsinew.HistoryAsdos_Keluar" />
+51-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:38:9-57
+51-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:38:19-54
+52        <activity android:name="com.example.testingskripsinew.HistoryAsdos_Absen" />
+52-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:39:9-56
+52-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:39:19-53
+53        <activity android:name="com.example.testingskripsinew.HistoryAsdos_Izin" />
+53-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:40:9-55
+53-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:40:19-52
+54        <activity android:name="com.example.testingskripsinew.HistoryAsdos_Hadir" />
+54-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:41:9-56
+54-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:41:19-53
+55        <activity android:name="com.example.testingskripsinew.asdos.ProfilAsdos" />
+55-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:42:9-55
+55-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:42:19-52
+56        <activity android:name="com.example.testingskripsinew.asdos.MainActivityAsdos" />
+56-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:43:9-61
+56-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:43:19-58
+57        <activity android:name="com.example.testingskripsinew.asdos.LoginAsdos" />
+57-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:44:9-54
+57-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:44:19-51
+58        <activity android:name="com.example.testingskripsinew.user.ProfilUser" />
+58-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:45:9-53
+58-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:45:19-50
+59        <activity android:name="com.example.testingskripsinew.user.JarakActivity" />
+59-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:46:9-56
+59-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:46:19-53
+60        <activity android:name="com.example.testingskripsinew.user.MainActivityUser" />
+60-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:47:9-59
+60-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:47:19-56
+61        <activity android:name="com.example.testingskripsinew.user.LoginUser" />
+61-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:48:9-52
+61-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:48:19-49
+62        <activity android:name="com.example.testingskripsinew.PilihAkunActivity" />
+62-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:49:9-55
+62-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:49:19-52
+63        <activity android:name="com.example.testingskripsinew.SplashScreen" >
+63-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:50:9-56:20
+63-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:50:19-47
+64            <intent-filter>
+64-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:51:13-55:29
+65                <action android:name="android.intent.action.MAIN" />
+65-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:52:17-69
+65-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:52:25-66
+66
+67                <category android:name="android.intent.category.LAUNCHER" />
+67-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:54:17-77
+67-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:54:27-74
+68            </intent-filter>
+69        </activity>
+>>>>>>> feature/schedule
 70
-71                <category android:name="android.intent.category.LAUNCHER" />
-71-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:61:17-77
-71-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:61:27-74
-72            </intent-filter>
-73        </activity>
-74
-75        <service
-75-->[com.google.firebase:firebase-analytics-ktx:18.0.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\66408c9c60c55b8e2de6b4304bd7e7b7\jetified-firebase-analytics-ktx-18.0.0\AndroidManifest.xml:8:9-14:19
-76            android:name="com.google.firebase.components.ComponentDiscoveryService"
-76-->[com.google.firebase:firebase-analytics-ktx:18.0.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\66408c9c60c55b8e2de6b4304bd7e7b7\jetified-firebase-analytics-ktx-18.0.0\AndroidManifest.xml:9:13-84
-77            android:directBootAware="true"
-77-->[com.google.firebase:firebase-common:19.5.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\2798f072a4796436c552c8c929e22e83\jetified-firebase-common-19.5.0\AndroidManifest.xml:35:13-43
-78            android:exported="false" >
-78-->[com.google.firebase:firebase-analytics-ktx:18.0.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\66408c9c60c55b8e2de6b4304bd7e7b7\jetified-firebase-analytics-ktx-18.0.0\AndroidManifest.xml:10:13-37
-79            <meta-data
-79-->[com.google.firebase:firebase-analytics-ktx:18.0.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\66408c9c60c55b8e2de6b4304bd7e7b7\jetified-firebase-analytics-ktx-18.0.0\AndroidManifest.xml:11:13-13:85
-80                android:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsKtxRegistrar"
-80-->[com.google.firebase:firebase-analytics-ktx:18.0.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\66408c9c60c55b8e2de6b4304bd7e7b7\jetified-firebase-analytics-ktx-18.0.0\AndroidManifest.xml:12:17-126
-81                android:value="com.google.firebase.components.ComponentRegistrar" />
-81-->[com.google.firebase:firebase-analytics-ktx:18.0.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\66408c9c60c55b8e2de6b4304bd7e7b7\jetified-firebase-analytics-ktx-18.0.0\AndroidManifest.xml:13:17-82
-82            <meta-data
-82-->[com.google.firebase:firebase-database-ktx:19.6.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\76a9e42b3b2eb4b53bc8b34c001396e4\jetified-firebase-database-ktx-19.6.0\AndroidManifest.xml:15:13-17:85
-83                android:name="com.google.firebase.components:com.google.firebase.database.ktx.FirebaseDatabaseKtxRegistrar"
-83-->[com.google.firebase:firebase-database-ktx:19.6.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\76a9e42b3b2eb4b53bc8b34c001396e4\jetified-firebase-database-ktx-19.6.0\AndroidManifest.xml:16:17-124
-84                android:value="com.google.firebase.components.ComponentRegistrar" />
-84-->[com.google.firebase:firebase-database-ktx:19.6.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\76a9e42b3b2eb4b53bc8b34c001396e4\jetified-firebase-database-ktx-19.6.0\AndroidManifest.xml:17:17-82
-85            <meta-data
-85-->[com.google.firebase:firebase-storage-ktx:19.2.1] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\dc168b23da13611aa9fb13730ca60c69\jetified-firebase-storage-ktx-19.2.1\AndroidManifest.xml:15:13-17:85
-86                android:name="com.google.firebase.components:com.google.firebase.storage.ktx.FirebaseStorageKtxRegistrar"
-86-->[com.google.firebase:firebase-storage-ktx:19.2.1] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\dc168b23da13611aa9fb13730ca60c69\jetified-firebase-storage-ktx-19.2.1\AndroidManifest.xml:16:17-122
-87                android:value="com.google.firebase.components.ComponentRegistrar" />
-87-->[com.google.firebase:firebase-storage-ktx:19.2.1] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\dc168b23da13611aa9fb13730ca60c69\jetified-firebase-storage-ktx-19.2.1\AndroidManifest.xml:17:17-82
-88            <meta-data
-88-->[com.google.firebase:firebase-common-ktx:19.5.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\eb394cd7b29a81a9d672195aa39a8f3f\jetified-firebase-common-ktx-19.5.0\AndroidManifest.xml:15:13-17:85
-89                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
-89-->[com.google.firebase:firebase-common-ktx:19.5.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\eb394cd7b29a81a9d672195aa39a8f3f\jetified-firebase-common-ktx-19.5.0\AndroidManifest.xml:16:17-113
-90                android:value="com.google.firebase.components.ComponentRegistrar" />
-90-->[com.google.firebase:firebase-common-ktx:19.5.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\eb394cd7b29a81a9d672195aa39a8f3f\jetified-firebase-common-ktx-19.5.0\AndroidManifest.xml:17:17-82
-91            <meta-data
-91-->[com.google.firebase:firebase-database:19.6.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\b7d20ddd6f2cb599b7df510cf465d4ca\jetified-firebase-database-19.6.0\AndroidManifest.xml:32:13-34:85
-92                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
-92-->[com.google.firebase:firebase-database:19.6.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\b7d20ddd6f2cb599b7df510cf465d4ca\jetified-firebase-database-19.6.0\AndroidManifest.xml:33:17-109
-93                android:value="com.google.firebase.components.ComponentRegistrar" />
-93-->[com.google.firebase:firebase-database:19.6.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\b7d20ddd6f2cb599b7df510cf465d4ca\jetified-firebase-database-19.6.0\AndroidManifest.xml:34:17-82
-94            <meta-data
-94-->[com.google.firebase:firebase-storage:19.2.1] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\978abe1b5533fc849d88fbfd7ae28b4e\jetified-firebase-storage-19.2.1\AndroidManifest.xml:33:13-35:85
-95                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
-95-->[com.google.firebase:firebase-storage:19.2.1] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\978abe1b5533fc849d88fbfd7ae28b4e\jetified-firebase-storage-19.2.1\AndroidManifest.xml:34:17-107
-96                android:value="com.google.firebase.components.ComponentRegistrar" />
-96-->[com.google.firebase:firebase-storage:19.2.1] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\978abe1b5533fc849d88fbfd7ae28b4e\jetified-firebase-storage-19.2.1\AndroidManifest.xml:35:17-82
-97            <meta-data
-97-->[com.google.android.gms:play-services-measurement-api:18.0.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\cb7b00c327d692b3c8ba5b2488f064aa\jetified-play-services-measurement-api-18.0.0\AndroidManifest.xml:30:13-32:85
-98                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
-98-->[com.google.android.gms:play-services-measurement-api:18.0.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\cb7b00c327d692b3c8ba5b2488f064aa\jetified-play-services-measurement-api-18.0.0\AndroidManifest.xml:31:17-139
-99                android:value="com.google.firebase.components.ComponentRegistrar" />
-99-->[com.google.android.gms:play-services-measurement-api:18.0.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\cb7b00c327d692b3c8ba5b2488f064aa\jetified-play-services-measurement-api-18.0.0\AndroidManifest.xml:32:17-82
-100            <meta-data
-100-->[com.google.firebase:firebase-installations:16.3.2] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\4b0067a483eb4ac1535d6452df8dec22\jetified-firebase-installations-16.3.2\AndroidManifest.xml:17:13-19:85
-101                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
-101-->[com.google.firebase:firebase-installations:16.3.2] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\4b0067a483eb4ac1535d6452df8dec22\jetified-firebase-installations-16.3.2\AndroidManifest.xml:18:17-127
-102                android:value="com.google.firebase.components.ComponentRegistrar" />
-102-->[com.google.firebase:firebase-installations:16.3.2] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\4b0067a483eb4ac1535d6452df8dec22\jetified-firebase-installations-16.3.2\AndroidManifest.xml:19:17-82
-103            <!--
-104                This registrar is not defined in the dynamic-module-support sdk itself to allow non-firebase
-105                clients to use it as well, by defining this registrar in their own core/common library.
-106            -->
-107            <meta-data
-107-->[com.google.firebase:firebase-common:19.5.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\2798f072a4796436c552c8c929e22e83\jetified-firebase-common-19.5.0\AndroidManifest.xml:43:13-45:85
-108                android:name="com.google.firebase.components:com.google.firebase.dynamicloading.DynamicLoadingRegistrar"
-108-->[com.google.firebase:firebase-common:19.5.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\2798f072a4796436c552c8c929e22e83\jetified-firebase-common-19.5.0\AndroidManifest.xml:44:17-121
-109                android:value="com.google.firebase.components.ComponentRegistrar" />
-109-->[com.google.firebase:firebase-common:19.5.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\2798f072a4796436c552c8c929e22e83\jetified-firebase-common-19.5.0\AndroidManifest.xml:45:17-82
-110        </service> <!-- Needs to be explicitly declared on P+ -->
-111        <uses-library
-111-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\4ef1d41b8372c49a5651c8fd48bae511\jetified-play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
-112            android:name="org.apache.http.legacy"
-112-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\4ef1d41b8372c49a5651c8fd48bae511\jetified-play-services-maps-17.0.0\AndroidManifest.xml:34:13-50
-113            android:required="false" />
-113-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\4ef1d41b8372c49a5651c8fd48bae511\jetified-play-services-maps-17.0.0\AndroidManifest.xml:35:13-37
-114
-115        <receiver
-115-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\33ea633291b32997ea3f4d9543115aa4\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:29:9-33:20
-116            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
-116-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\33ea633291b32997ea3f4d9543115aa4\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:30:13-85
-117            android:enabled="true"
-117-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\33ea633291b32997ea3f4d9543115aa4\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:31:13-35
-118            android:exported="false" >
-118-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\33ea633291b32997ea3f4d9543115aa4\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:32:13-37
-119        </receiver>
-120
-121        <service
-121-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\33ea633291b32997ea3f4d9543115aa4\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:35:9-38:40
-122            android:name="com.google.android.gms.measurement.AppMeasurementService"
-122-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\33ea633291b32997ea3f4d9543115aa4\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:36:13-84
-123            android:enabled="true"
-123-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\33ea633291b32997ea3f4d9543115aa4\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:37:13-35
-124            android:exported="false" />
-124-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\33ea633291b32997ea3f4d9543115aa4\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:38:13-37
-125        <service
-125-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\33ea633291b32997ea3f4d9543115aa4\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:39:9-43:72
-126            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
-126-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\33ea633291b32997ea3f4d9543115aa4\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:40:13-87
-127            android:enabled="true"
-127-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\33ea633291b32997ea3f4d9543115aa4\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:41:13-35
-128            android:exported="false"
-128-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\33ea633291b32997ea3f4d9543115aa4\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:42:13-37
-129            android:permission="android.permission.BIND_JOB_SERVICE" />
-129-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\33ea633291b32997ea3f4d9543115aa4\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:43:13-69
-130
-131        <activity
-131-->[com.google.android.gms:play-services-base:17.3.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\a89d007f1977607858886975c5db6841\jetified-play-services-base-17.3.0\AndroidManifest.xml:23:9-26:75
-132            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-132-->[com.google.android.gms:play-services-base:17.3.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\a89d007f1977607858886975c5db6841\jetified-play-services-base-17.3.0\AndroidManifest.xml:24:13-79
-133            android:exported="false"
-133-->[com.google.android.gms:play-services-base:17.3.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\a89d007f1977607858886975c5db6841\jetified-play-services-base-17.3.0\AndroidManifest.xml:25:13-37
-134            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-134-->[com.google.android.gms:play-services-base:17.3.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\a89d007f1977607858886975c5db6841\jetified-play-services-base-17.3.0\AndroidManifest.xml:26:13-72
-135
-136        <provider
-136-->[com.google.firebase:firebase-common:19.5.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\2798f072a4796436c552c8c929e22e83\jetified-firebase-common-19.5.0\AndroidManifest.xml:26:9-31:39
-137            android:name="com.google.firebase.provider.FirebaseInitProvider"
-137-->[com.google.firebase:firebase-common:19.5.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\2798f072a4796436c552c8c929e22e83\jetified-firebase-common-19.5.0\AndroidManifest.xml:27:13-77
-138            android:authorities="com.example.testingskripsinew.firebaseinitprovider"
-138-->[com.google.firebase:firebase-common:19.5.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\2798f072a4796436c552c8c929e22e83\jetified-firebase-common-19.5.0\AndroidManifest.xml:28:13-72
-139            android:directBootAware="true"
-139-->[com.google.firebase:firebase-common:19.5.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\2798f072a4796436c552c8c929e22e83\jetified-firebase-common-19.5.0\AndroidManifest.xml:29:13-43
+71        <meta-data
+71-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:58:9-60:55
+72            android:name="com.google.android.geo.API_KEY"
+72-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:59:13-58
+73            android:value="@string/google_maps_key" />
+73-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:60:13-52
+74        <meta-data
+74-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:62:9-64:39
+75            android:name="com.google.mlkit.vision.DEPENDENCIES"
+75-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:63:13-64
+76            android:value="barcode" />
+76-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:64:13-36
+77
+78        <receiver
+78-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:66:9-69:39
+79            android:name="com.example.testingskripsinew.helper.GeofenceBroadcastReceiver"
+79-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:67:13-61
+80            android:enabled="true"
+80-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:68:13-35
+81            android:exported="true" />
+81-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:69:13-36
+82
+83        <service
+83-->[com.google.firebase:firebase-database-ktx:19.6.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\76a9e42b3b2eb4b53bc8b34c001396e4\jetified-firebase-database-ktx-19.6.0\AndroidManifest.xml:12:9-18:19
+84            android:name="com.google.firebase.components.ComponentDiscoveryService"
+84-->[com.google.firebase:firebase-database-ktx:19.6.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\76a9e42b3b2eb4b53bc8b34c001396e4\jetified-firebase-database-ktx-19.6.0\AndroidManifest.xml:13:13-84
+85            android:directBootAware="true"
+85-->[com.google.firebase:firebase-common:19.5.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\2798f072a4796436c552c8c929e22e83\jetified-firebase-common-19.5.0\AndroidManifest.xml:35:13-43
+86            android:exported="false" >
+86-->[com.google.firebase:firebase-database-ktx:19.6.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\76a9e42b3b2eb4b53bc8b34c001396e4\jetified-firebase-database-ktx-19.6.0\AndroidManifest.xml:14:13-37
+87            <meta-data
+87-->[com.google.firebase:firebase-database-ktx:19.6.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\76a9e42b3b2eb4b53bc8b34c001396e4\jetified-firebase-database-ktx-19.6.0\AndroidManifest.xml:15:13-17:85
+88                android:name="com.google.firebase.components:com.google.firebase.database.ktx.FirebaseDatabaseKtxRegistrar"
+88-->[com.google.firebase:firebase-database-ktx:19.6.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\76a9e42b3b2eb4b53bc8b34c001396e4\jetified-firebase-database-ktx-19.6.0\AndroidManifest.xml:16:17-124
+89                android:value="com.google.firebase.components.ComponentRegistrar" />
+89-->[com.google.firebase:firebase-database-ktx:19.6.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\76a9e42b3b2eb4b53bc8b34c001396e4\jetified-firebase-database-ktx-19.6.0\AndroidManifest.xml:17:17-82
+90            <meta-data
+90-->[com.google.firebase:firebase-storage-ktx:19.2.1] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\dc168b23da13611aa9fb13730ca60c69\jetified-firebase-storage-ktx-19.2.1\AndroidManifest.xml:15:13-17:85
+91                android:name="com.google.firebase.components:com.google.firebase.storage.ktx.FirebaseStorageKtxRegistrar"
+91-->[com.google.firebase:firebase-storage-ktx:19.2.1] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\dc168b23da13611aa9fb13730ca60c69\jetified-firebase-storage-ktx-19.2.1\AndroidManifest.xml:16:17-122
+92                android:value="com.google.firebase.components.ComponentRegistrar" />
+92-->[com.google.firebase:firebase-storage-ktx:19.2.1] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\dc168b23da13611aa9fb13730ca60c69\jetified-firebase-storage-ktx-19.2.1\AndroidManifest.xml:17:17-82
+93            <meta-data
+93-->[com.google.firebase:firebase-common-ktx:19.5.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\eb394cd7b29a81a9d672195aa39a8f3f\jetified-firebase-common-ktx-19.5.0\AndroidManifest.xml:15:13-17:85
+94                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
+94-->[com.google.firebase:firebase-common-ktx:19.5.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\eb394cd7b29a81a9d672195aa39a8f3f\jetified-firebase-common-ktx-19.5.0\AndroidManifest.xml:16:17-113
+95                android:value="com.google.firebase.components.ComponentRegistrar" />
+95-->[com.google.firebase:firebase-common-ktx:19.5.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\eb394cd7b29a81a9d672195aa39a8f3f\jetified-firebase-common-ktx-19.5.0\AndroidManifest.xml:17:17-82
+96            <meta-data
+96-->[com.google.firebase:firebase-database:19.6.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\b7d20ddd6f2cb599b7df510cf465d4ca\jetified-firebase-database-19.6.0\AndroidManifest.xml:32:13-34:85
+97                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+97-->[com.google.firebase:firebase-database:19.6.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\b7d20ddd6f2cb599b7df510cf465d4ca\jetified-firebase-database-19.6.0\AndroidManifest.xml:33:17-109
+98                android:value="com.google.firebase.components.ComponentRegistrar" />
+98-->[com.google.firebase:firebase-database:19.6.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\b7d20ddd6f2cb599b7df510cf465d4ca\jetified-firebase-database-19.6.0\AndroidManifest.xml:34:17-82
+99            <meta-data
+99-->[com.google.firebase:firebase-storage:19.2.1] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\978abe1b5533fc849d88fbfd7ae28b4e\jetified-firebase-storage-19.2.1\AndroidManifest.xml:33:13-35:85
+100                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+100-->[com.google.firebase:firebase-storage:19.2.1] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\978abe1b5533fc849d88fbfd7ae28b4e\jetified-firebase-storage-19.2.1\AndroidManifest.xml:34:17-107
+101                android:value="com.google.firebase.components.ComponentRegistrar" />
+101-->[com.google.firebase:firebase-storage:19.2.1] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\978abe1b5533fc849d88fbfd7ae28b4e\jetified-firebase-storage-19.2.1\AndroidManifest.xml:35:17-82
+102            <!--
+103                This registrar is not defined in the dynamic-module-support sdk itself to allow non-firebase
+104                clients to use it as well, by defining this registrar in their own core/common library.
+105            -->
+106            <meta-data
+106-->[com.google.firebase:firebase-common:19.5.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\2798f072a4796436c552c8c929e22e83\jetified-firebase-common-19.5.0\AndroidManifest.xml:43:13-45:85
+107                android:name="com.google.firebase.components:com.google.firebase.dynamicloading.DynamicLoadingRegistrar"
+107-->[com.google.firebase:firebase-common:19.5.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\2798f072a4796436c552c8c929e22e83\jetified-firebase-common-19.5.0\AndroidManifest.xml:44:17-121
+108                android:value="com.google.firebase.components.ComponentRegistrar" />
+108-->[com.google.firebase:firebase-common:19.5.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\2798f072a4796436c552c8c929e22e83\jetified-firebase-common-19.5.0\AndroidManifest.xml:45:17-82
+109        </service> <!-- Needs to be explicitly declared on P+ -->
+110        <uses-library
+110-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\4ef1d41b8372c49a5651c8fd48bae511\jetified-play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
+111            android:name="org.apache.http.legacy"
+111-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\4ef1d41b8372c49a5651c8fd48bae511\jetified-play-services-maps-17.0.0\AndroidManifest.xml:34:13-50
+112            android:required="false" />
+112-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\4ef1d41b8372c49a5651c8fd48bae511\jetified-play-services-maps-17.0.0\AndroidManifest.xml:35:13-37
+113        <uses-library
+113-->[androidx.camera:camera-extensions:1.0.0-alpha20] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\c29cd382b4959da28e8839735d44578c\jetified-camera-extensions-1.0.0-alpha20\AndroidManifest.xml:31:9-33:40
+114            android:name="androidx.camera.extensions.impl"
+114-->[androidx.camera:camera-extensions:1.0.0-alpha20] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\c29cd382b4959da28e8839735d44578c\jetified-camera-extensions-1.0.0-alpha20\AndroidManifest.xml:32:13-59
+115            android:required="false" />
+115-->[androidx.camera:camera-extensions:1.0.0-alpha20] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\c29cd382b4959da28e8839735d44578c\jetified-camera-extensions-1.0.0-alpha20\AndroidManifest.xml:33:13-37
+116
+117        <service
+117-->[com.google.android.gms:play-services-mlkit-barcode-scanning:16.1.3] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\284b034bd7c06295f17b62bfe1694a38\jetified-play-services-mlkit-barcode-scanning-16.1.3\AndroidManifest.xml:9:9-15:19
+118            android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService"
+118-->[com.google.android.gms:play-services-mlkit-barcode-scanning:16.1.3] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\284b034bd7c06295f17b62bfe1694a38\jetified-play-services-mlkit-barcode-scanning-16.1.3\AndroidManifest.xml:10:13-91
+119            android:directBootAware="true"
+119-->[com.google.mlkit:common:17.1.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\4a0acf1790e34a71931de6af43c906c1\jetified-common-17.1.0\AndroidManifest.xml:17:13-43
+120            android:exported="false" >
+120-->[com.google.android.gms:play-services-mlkit-barcode-scanning:16.1.3] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\284b034bd7c06295f17b62bfe1694a38\jetified-play-services-mlkit-barcode-scanning-16.1.3\AndroidManifest.xml:11:13-37
+121            <meta-data
+121-->[com.google.android.gms:play-services-mlkit-barcode-scanning:16.1.3] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\284b034bd7c06295f17b62bfe1694a38\jetified-play-services-mlkit-barcode-scanning-16.1.3\AndroidManifest.xml:12:13-14:85
+122                android:name="com.google.firebase.components:com.google.mlkit.vision.barcode.internal.BarcodeRegistrar"
+122-->[com.google.android.gms:play-services-mlkit-barcode-scanning:16.1.3] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\284b034bd7c06295f17b62bfe1694a38\jetified-play-services-mlkit-barcode-scanning-16.1.3\AndroidManifest.xml:13:17-120
+123                android:value="com.google.firebase.components.ComponentRegistrar" />
+123-->[com.google.android.gms:play-services-mlkit-barcode-scanning:16.1.3] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\284b034bd7c06295f17b62bfe1694a38\jetified-play-services-mlkit-barcode-scanning-16.1.3\AndroidManifest.xml:14:17-82
+124            <meta-data
+124-->[com.google.mlkit:vision-common:16.2.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\7e5522cc1da7bd5c59d60f0c6d36c676\jetified-vision-common-16.2.0\AndroidManifest.xml:12:13-14:85
+125                android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar"
+125-->[com.google.mlkit:vision-common:16.2.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\7e5522cc1da7bd5c59d60f0c6d36c676\jetified-vision-common-16.2.0\AndroidManifest.xml:13:17-124
+126                android:value="com.google.firebase.components.ComponentRegistrar" />
+126-->[com.google.mlkit:vision-common:16.2.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\7e5522cc1da7bd5c59d60f0c6d36c676\jetified-vision-common-16.2.0\AndroidManifest.xml:14:17-82
+127            <meta-data
+127-->[com.google.mlkit:common:17.1.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\4a0acf1790e34a71931de6af43c906c1\jetified-common-17.1.0\AndroidManifest.xml:20:13-22:85
+128                android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar"
+128-->[com.google.mlkit:common:17.1.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\4a0acf1790e34a71931de6af43c906c1\jetified-common-17.1.0\AndroidManifest.xml:21:17-120
+129                android:value="com.google.firebase.components.ComponentRegistrar" />
+129-->[com.google.mlkit:common:17.1.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\4a0acf1790e34a71931de6af43c906c1\jetified-common-17.1.0\AndroidManifest.xml:22:17-82
+130        </service>
+131
+132        <provider
+132-->[com.google.mlkit:common:17.1.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\4a0acf1790e34a71931de6af43c906c1\jetified-common-17.1.0\AndroidManifest.xml:9:9-13:38
+133            android:name="com.google.mlkit.common.internal.MlKitInitProvider"
+133-->[com.google.mlkit:common:17.1.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\4a0acf1790e34a71931de6af43c906c1\jetified-common-17.1.0\AndroidManifest.xml:10:13-78
+134            android:authorities="com.example.testingskripsinew.mlkitinitprovider"
+134-->[com.google.mlkit:common:17.1.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\4a0acf1790e34a71931de6af43c906c1\jetified-common-17.1.0\AndroidManifest.xml:11:13-69
+135            android:exported="false"
+135-->[com.google.mlkit:common:17.1.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\4a0acf1790e34a71931de6af43c906c1\jetified-common-17.1.0\AndroidManifest.xml:12:13-37
+136            android:initOrder="99" />
+136-->[com.google.mlkit:common:17.1.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\4a0acf1790e34a71931de6af43c906c1\jetified-common-17.1.0\AndroidManifest.xml:13:13-35
+137
+138        <activity
+138-->[com.google.android.gms:play-services-base:17.4.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\da06390d70b2bff65741c61450d4b1c0\jetified-play-services-base-17.4.0\AndroidManifest.xml:23:9-26:75
+139            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+139-->[com.google.android.gms:play-services-base:17.4.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\da06390d70b2bff65741c61450d4b1c0\jetified-play-services-base-17.4.0\AndroidManifest.xml:24:13-79
 140            android:exported="false"
-140-->[com.google.firebase:firebase-common:19.5.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\2798f072a4796436c552c8c929e22e83\jetified-firebase-common-19.5.0\AndroidManifest.xml:30:13-37
-141            android:initOrder="100" />
-141-->[com.google.firebase:firebase-common:19.5.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\2798f072a4796436c552c8c929e22e83\jetified-firebase-common-19.5.0\AndroidManifest.xml:31:13-36
+140-->[com.google.android.gms:play-services-base:17.4.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\da06390d70b2bff65741c61450d4b1c0\jetified-play-services-base-17.4.0\AndroidManifest.xml:25:13-37
+141            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+141-->[com.google.android.gms:play-services-base:17.4.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\da06390d70b2bff65741c61450d4b1c0\jetified-play-services-base-17.4.0\AndroidManifest.xml:26:13-72
 142
+<<<<<<< HEAD
 143        <meta-data
 143-->[com.google.android.gms:play-services-basement:17.3.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\f3b7667ddfb3cbe1dabde091cef4cb96\jetified-play-services-basement-17.3.0\AndroidManifest.xml:23:9-25:69
 144            android:name="com.google.android.gms.version"
@@ -452,3 +584,57 @@
 106
 107</manifest>
 >>>>>>> ui_manda
+=======
+143        <provider
+143-->[com.google.firebase:firebase-common:19.5.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\2798f072a4796436c552c8c929e22e83\jetified-firebase-common-19.5.0\AndroidManifest.xml:26:9-31:39
+144            android:name="com.google.firebase.provider.FirebaseInitProvider"
+144-->[com.google.firebase:firebase-common:19.5.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\2798f072a4796436c552c8c929e22e83\jetified-firebase-common-19.5.0\AndroidManifest.xml:27:13-77
+145            android:authorities="com.example.testingskripsinew.firebaseinitprovider"
+145-->[com.google.firebase:firebase-common:19.5.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\2798f072a4796436c552c8c929e22e83\jetified-firebase-common-19.5.0\AndroidManifest.xml:28:13-72
+146            android:directBootAware="true"
+146-->[com.google.firebase:firebase-common:19.5.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\2798f072a4796436c552c8c929e22e83\jetified-firebase-common-19.5.0\AndroidManifest.xml:29:13-43
+147            android:exported="false"
+147-->[com.google.firebase:firebase-common:19.5.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\2798f072a4796436c552c8c929e22e83\jetified-firebase-common-19.5.0\AndroidManifest.xml:30:13-37
+148            android:initOrder="100" />
+148-->[com.google.firebase:firebase-common:19.5.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\2798f072a4796436c552c8c929e22e83\jetified-firebase-common-19.5.0\AndroidManifest.xml:31:13-36
+149
+150        <meta-data
+150-->[com.google.android.gms:play-services-basement:17.4.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\e6656e7ee595835778f13dded72a03c7\jetified-play-services-basement-17.4.0\AndroidManifest.xml:23:9-25:69
+151            android:name="com.google.android.gms.version"
+151-->[com.google.android.gms:play-services-basement:17.4.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\e6656e7ee595835778f13dded72a03c7\jetified-play-services-basement-17.4.0\AndroidManifest.xml:24:13-58
+152            android:value="@integer/google_play_services_version" />
+152-->[com.google.android.gms:play-services-basement:17.4.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\e6656e7ee595835778f13dded72a03c7\jetified-play-services-basement-17.4.0\AndroidManifest.xml:25:13-66
+153
+154        <service
+154-->[com.google.android.datatransport:transport-backend-cct:2.3.2] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\baaae943fa39187533e407b8baedafa7\jetified-transport-backend-cct-2.3.2\AndroidManifest.xml:29:9-35:19
+155            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+155-->[com.google.android.datatransport:transport-backend-cct:2.3.2] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\baaae943fa39187533e407b8baedafa7\jetified-transport-backend-cct-2.3.2\AndroidManifest.xml:30:13-103
+156            android:exported="false" >
+156-->[com.google.android.datatransport:transport-backend-cct:2.3.2] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\baaae943fa39187533e407b8baedafa7\jetified-transport-backend-cct-2.3.2\AndroidManifest.xml:31:13-37
+157            <meta-data
+157-->[com.google.android.datatransport:transport-backend-cct:2.3.2] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\baaae943fa39187533e407b8baedafa7\jetified-transport-backend-cct-2.3.2\AndroidManifest.xml:32:13-34:39
+158                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+158-->[com.google.android.datatransport:transport-backend-cct:2.3.2] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\baaae943fa39187533e407b8baedafa7\jetified-transport-backend-cct-2.3.2\AndroidManifest.xml:33:17-94
+159                android:value="cct" />
+159-->[com.google.android.datatransport:transport-backend-cct:2.3.2] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\baaae943fa39187533e407b8baedafa7\jetified-transport-backend-cct-2.3.2\AndroidManifest.xml:34:17-36
+160        </service>
+161        <service
+161-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\c59216d1a4589ed8c47592b2535be367\jetified-transport-runtime-2.2.5\AndroidManifest.xml:26:9-30:19
+162            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+162-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\c59216d1a4589ed8c47592b2535be367\jetified-transport-runtime-2.2.5\AndroidManifest.xml:27:13-117
+163            android:exported="false"
+163-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\c59216d1a4589ed8c47592b2535be367\jetified-transport-runtime-2.2.5\AndroidManifest.xml:28:13-37
+164            android:permission="android.permission.BIND_JOB_SERVICE" >
+164-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\c59216d1a4589ed8c47592b2535be367\jetified-transport-runtime-2.2.5\AndroidManifest.xml:29:13-69
+165        </service>
+166
+167        <receiver
+167-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\c59216d1a4589ed8c47592b2535be367\jetified-transport-runtime-2.2.5\AndroidManifest.xml:32:9-34:40
+168            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+168-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\c59216d1a4589ed8c47592b2535be367\jetified-transport-runtime-2.2.5\AndroidManifest.xml:33:13-132
+169            android:exported="false" />
+169-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\c59216d1a4589ed8c47592b2535be367\jetified-transport-runtime-2.2.5\AndroidManifest.xml:34:13-37
+170    </application>
+171
+172</manifest>
+>>>>>>> feature/schedule

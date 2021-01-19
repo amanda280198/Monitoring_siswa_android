@@ -6,13 +6,14 @@
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
     android:orientation="vertical"
-    tools:context=".Jarak">
+    tools:context=".user.JarakActivity">
 
     <ImageButton
         android:id="@+id/button_back"
         android:layout_width="50dp"
         android:layout_height="45dp"
         android:background="#2F2E2E"
+        android:onClick="btnBack"
         android:src="@drawable/left_arrow"
         app:layout_constraintBottom_toTopOf="@+id/guideline3"
         app:layout_constraintStart_toStartOf="@+id/guideline1"
@@ -20,32 +21,90 @@
         tools:ignore="MissingConstraints" />
 
     <TextView
+        android:id="@+id/txt_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Posisi anda di kampus.."
-        android:textColor="#4CCEC6"
-        android:textSize="22dp"
+        android:text="Memeriksa Lokasi Anda"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="@+id/button_back"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="@+id/guideline1"
         app:layout_constraintTop_toTopOf="@+id/button_back"
         tools:ignore="MissingConstraints" />
 
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rippleBackground"
+        tools:context=".user.JarakActivity" />
+
+    <com.skyfishjy.library.RippleBackground
+        android:id="@+id/rippleBackground"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        app:rb_color="@android:color/white"
+        app:rb_duration="3000"
+        app:rb_radius="32dp"
+        app:rb_rippleAmount="4"
+        app:rb_scale="4">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabCheckIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:backgroundTint="@android:color/white"
+            android:src="@android:drawable/ic_dialog_map"
+            android:tint="@color/colorPrimary"
+            app:layout_constraintBottom_toTopOf="@+id/guideline4"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintStart_toStartOf="@+id/guideline1"
+            app:layout_constraintTop_toTopOf="@+id/guideline3" />
+
+    </com.skyfishjy.library.RippleBackground>
+
+    <TextView
+        android:id="@+id/aler_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/alert_txt"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/text_size_12"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintTop_toTopOf="@+id/guideline3"
+        app:layout_constraintVertical_bias="0.72" />
+
     <TextView
         android:id="@+id/txt_lat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
         android:text="Latittude   :"
         android:textColor="#ffffff"
         android:textSize="17dp"
         app:layout_constraintBottom_toTopOf="@+id/txt_long"
+        app:layout_constraintEnd_toStartOf="@+id/status_lat"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
         app:layout_constraintTop_toTopOf="@+id/guideline3"
         app:layout_constraintVertical_chainStyle="packed"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="64dp" />
+        tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/txt_statuslat"
+        android:id="@+id/status_lat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="-"
@@ -63,16 +122,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
         android:text="Longitude :"
         android:textColor="#ffffff"
         android:textSize="17dp"
         app:layout_constraintBottom_toTopOf="@+id/txt_jarak"
+        app:layout_constraintEnd_toStartOf="@+id/status_long"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
         app:layout_constraintTop_toBottomOf="@+id/txt_lat"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="64dp" />
+        tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/txt_statuslong"
+        android:id="@+id/status_long"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="-"
@@ -90,16 +152,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
         android:text="Posisi        :"
         android:textColor="#ffffff"
         android:textSize="17dp"
-        app:layout_constraintBottom_toTopOf="@+id/btn_checkin"
+        app:layout_constraintBottom_toTopOf="@+id/aler_text"
+        app:layout_constraintEnd_toStartOf="@+id/status_jarak"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
         app:layout_constraintTop_toBottomOf="@+id/txt_long"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="64dp" />
+        tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/txt_statusjarak"
+        android:id="@+id/status_jarak"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="-"
@@ -114,29 +179,18 @@
 
     <Button
         android:id="@+id/btn_checkin"
-        android:layout_width="120dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="32dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:background="@drawable/custom_buttom3"
         android:text="Check-in"
         android:textColor="#ffffff"
         app:layout_constraintBottom_toTopOf="@+id/guideline4"
-        app:layout_constraintTop_toBottomOf="@+id/txt_jarak"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="60dp" />
-
-    <Button
-        android:id="@+id/btn_checkout"
-        android:layout_width="120dp"
-        android:layout_height="wrap_content"
-        android:background="@drawable/custom_buttom3"
-        android:text="Check-out"
-        android:textColor="#ffffff"
-        app:layout_constraintBottom_toBottomOf="@+id/btn_checkin"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
-        app:layout_constraintStart_toEndOf="@+id/btn_checkin"
-        app:layout_constraintTop_toTopOf="@+id/btn_checkin"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintTop_toBottomOf="@+id/aler_text"
         tools:ignore="MissingConstraints" />
+
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
@@ -171,5 +225,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.61" />
+        app:layout_constraintGuide_percent="0.55" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="status_lat,txt_long,status_jarak,txt_jarak,btn_checkin,txt_lat,status_long" />
 </androidx.constraintlayout.widget.ConstraintLayout>

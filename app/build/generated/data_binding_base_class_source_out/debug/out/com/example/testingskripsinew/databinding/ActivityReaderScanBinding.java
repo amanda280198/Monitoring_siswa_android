@@ -4,20 +4,53 @@ package com.example.testingskripsinew.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.camera.view.PreviewView;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.constraintlayout.widget.Guideline;
 import androidx.viewbinding.ViewBinding;
 import com.example.testingskripsinew.R;
+import com.example.testingskripsinew.helper.ViewFinderOverlay;
 import java.lang.NullPointerException;
 import java.lang.Override;
+import java.lang.String;
 
 public final class ActivityReaderScanBinding implements ViewBinding {
   @NonNull
   private final ConstraintLayout rootView;
 
-  private ActivityReaderScanBinding(@NonNull ConstraintLayout rootView) {
+  @NonNull
+  public final Guideline guideline;
+
+  @NonNull
+  public final Guideline guideline1;
+
+  @NonNull
+  public final ImageView ivFlashControl;
+
+  @NonNull
+  public final ViewFinderOverlay overlay;
+
+  @NonNull
+  public final PreviewView previewView;
+
+  @NonNull
+  public final TextView textView;
+
+  private ActivityReaderScanBinding(@NonNull ConstraintLayout rootView,
+      @NonNull Guideline guideline, @NonNull Guideline guideline1,
+      @NonNull ImageView ivFlashControl, @NonNull ViewFinderOverlay overlay,
+      @NonNull PreviewView previewView, @NonNull TextView textView) {
     this.rootView = rootView;
+    this.guideline = guideline;
+    this.guideline1 = guideline1;
+    this.ivFlashControl = ivFlashControl;
+    this.overlay = overlay;
+    this.previewView = previewView;
+    this.textView = textView;
   }
 
   @Override
@@ -43,10 +76,50 @@ public final class ActivityReaderScanBinding implements ViewBinding {
 
   @NonNull
   public static ActivityReaderScanBinding bind(@NonNull View rootView) {
-    if (rootView == null) {
-      throw new NullPointerException("rootView");
-    }
+    // The body of this method is generated in a way you would not otherwise write.
+    // This is done to optimize the compiled bytecode for size and performance.
+    int id;
+    missingId: {
+      id = R.id.guideline;
+      Guideline guideline = rootView.findViewById(id);
+      if (guideline == null) {
+        break missingId;
+      }
 
-    return new ActivityReaderScanBinding((ConstraintLayout) rootView);
+      id = R.id.guideline1;
+      Guideline guideline1 = rootView.findViewById(id);
+      if (guideline1 == null) {
+        break missingId;
+      }
+
+      id = R.id.ivFlashControl;
+      ImageView ivFlashControl = rootView.findViewById(id);
+      if (ivFlashControl == null) {
+        break missingId;
+      }
+
+      id = R.id.overlay;
+      ViewFinderOverlay overlay = rootView.findViewById(id);
+      if (overlay == null) {
+        break missingId;
+      }
+
+      id = R.id.previewView;
+      PreviewView previewView = rootView.findViewById(id);
+      if (previewView == null) {
+        break missingId;
+      }
+
+      id = R.id.text_view;
+      TextView textView = rootView.findViewById(id);
+      if (textView == null) {
+        break missingId;
+      }
+
+      return new ActivityReaderScanBinding((ConstraintLayout) rootView, guideline, guideline1,
+          ivFlashControl, overlay, previewView, textView);
+    }
+    String missingId = rootView.getResources().getResourceName(id);
+    throw new NullPointerException("Missing required view with ID: ".concat(missingId));
   }
 }

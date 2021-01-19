@@ -1,5 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 #Wed Jan 13 23:51:59 ICT 2021
+=======
+#Tue Jan 19 22:54:46 ICT 2021
+>>>>>>> feature/schedule
 path.2=classes2.dex
 =======
 #Thu Jan 14 00:17:10 ICT 2021

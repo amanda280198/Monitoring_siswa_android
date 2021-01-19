@@ -53,6 +53,7 @@ class LoginAsdos : AppCompatActivity() {
                     val intent = Intent(this@LoginAsdos, MainActivityAsdos::class.java)
                     intent.putExtra(MainActivityAsdos.EXTRA_USER, value.nama)
                     intent.putExtra(MainActivityAsdos.EXTRA_NPM, value.npm)
+                    intent.putExtra(MainActivityAsdos.EXTRA_STATUS, value.status)
                     startActivity(intent)
                 } else {
                     Toast.makeText(this@LoginAsdos, "Maaf Data Tidak Tersedia", Toast.LENGTH_SHORT)
