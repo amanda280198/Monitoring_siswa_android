@@ -1,12 +1,11 @@
 package com.example.testingskripsinew.user
 
 import android.annotation.SuppressLint
+import android.content.Context
 import android.os.Build
 import android.os.Bundle
 import android.util.Size
-import android.view.View
-import android.view.WindowInsets
-import android.view.WindowManager
+import android.view.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.camera.core.CameraSelector
 import androidx.camera.core.ImageAnalysis
@@ -17,6 +16,7 @@ import androidx.core.content.ContextCompat
 import com.example.testingskripsinew.helper.MyImageAnalyzer
 import com.example.testingskripsinew.R
 import com.example.testingskripsinew.databinding.ActivityReaderScanBinding
+import com.example.testingskripsinew.helper.ScanningResultListener
 import com.google.common.util.concurrent.ListenableFuture
 import java.util.concurrent.ExecutorService
 import java.util.concurrent.Executors
@@ -43,7 +43,6 @@ class ReaderScanActivity : AppCompatActivity() {
             )
         }
 
-        analyzer = MyImageAnalyzer(supportFragmentManager)
         cameraExecutor = Executors.newSingleThreadExecutor()
         cameraProviderFuture = ProcessCameraProvider.getInstance(this)
 
@@ -70,6 +69,7 @@ class ReaderScanActivity : AppCompatActivity() {
 
         val preview: Preview = Preview.Builder()
             .build()
+
         val cameraSelector: CameraSelector = CameraSelector.Builder()
             .requireLensFacing(CameraSelector.LENS_FACING_BACK)
             .build()
@@ -79,6 +79,51 @@ class ReaderScanActivity : AppCompatActivity() {
             .setTargetResolution(Size(1280, 720))
             .setBackpressureStrategy(ImageAnalysis.STRATEGY_KEEP_ONLY_LATEST)
             .build()
+
+        val orientationEventListener = object : OrientationEventListener(this as Context) {
+            override fun onOrientationChanged(orientation: Int) {
+                // Monitors orientation values to determine the target rotation value
+                val rotation: Int = when (orientation) {
+                    in 45..134 -> Surface.ROTATION_270
+                    in 135..224 -> Surface.ROTATION_180
+                    in 225..314 -> Surface.ROTATION_90
+                    else -> Surface.ROTATION_0
+                }
+
+                imageAnalysis.targetRotation = rotation
+            }
+        }
+        orientationEventListener.enable()
+
+//        class ScanningListener : ScanningResultListener {
+//            override fun onScanned(result: String) {
+//                runOnUiThread {
+//                    imageAnalysis.clearAnalyzer()
+//                    cameraProvider?.unbindAll()
+//                    fetchTextMetaData(result) {
+//                        if (it == "0") {
+//                            MaterialAlertDialogBuilder(this@ReaderScanActivity)
+//                                .setTitle("Peringatan!")
+//                                .setMessage("Qr Code tidak terdeteksi")
+//
+//                                .setPositiveButton("Ya") { _, _ ->
+//                                    finish()
+//                                }
+//                                .show()
+//                        } else {
+//                            Data.ID = it
+//                            val i = Intent(this@ScanMejaActivity, MenuActivity::class.java)
+//                            startActivity(i)
+//                            finish()
+//                        }
+//
+//                    }
+//                }
+//            }
+//        }
+//        analyzer = MyImageAnalyzer(ScanningListener())
+
+        analyzer = MyImageAnalyzer(supportFragmentManager)
 
         imageAnalysis.setAnalyzer(cameraExecutor, analyzer)
 

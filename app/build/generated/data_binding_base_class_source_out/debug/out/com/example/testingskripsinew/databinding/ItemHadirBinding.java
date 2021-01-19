@@ -49,6 +49,9 @@ public final class ItemHadirBinding implements ViewBinding {
   public final TextView namaMhs;
 
   @NonNull
+  public final TextView statusGeo;
+
+  @NonNull
   public final LabeledSwitch switchIzin;
 
   @NonNull
@@ -64,8 +67,8 @@ public final class ItemHadirBinding implements ViewBinding {
       @NonNull Guideline guideline2, @NonNull Guideline guideline3, @NonNull Guideline guideline6,
       @NonNull Guideline guideline7, @NonNull CircleImageView imageView,
       @NonNull TextView jamKeluar, @NonNull TextView jamMasuk, @NonNull TextView namaMhs,
-      @NonNull LabeledSwitch switchIzin, @NonNull TextView tvCekin, @NonNull TextView tvCekout,
-      @NonNull TextView txtNpm) {
+      @NonNull TextView statusGeo, @NonNull LabeledSwitch switchIzin, @NonNull TextView tvCekin,
+      @NonNull TextView tvCekout, @NonNull TextView txtNpm) {
     this.rootView = rootView;
     this.guideline1 = guideline1;
     this.guideline2 = guideline2;
@@ -76,6 +79,7 @@ public final class ItemHadirBinding implements ViewBinding {
     this.jamKeluar = jamKeluar;
     this.jamMasuk = jamMasuk;
     this.namaMhs = namaMhs;
+    this.statusGeo = statusGeo;
     this.switchIzin = switchIzin;
     this.tvCekin = tvCekin;
     this.tvCekout = tvCekout;
@@ -163,7 +167,13 @@ public final class ItemHadirBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.switchIzin;
+      id = R.id.status_geo;
+      TextView statusGeo = rootView.findViewById(id);
+      if (statusGeo == null) {
+        break missingId;
+      }
+
+      id = R.id.switch_izin;
       LabeledSwitch switchIzin = rootView.findViewById(id);
       if (switchIzin == null) {
         break missingId;
@@ -188,8 +198,8 @@ public final class ItemHadirBinding implements ViewBinding {
       }
 
       return new ItemHadirBinding((CardView) rootView, guideline1, guideline2, guideline3,
-          guideline6, guideline7, imageView, jamKeluar, jamMasuk, namaMhs, switchIzin, tvCekin,
-          tvCekout, txtNpm);
+          guideline6, guideline7, imageView, jamKeluar, jamMasuk, namaMhs, statusGeo, switchIzin,
+          tvCekin, tvCekout, txtNpm);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
