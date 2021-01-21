@@ -27,6 +27,7 @@ android {
         cleanedAnnotations
         compile.exclude group: 'org.jetbrains', module: 'annotations'
     }
+
     lintOptions {
         checkReleaseBuilds false
         abortOnError false
@@ -48,16 +49,17 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
     kotlinOptions {
         jvmTarget = JavaVersion.VERSION_1_8
     }
 
     androidExtensions {
-        experimental = true
+        experimental true
     }
 
     buildFeatures {
-        viewBinding = true
+        viewBinding true
     }
 }
 
@@ -79,6 +81,8 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
     /* firebase */
+    implementation platform('com.google.firebase:firebase-bom:26.3.0')
+    implementation 'com.google.firebase:firebase-analytics-ktx'
     implementation 'com.google.firebase:firebase-database-ktx:19.6.0'
     implementation 'com.google.firebase:firebase-storage-ktx:19.2.1'
 
@@ -88,7 +92,7 @@ dependencies {
 
     /* buat UI/UX */
     implementation 'de.hdodenhof:circleimageview:3.1.0'
-    implementation 'com.airbnb.android:lottie:3.6.0'
+    implementation 'com.airbnb.android:lottie:2.7.0'
     implementation 'com.github.angads25:toggle:1.1.0'
     implementation 'com.skyfishjy.ripplebackground:library:1.0.1'
 

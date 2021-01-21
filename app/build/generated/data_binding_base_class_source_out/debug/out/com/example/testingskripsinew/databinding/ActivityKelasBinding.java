@@ -4,7 +4,6 @@ package com.example.testingskripsinew.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -13,6 +12,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.constraintlayout.widget.Guideline;
 import androidx.viewbinding.ViewBinding;
 import com.example.testingskripsinew.R;
+import com.google.android.material.button.MaterialButton;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -25,10 +25,10 @@ public final class ActivityKelasBinding implements ViewBinding {
   public final TextView alerText;
 
   @NonNull
-  public final Button btnCheckout;
+  public final MaterialButton btnCheckout;
 
   @NonNull
-  public final Button btnIzin;
+  public final MaterialButton btnIzin;
 
   @NonNull
   public final Guideline guideline;
@@ -61,10 +61,11 @@ public final class ActivityKelasBinding implements ViewBinding {
   public final View view1;
 
   private ActivityKelasBinding(@NonNull ConstraintLayout rootView, @NonNull TextView alerText,
-      @NonNull Button btnCheckout, @NonNull Button btnIzin, @NonNull Guideline guideline,
-      @NonNull Guideline guideline1, @NonNull Guideline guideline2, @NonNull Guideline guideline3,
-      @NonNull Guideline guideline4, @NonNull ImageView imageView7, @NonNull TextView namaUser,
-      @NonNull TextView npm, @NonNull TextView txtProfilPribadi, @NonNull View view1) {
+      @NonNull MaterialButton btnCheckout, @NonNull MaterialButton btnIzin,
+      @NonNull Guideline guideline, @NonNull Guideline guideline1, @NonNull Guideline guideline2,
+      @NonNull Guideline guideline3, @NonNull Guideline guideline4, @NonNull ImageView imageView7,
+      @NonNull TextView namaUser, @NonNull TextView npm, @NonNull TextView txtProfilPribadi,
+      @NonNull View view1) {
     this.rootView = rootView;
     this.alerText = alerText;
     this.btnCheckout = btnCheckout;
@@ -115,13 +116,13 @@ public final class ActivityKelasBinding implements ViewBinding {
       }
 
       id = R.id.btn_checkout;
-      Button btnCheckout = rootView.findViewById(id);
+      MaterialButton btnCheckout = rootView.findViewById(id);
       if (btnCheckout == null) {
         break missingId;
       }
 
       id = R.id.btn_izin;
-      Button btnIzin = rootView.findViewById(id);
+      MaterialButton btnIzin = rootView.findViewById(id);
       if (btnIzin == null) {
         break missingId;
       }

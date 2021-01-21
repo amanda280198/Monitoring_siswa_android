@@ -4,7 +4,6 @@ package com.example.testingskripsinew.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -13,6 +12,8 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.constraintlayout.widget.Guideline;
 import androidx.viewbinding.ViewBinding;
 import com.example.testingskripsinew.R;
+import com.google.android.material.button.MaterialButton;
+import com.google.android.material.card.MaterialCardView;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -22,7 +23,13 @@ public final class ActivityDetailBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final ImageButton buttonBack;
+  public final MaterialButton btnLihatKelas;
+
+  @NonNull
+  public final ImageView buttonBack;
+
+  @NonNull
+  public final MaterialCardView frameMakanan;
 
   @NonNull
   public final Guideline guideline;
@@ -41,6 +48,12 @@ public final class ActivityDetailBinding implements ViewBinding {
 
   @NonNull
   public final Guideline guideline5;
+
+  @NonNull
+  public final Guideline guideline6;
+
+  @NonNull
+  public final Guideline guideline7;
 
   @NonNull
   public final TextView hari;
@@ -78,22 +91,28 @@ public final class ActivityDetailBinding implements ViewBinding {
   @NonNull
   public final TextView txtProfilAsdos;
 
-  private ActivityDetailBinding(@NonNull ConstraintLayout rootView, @NonNull ImageButton buttonBack,
-      @NonNull Guideline guideline, @NonNull Guideline guideline1, @NonNull Guideline guideline2,
-      @NonNull Guideline guideline3, @NonNull Guideline guideline4, @NonNull Guideline guideline5,
-      @NonNull TextView hari, @NonNull TextView jamTgl, @NonNull TextView kelas,
-      @NonNull TextView mataKuliah, @NonNull TextView npmPengajar1, @NonNull TextView npmPengajar2,
-      @NonNull TextView pengajar1, @NonNull TextView pengajar2, @NonNull ImageView qrCodeImage,
-      @NonNull TextView textPengajar1, @NonNull TextView textPengajar2,
-      @NonNull TextView txtProfilAsdos) {
+  private ActivityDetailBinding(@NonNull ConstraintLayout rootView,
+      @NonNull MaterialButton btnLihatKelas, @NonNull ImageView buttonBack,
+      @NonNull MaterialCardView frameMakanan, @NonNull Guideline guideline,
+      @NonNull Guideline guideline1, @NonNull Guideline guideline2, @NonNull Guideline guideline3,
+      @NonNull Guideline guideline4, @NonNull Guideline guideline5, @NonNull Guideline guideline6,
+      @NonNull Guideline guideline7, @NonNull TextView hari, @NonNull TextView jamTgl,
+      @NonNull TextView kelas, @NonNull TextView mataKuliah, @NonNull TextView npmPengajar1,
+      @NonNull TextView npmPengajar2, @NonNull TextView pengajar1, @NonNull TextView pengajar2,
+      @NonNull ImageView qrCodeImage, @NonNull TextView textPengajar1,
+      @NonNull TextView textPengajar2, @NonNull TextView txtProfilAsdos) {
     this.rootView = rootView;
+    this.btnLihatKelas = btnLihatKelas;
     this.buttonBack = buttonBack;
+    this.frameMakanan = frameMakanan;
     this.guideline = guideline;
     this.guideline1 = guideline1;
     this.guideline2 = guideline2;
     this.guideline3 = guideline3;
     this.guideline4 = guideline4;
     this.guideline5 = guideline5;
+    this.guideline6 = guideline6;
+    this.guideline7 = guideline7;
     this.hari = hari;
     this.jamTgl = jamTgl;
     this.kelas = kelas;
@@ -135,9 +154,21 @@ public final class ActivityDetailBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.btn_lihat_kelas;
+      MaterialButton btnLihatKelas = rootView.findViewById(id);
+      if (btnLihatKelas == null) {
+        break missingId;
+      }
+
       id = R.id.button_back;
-      ImageButton buttonBack = rootView.findViewById(id);
+      ImageView buttonBack = rootView.findViewById(id);
       if (buttonBack == null) {
+        break missingId;
+      }
+
+      id = R.id.frame_makanan;
+      MaterialCardView frameMakanan = rootView.findViewById(id);
+      if (frameMakanan == null) {
         break missingId;
       }
 
@@ -174,6 +205,18 @@ public final class ActivityDetailBinding implements ViewBinding {
       id = R.id.guideline5;
       Guideline guideline5 = rootView.findViewById(id);
       if (guideline5 == null) {
+        break missingId;
+      }
+
+      id = R.id.guideline6;
+      Guideline guideline6 = rootView.findViewById(id);
+      if (guideline6 == null) {
+        break missingId;
+      }
+
+      id = R.id.guideline7;
+      Guideline guideline7 = rootView.findViewById(id);
+      if (guideline7 == null) {
         break missingId;
       }
 
@@ -249,10 +292,10 @@ public final class ActivityDetailBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityDetailBinding((ConstraintLayout) rootView, buttonBack, guideline,
-          guideline1, guideline2, guideline3, guideline4, guideline5, hari, jamTgl, kelas,
-          mataKuliah, npmPengajar1, npmPengajar2, pengajar1, pengajar2, qrCodeImage, textPengajar1,
-          textPengajar2, txtProfilAsdos);
+      return new ActivityDetailBinding((ConstraintLayout) rootView, btnLihatKelas, buttonBack,
+          frameMakanan, guideline, guideline1, guideline2, guideline3, guideline4, guideline5,
+          guideline6, guideline7, hari, jamTgl, kelas, mataKuliah, npmPengajar1, npmPengajar2,
+          pengajar1, pengajar2, qrCodeImage, textPengajar1, textPengajar2, txtProfilAsdos);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

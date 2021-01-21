@@ -7,11 +7,10 @@
     android:background="@color/colorPrimary"
     tools:context=".jadwal.DetailActivity">
 
-    <ImageButton
+    <ImageView
         android:id="@+id/button_back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#2F2E2E"
         android:onClick="btnBack"
         android:src="@drawable/left_arrow"
         app:layout_constraintBottom_toTopOf="@+id/guideline3"
@@ -25,7 +24,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="Mata Kuliah"
-        android:textColor="#ffffff"
+        android:textColor="@color/textColorLight"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/guideline4"
@@ -40,9 +39,10 @@
         android:fontFamily="@font/poppins_light"
         android:gravity="center"
         android:text="Pengajar 1"
-        android:textColor="#ffffff"
-        android:textSize="14sp"
+        android:textColor="@color/textColorLight"
+        android:textSize="@dimen/text_size_12"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guideline1"
         app:layout_constraintTop_toTopOf="@+id/guideline4" />
 
@@ -52,21 +52,19 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="Pengajar 1"
-        android:textColor="#ffffff"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        android:textColor="@color/textColorLight"
+        android:textSize="@dimen/text_size_16"
         app:layout_constraintStart_toStartOf="@+id/guideline1"
         app:layout_constraintTop_toBottomOf="@+id/textPengajar1" />
 
     <TextView
         android:id="@+id/npmPengajar1"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="22dp"
         android:gravity="center"
         android:text="065111"
-        android:textColor="#ffffff"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        android:textColor="@color/textColorLight"
+        android:textSize="@dimen/text_size_14"
         app:layout_constraintStart_toStartOf="@+id/guideline1"
         app:layout_constraintTop_toBottomOf="@+id/pengajar1" />
 
@@ -78,9 +76,8 @@
         android:fontFamily="@font/poppins_light"
         android:gravity="center"
         android:text="Pengajar 2"
-        android:textColor="#ffffff"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        android:textColor="@color/textColorLight"
+        android:textSize="@dimen/text_size_12"
         app:layout_constraintStart_toStartOf="@+id/guideline1"
         app:layout_constraintTop_toBottomOf="@+id/npmPengajar1" />
 
@@ -90,9 +87,8 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="Pengajar 2"
-        android:textColor="#ffffff"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        android:textColor="@color/textColorLight"
+        android:textSize="@dimen/text_size_16"
         app:layout_constraintStart_toStartOf="@+id/guideline1"
         app:layout_constraintTop_toBottomOf="@+id/textPengajar2" />
 
@@ -102,9 +98,8 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="0611111"
-        android:textColor="#ffffff"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        android:textColor="@color/textColorLight"
+        android:textSize="@dimen/text_size_14"
         app:layout_constraintStart_toStartOf="@+id/guideline1"
         app:layout_constraintTop_toBottomOf="@+id/pengajar2" />
 
@@ -114,42 +109,40 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="Kelas"
-        android:textColor="#ffffff"
-        android:textSize="24sp"
+        android:textColor="@color/textColorLight"
+        android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
-        app:layout_constraintStart_toStartOf="@+id/guideline1"
-        app:layout_constraintTop_toTopOf="@+id/guideline5" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline7"
+        app:layout_constraintTop_toTopOf="@+id/guideline4" />
 
     <TextView
         android:id="@+id/jamTgl"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:fontFamily="@font/poppins_light"
         android:gravity="center"
         android:text="Jam"
-        android:textColor="#ffffff"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="@+id/hari"
+        android:textColor="@color/textColorLight"
+        android:textSize="18sp"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
-        app:layout_constraintStart_toEndOf="@+id/hari"
-        app:layout_constraintTop_toTopOf="@+id/hari" />
+        app:layout_constraintTop_toBottomOf="@+id/kelas" />
 
     <TextView
         android:id="@+id/hari"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
         android:layout_marginEnd="8dp"
         android:gravity="center"
         android:text="Hari"
-        android:textColor="#ffffff"
-        android:textSize="24sp"
+        android:textColor="@color/textColorLight"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/jamTgl"
         app:layout_constraintEnd_toStartOf="@+id/jamTgl"
         app:layout_constraintHorizontal_chainStyle="packed"
-        app:layout_constraintStart_toStartOf="@+id/guideline1"
-        app:layout_constraintTop_toBottomOf="@+id/kelas" />
+        app:layout_constraintTop_toTopOf="@+id/jamTgl" />
 
     <TextView
         android:id="@+id/txtProfilAsdos"
@@ -157,7 +150,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="Detail Pengajar"
-        android:textColor="#ffffff"
+        android:textColor="@color/textColorLight"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/button_back"
@@ -166,15 +159,44 @@
         app:layout_constraintTop_toTopOf="@+id/button_back"
         app:layout_constraintVertical_bias="0.3" />
 
-    <ImageView
-        android:id="@+id/qrCodeImage"
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/frame_makanan"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="@dimen/separator_size_16"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline6"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintTop_toTopOf="@+id/guideline5">
+
+        <ImageView
+            android:id="@+id/qrCodeImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toTopOf="@+id/guideline6"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintStart_toStartOf="@+id/guideline1"
+            app:layout_constraintTop_toTopOf="@+id/guideline5" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_lihat_kelas"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_buttom3"
+        android:onClick="btnLihatKelas"
+        android:text="lihat kelas"
+        android:textColor="@color/textColorLight"
+        app:backgroundTint="@color/torques"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="@+id/guideline1"
-        app:layout_constraintTop_toBottomOf="@+id/hari" />
+        app:layout_constraintTop_toTopOf="@+id/guideline6"
+        app:layout_constraintVertical_bias="0.32999998" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
@@ -209,13 +231,27 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.2" />
+        app:layout_constraintGuide_percent="0.16" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.43" />
+        app:layout_constraintGuide_percent="0.4" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

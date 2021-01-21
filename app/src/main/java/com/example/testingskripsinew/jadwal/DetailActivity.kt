@@ -82,4 +82,6 @@ class DetailActivity : AppCompatActivity() {
         }
         return bitmap
     }
+
+    fun btnLihatKelas(view: View) {}
 }

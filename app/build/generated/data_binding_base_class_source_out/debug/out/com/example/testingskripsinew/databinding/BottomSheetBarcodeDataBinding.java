@@ -4,7 +4,6 @@ package com.example.testingskripsinew.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -12,6 +11,7 @@ import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import com.example.testingskripsinew.R;
+import com.google.android.material.button.MaterialButton;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -24,7 +24,7 @@ public final class BottomSheetBarcodeDataBinding implements ViewBinding {
   public final ConstraintLayout bottomSheet;
 
   @NonNull
-  public final Button btnAbsen;
+  public final MaterialButton btnAbsen;
 
   @NonNull
   public final ImageView imageView;
@@ -42,9 +42,9 @@ public final class BottomSheetBarcodeDataBinding implements ViewBinding {
   public final View view;
 
   private BottomSheetBarcodeDataBinding(@NonNull ConstraintLayout rootView,
-      @NonNull ConstraintLayout bottomSheet, @NonNull Button btnAbsen, @NonNull ImageView imageView,
-      @NonNull TextView textViewKelas, @NonNull TextView textViewMatkul,
-      @NonNull TextView textViewTitle, @NonNull View view) {
+      @NonNull ConstraintLayout bottomSheet, @NonNull MaterialButton btnAbsen,
+      @NonNull ImageView imageView, @NonNull TextView textViewKelas,
+      @NonNull TextView textViewMatkul, @NonNull TextView textViewTitle, @NonNull View view) {
     this.rootView = rootView;
     this.bottomSheet = bottomSheet;
     this.btnAbsen = btnAbsen;
@@ -85,7 +85,7 @@ public final class BottomSheetBarcodeDataBinding implements ViewBinding {
       ConstraintLayout bottomSheet = (ConstraintLayout) rootView;
 
       id = R.id.btn_absen;
-      Button btnAbsen = rootView.findViewById(id);
+      MaterialButton btnAbsen = rootView.findViewById(id);
       if (btnAbsen == null) {
         break missingId;
       }

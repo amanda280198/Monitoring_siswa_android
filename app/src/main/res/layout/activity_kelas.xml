@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="Dalam Kelas"
-        android:textColor="#ffffff"
+        android:textColor="@color/textColorLight"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/guideline3"
@@ -40,10 +40,10 @@
         android:layout_marginTop="32dp"
         android:gravity="center"
         android:text="Nama User"
-        android:textColor="#ffffff"
-        android:textSize="28dp"
+        android:textColor="@color/textColorLight"
+        android:textSize="28sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/textPengajar1"
+        app:layout_constraintBottom_toTopOf="@+id/npm"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="@+id/guideline1"
@@ -56,9 +56,9 @@
         android:layout_marginTop="8dp"
         android:gravity="center"
         android:text="NPM"
-        android:textColor="#ffffff"
+        android:textColor="@color/textColorLight"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/view2"
+        app:layout_constraintBottom_toTopOf="@+id/view1"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="@+id/guideline1"
         app:layout_constraintTop_toBottomOf="@id/nama_user" />
@@ -66,50 +66,54 @@
     <View
         android:id="@+id/view1"
         android:layout_width="290dp"
-        android:layout_height="1dp"
+        android:layout_height="2dp"
         android:layout_marginTop="8dp"
-        android:background="#838080"
+        android:background="@color/colorLight"
         android:visibility="visible"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="@+id/guideline1"
         app:layout_constraintTop_toBottomOf="@id/npm" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_izin"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:background="@drawable/custom_buttom3"
         android:text="Izin"
-        android:textColor="#ffffff"
+        android:textColor="@color/textColorLight"
+        app:backgroundTint="@color/torques"
         app:layout_constraintBottom_toTopOf="@+id/btn_checkout"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="@+id/guideline1"
         app:layout_constraintTop_toTopOf="@+id/guideline4"
         app:layout_constraintVertical_bias="0.3"
-        app:layout_constraintVertical_chainStyle="packed" />
+        app:layout_constraintVertical_chainStyle="packed"
+        app:rippleColor="@color/colorDark" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_checkout"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
         android:background="@drawable/custom_buttom3"
         android:text="Check-Out"
-        android:textColor="#ffffff"
+        android:textColor="@color/textColorLight"
+        app:backgroundTint="@color/torques"
         app:layout_constraintBottom_toTopOf="@+id/aler_text"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="@+id/guideline1"
-        app:layout_constraintTop_toBottomOf="@+id/btn_izin" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_izin"
+        app:rippleColor="@color/colorDark" />
 
     <TextView
         android:id="@+id/aler_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAlignment="center"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/textColorLight"
         android:textSize="@dimen/text_size_12"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
