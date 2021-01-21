@@ -42,38 +42,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:testOnly="true"
-<<<<<<< HEAD
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true" >
-<<<<<<< HEAD
-        <activity android:name="com.example.testingskripsinew.ScheduleActivity" />
-=======
-        android:theme="@style/AppTheme" >
-        <activity android:name="com.example.testingskripsinew.Register" />
->>>>>>> ui_manda
-
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="@string/google_maps_key" />
-
-        <activity
-            android:name="com.example.testingskripsinew.ViewMapsActivity"
-            android:label="@string/title_activity_view_maps" />
-
-        <receiver
-            android:name="com.example.testingskripsinew.GeofenceBroadcastReceiver"
-            android:enabled="true"
-            android:exported="true" />
-
-        <activity android:name="com.example.testingskripsinew.ReaderScanActivity" />
-=======
         <activity android:name="com.example.testingskripsinew.asdos.MonitoringKelasActivity" />
         <activity android:name="com.example.testingskripsinew.user.KelasActivity" />
         <activity android:name="com.example.testingskripsinew.riwayat.HistoryActivity" />
         <activity android:name="com.example.testingskripsinew.jadwal.DetailActivity" />
         <activity android:name="com.example.testingskripsinew.jadwal.ScheduleActivity" />
         <activity android:name="com.example.testingskripsinew.user.ReaderScanActivity" />
->>>>>>> feature/schedule
         <activity android:name="com.example.testingskripsinew.HistoryUser" />
         <activity android:name="com.example.testingskripsinew.HistoryAsdos_Keluar" />
         <activity android:name="com.example.testingskripsinew.HistoryAsdos_Absen" />

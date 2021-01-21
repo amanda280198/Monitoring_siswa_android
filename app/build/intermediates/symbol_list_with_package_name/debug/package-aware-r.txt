@@ -1927,8 +1927,6 @@ id btn_logout
 id btn_presensi
 id btn_profil_asdos
 id btn_profil_user
-id btn_register
-id btn_signUp
 id btn_user
 id bulan
 id buttonPanel
@@ -1941,7 +1939,6 @@ id center_horizontal
 id center_vertical
 id chain
 id chains
-id check_box
 id checkbox
 id checked
 id chip
@@ -1995,20 +1992,10 @@ id easeInOut
 id easeOut
 id edit_query
 id end
-<<<<<<< HEAD
-<<<<<<< HEAD
-id endToStart
-=======
->>>>>>> feature/schedule
 id end_padder
 id enterAlways
 id enterAlwaysCollapsed
 id exitUntilCollapsed
-=======
-id etNPM
-id etNama
-id etPassword
->>>>>>> ui_manda
 id expand_activities_button
 id expanded_menu
 id fabCheckIn
@@ -2066,7 +2053,6 @@ id ignore
 id ignoreRequest
 id image
 id imageView
-id imageView11
 id imageView2
 id imageView3
 id imageView4
@@ -2327,12 +2313,8 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
-<<<<<<< HEAD
-id txt1
-=======
 id tv_cekin
 id tv_cekout
->>>>>>> feature/schedule
 id txtHistory
 id txtProfilAsdos
 id txtProfilPribadi
@@ -2342,15 +2324,8 @@ id txt_checkout
 id txt_jarak
 id txt_lat
 id txt_long
-<<<<<<< HEAD
-id txt_register
-id txt_statusjarak
-id txt_statuslat
-id txt_statuslong
-=======
 id txt_npm
 id txt_title
->>>>>>> feature/schedule
 id unchecked
 id uniform
 id unlabeled
@@ -2451,11 +2426,7 @@ layout activity_pilih_akun
 layout activity_profil_asdos
 layout activity_profil_user
 layout activity_reader_scan
-<<<<<<< HEAD
 layout activity_schedule
-=======
-layout activity_register
->>>>>>> ui_manda
 layout activity_splash_screen
 layout bottom_sheet_barcode_data
 layout custom_dialog
