@@ -22,6 +22,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+<<<<<<< HEAD
         android:theme="@style/AppTheme">
         <activity android:name=".HistoryAsdos_Keluar"></activity>
         <activity android:name=".HistoryAsdos_Absen" />
@@ -49,6 +50,29 @@
         <activity android:name=".MainActivityUser" />
         <activity android:name=".LoginAsdos" />
         <activity android:name=".LoginUser" />
+=======
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="m">
+        <activity android:name=".asdos.MonitoringKelasActivity" />
+        <activity android:name=".user.KelasActivity" />
+        <activity android:name=".riwayat.HistoryActivity" />
+        <activity android:name=".jadwal.DetailActivity" />
+        <activity android:name=".jadwal.ScheduleActivity" />
+        <activity android:name=".user.ReaderScanActivity" />
+        <activity android:name=".HistoryUser" />
+        <activity android:name=".HistoryAsdos_Keluar" />
+        <activity android:name=".HistoryAsdos_Absen" />
+        <activity android:name=".HistoryAsdos_Izin" />
+        <activity android:name=".HistoryAsdos_Hadir" />
+        <activity android:name=".asdos.ProfilAsdos" />
+        <activity android:name=".asdos.MainActivityAsdos" />
+        <activity android:name=".asdos.LoginAsdos" />
+        <activity android:name=".user.ProfilUser" />
+        <activity android:name=".user.JarakActivity" />
+        <activity android:name=".user.MainActivityUser" />
+        <activity android:name=".user.LoginUser" />
+>>>>>>> 0c618a9 (load backup layout)
         <activity android:name=".PilihAkunActivity" />
         <activity android:name=".SplashScreen">
             <intent-filter>
