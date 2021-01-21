@@ -8,13 +8,13 @@ import android.widget.Button;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.widget.Toolbar;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.constraintlayout.widget.Guideline;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import com.example.testingskripsinew.R;
 import com.google.android.material.appbar.AppBarLayout;
+import com.google.android.material.appbar.MaterialToolbar;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -45,12 +45,12 @@ public final class ActivityMonitoringKelasBinding implements ViewBinding {
   public final TextView textView7;
 
   @NonNull
-  public final Toolbar toolbar;
+  public final MaterialToolbar toolbar;
 
   private ActivityMonitoringKelasBinding(@NonNull ConstraintLayout rootView,
       @NonNull AppBarLayout appBarLayout, @NonNull Button btnIzin, @NonNull Guideline guideline9,
       @NonNull RecyclerView rvListMasuk, @NonNull TextView textJudul, @NonNull TextView textTotal,
-      @NonNull TextView textView7, @NonNull Toolbar toolbar) {
+      @NonNull TextView textView7, @NonNull MaterialToolbar toolbar) {
     this.rootView = rootView;
     this.appBarLayout = appBarLayout;
     this.btnIzin = btnIzin;
@@ -132,7 +132,7 @@ public final class ActivityMonitoringKelasBinding implements ViewBinding {
       }
 
       id = R.id.toolbar;
-      Toolbar toolbar = rootView.findViewById(id);
+      MaterialToolbar toolbar = rootView.findViewById(id);
       if (toolbar == null) {
         break missingId;
       }

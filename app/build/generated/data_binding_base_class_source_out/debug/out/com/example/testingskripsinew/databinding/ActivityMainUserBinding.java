@@ -4,7 +4,6 @@ package com.example.testingskripsinew.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -12,6 +11,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.constraintlayout.widget.Guideline;
 import androidx.viewbinding.ViewBinding;
 import com.example.testingskripsinew.R;
+import com.google.android.material.button.MaterialButton;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -21,16 +21,16 @@ public final class ActivityMainUserBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final Button btnHistoriPresensiUser;
+  public final MaterialButton btnHistoriPresensiUser;
 
   @NonNull
-  public final Button btnJadwalUser;
+  public final MaterialButton btnJadwalUser;
 
   @NonNull
-  public final Button btnPresensi;
+  public final MaterialButton btnPresensi;
 
   @NonNull
-  public final Button btnProfilUser;
+  public final MaterialButton btnProfilUser;
 
   @NonNull
   public final Guideline guideline;
@@ -57,11 +57,11 @@ public final class ActivityMainUserBinding implements ViewBinding {
   public final View view3;
 
   private ActivityMainUserBinding(@NonNull ConstraintLayout rootView,
-      @NonNull Button btnHistoriPresensiUser, @NonNull Button btnJadwalUser,
-      @NonNull Button btnPresensi, @NonNull Button btnProfilUser, @NonNull Guideline guideline,
-      @NonNull Guideline guideline1, @NonNull Guideline guideline2, @NonNull Guideline guideline3,
-      @NonNull Guideline guideline5, @NonNull TextView namaUser, @NonNull TextView titleDashboard2,
-      @NonNull View view3) {
+      @NonNull MaterialButton btnHistoriPresensiUser, @NonNull MaterialButton btnJadwalUser,
+      @NonNull MaterialButton btnPresensi, @NonNull MaterialButton btnProfilUser,
+      @NonNull Guideline guideline, @NonNull Guideline guideline1, @NonNull Guideline guideline2,
+      @NonNull Guideline guideline3, @NonNull Guideline guideline5, @NonNull TextView namaUser,
+      @NonNull TextView titleDashboard2, @NonNull View view3) {
     this.rootView = rootView;
     this.btnHistoriPresensiUser = btnHistoriPresensiUser;
     this.btnJadwalUser = btnJadwalUser;
@@ -105,25 +105,25 @@ public final class ActivityMainUserBinding implements ViewBinding {
     int id;
     missingId: {
       id = R.id.btn_histori_presensi_user;
-      Button btnHistoriPresensiUser = rootView.findViewById(id);
+      MaterialButton btnHistoriPresensiUser = rootView.findViewById(id);
       if (btnHistoriPresensiUser == null) {
         break missingId;
       }
 
       id = R.id.btn_jadwal_user;
-      Button btnJadwalUser = rootView.findViewById(id);
+      MaterialButton btnJadwalUser = rootView.findViewById(id);
       if (btnJadwalUser == null) {
         break missingId;
       }
 
       id = R.id.btn_presensi;
-      Button btnPresensi = rootView.findViewById(id);
+      MaterialButton btnPresensi = rootView.findViewById(id);
       if (btnPresensi == null) {
         break missingId;
       }
 
       id = R.id.btn_profil_user;
-      Button btnProfilUser = rootView.findViewById(id);
+      MaterialButton btnProfilUser = rootView.findViewById(id);
       if (btnProfilUser == null) {
         break missingId;
       }

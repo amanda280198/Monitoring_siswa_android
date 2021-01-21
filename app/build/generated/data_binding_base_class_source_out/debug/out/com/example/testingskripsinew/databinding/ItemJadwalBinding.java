@@ -7,10 +7,10 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.cardview.widget.CardView;
 import androidx.constraintlayout.widget.Guideline;
 import androidx.viewbinding.ViewBinding;
 import com.example.testingskripsinew.R;
+import com.google.android.material.card.MaterialCardView;
 import de.hdodenhof.circleimageview.CircleImageView;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -18,7 +18,7 @@ import java.lang.String;
 
 public final class ItemJadwalBinding implements ViewBinding {
   @NonNull
-  private final CardView rootView;
+  private final MaterialCardView rootView;
 
   @NonNull
   public final Guideline guideline1;
@@ -65,7 +65,7 @@ public final class ItemJadwalBinding implements ViewBinding {
   @NonNull
   public final TextView txtNpm;
 
-  private ItemJadwalBinding(@NonNull CardView rootView, @NonNull Guideline guideline1,
+  private ItemJadwalBinding(@NonNull MaterialCardView rootView, @NonNull Guideline guideline1,
       @NonNull Guideline guideline2, @NonNull Guideline guideline3, @NonNull Guideline guideline6,
       @NonNull Guideline guideline7, @NonNull TextView hari, @NonNull CircleImageView imageView,
       @NonNull TextView jam, @NonNull TextView kelas, @NonNull TextView namaMatkul,
@@ -91,7 +91,7 @@ public final class ItemJadwalBinding implements ViewBinding {
 
   @Override
   @NonNull
-  public CardView getRoot() {
+  public MaterialCardView getRoot() {
     return rootView;
   }
 
@@ -206,7 +206,7 @@ public final class ItemJadwalBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ItemJadwalBinding((CardView) rootView, guideline1, guideline2, guideline3,
+      return new ItemJadwalBinding((MaterialCardView) rootView, guideline1, guideline2, guideline3,
           guideline6, guideline7, hari, imageView, jam, kelas, namaMatkul, npmPengajar1,
           npmPengajar2, pengajar1, pengajar2, txtNpm);
     }

@@ -24,7 +24,7 @@
         android:layout_height="wrap_content"
         android:text="Login Sebagai Mahasiswa"
         android:textColor="#ffffff"
-        android:textSize="20dp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline3"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="@+id/guideline1"
@@ -47,12 +47,12 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:text="Username"
-        android:textSize="15dp"
+        android:textSize="15sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/username_user"
         app:layout_constraintStart_toStartOf="@+id/guideline1"
         app:layout_constraintTop_toTopOf="@+id/guideline3"
-        tools:ignore="MissingConstraints"  />
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/username_user"
@@ -73,7 +73,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:text="Password"
-        android:textSize="15dp"
+        android:textSize="15sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/pass_user"
         app:layout_constraintStart_toStartOf="@+id/guideline1"
@@ -93,16 +93,19 @@
         app:layout_constraintTop_toBottomOf="@+id/textView3"
         tools:ignore="MissingConstraints" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_login_user"
         android:layout_width="200dp"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:layout_marginTop="16dp"
-        android:background="@drawable/custom_button_black"
         android:text="Masuk"
+        android:textColor="@color/textColorLight"
+        app:backgroundTint="@color/colorDark"
+        app:cornerRadius="20dp"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="@+id/guideline1"
         app:layout_constraintTop_toTopOf="@+id/guideline4"
+        app:rippleColor="@color/torques"
         tools:ignore="MissingConstraints" />
 
     <TextView

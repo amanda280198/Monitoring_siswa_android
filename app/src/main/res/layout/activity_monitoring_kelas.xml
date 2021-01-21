@@ -16,7 +16,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <androidx.appcompat.widget.Toolbar
+        <com.google.android.material.appbar.MaterialToolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
@@ -65,7 +65,7 @@
                     android:orientation="vertical"
                     app:layout_constraintGuide_percent="0.9594937" />
             </androidx.constraintlayout.widget.ConstraintLayout>
-        </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.MaterialToolbar>
     </com.google.android.material.appbar.AppBarLayout>
 
     <TextView
@@ -92,7 +92,7 @@
         android:layout_marginBottom="4dp"
         android:background="@drawable/custom_buttom3"
         android:text="Kelas Selesai"
-        android:textColor="#ffffff"
+        android:textColor="@color/textColorLight"
         android:textSize="@dimen/text_size_10"
         app:layout_constraintBottom_toTopOf="@+id/rvListMasuk"
         app:layout_constraintEnd_toEndOf="parent"

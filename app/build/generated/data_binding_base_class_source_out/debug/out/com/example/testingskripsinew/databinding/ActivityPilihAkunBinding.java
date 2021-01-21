@@ -4,7 +4,6 @@ package com.example.testingskripsinew.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -13,6 +12,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.constraintlayout.widget.Guideline;
 import androidx.viewbinding.ViewBinding;
 import com.example.testingskripsinew.R;
+import com.google.android.material.button.MaterialButton;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -22,10 +22,10 @@ public final class ActivityPilihAkunBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final Button btnAsdos;
+  public final MaterialButton btnAsdos;
 
   @NonNull
-  public final Button btnUser;
+  public final MaterialButton btnUser;
 
   @NonNull
   public final Guideline guideline;
@@ -57,11 +57,12 @@ public final class ActivityPilihAkunBinding implements ViewBinding {
   @NonNull
   public final TextView textView5;
 
-  private ActivityPilihAkunBinding(@NonNull ConstraintLayout rootView, @NonNull Button btnAsdos,
-      @NonNull Button btnUser, @NonNull Guideline guideline, @NonNull Guideline guideline1,
-      @NonNull Guideline guideline2, @NonNull Guideline guideline3, @NonNull Guideline guideline4,
-      @NonNull Guideline guideline5, @NonNull ImageView imageView2, @NonNull ImageView imageView3,
-      @NonNull TextView textView4, @NonNull TextView textView5) {
+  private ActivityPilihAkunBinding(@NonNull ConstraintLayout rootView,
+      @NonNull MaterialButton btnAsdos, @NonNull MaterialButton btnUser,
+      @NonNull Guideline guideline, @NonNull Guideline guideline1, @NonNull Guideline guideline2,
+      @NonNull Guideline guideline3, @NonNull Guideline guideline4, @NonNull Guideline guideline5,
+      @NonNull ImageView imageView2, @NonNull ImageView imageView3, @NonNull TextView textView4,
+      @NonNull TextView textView5) {
     this.rootView = rootView;
     this.btnAsdos = btnAsdos;
     this.btnUser = btnUser;
@@ -105,13 +106,13 @@ public final class ActivityPilihAkunBinding implements ViewBinding {
     int id;
     missingId: {
       id = R.id.btn_asdos;
-      Button btnAsdos = rootView.findViewById(id);
+      MaterialButton btnAsdos = rootView.findViewById(id);
       if (btnAsdos == null) {
         break missingId;
       }
 
       id = R.id.btn_user;
-      Button btnUser = rootView.findViewById(id);
+      MaterialButton btnUser = rootView.findViewById(id);
       if (btnUser == null) {
         break missingId;
       }

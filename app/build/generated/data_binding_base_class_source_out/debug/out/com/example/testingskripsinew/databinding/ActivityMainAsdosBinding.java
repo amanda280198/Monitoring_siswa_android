@@ -4,7 +4,6 @@ package com.example.testingskripsinew.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -12,6 +11,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.constraintlayout.widget.Guideline;
 import androidx.viewbinding.ViewBinding;
 import com.example.testingskripsinew.R;
+import com.google.android.material.button.MaterialButton;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -21,13 +21,13 @@ public final class ActivityMainAsdosBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final Button btnHistPresensi;
+  public final MaterialButton btnHistPresensi;
 
   @NonNull
-  public final Button btnJadwalAsdos;
+  public final MaterialButton btnJadwalAsdos;
 
   @NonNull
-  public final Button btnProfilAsdos;
+  public final MaterialButton btnProfilAsdos;
 
   @NonNull
   public final Guideline guideline;
@@ -57,11 +57,11 @@ public final class ActivityMainAsdosBinding implements ViewBinding {
   public final View view;
 
   private ActivityMainAsdosBinding(@NonNull ConstraintLayout rootView,
-      @NonNull Button btnHistPresensi, @NonNull Button btnJadwalAsdos,
-      @NonNull Button btnProfilAsdos, @NonNull Guideline guideline, @NonNull Guideline guideline1,
-      @NonNull Guideline guideline2, @NonNull Guideline guideline3, @NonNull Guideline guideline5,
-      @NonNull TextView namaAsdos, @NonNull TextView textJudul, @NonNull TextView titleDashboard,
-      @NonNull View view) {
+      @NonNull MaterialButton btnHistPresensi, @NonNull MaterialButton btnJadwalAsdos,
+      @NonNull MaterialButton btnProfilAsdos, @NonNull Guideline guideline,
+      @NonNull Guideline guideline1, @NonNull Guideline guideline2, @NonNull Guideline guideline3,
+      @NonNull Guideline guideline5, @NonNull TextView namaAsdos, @NonNull TextView textJudul,
+      @NonNull TextView titleDashboard, @NonNull View view) {
     this.rootView = rootView;
     this.btnHistPresensi = btnHistPresensi;
     this.btnJadwalAsdos = btnJadwalAsdos;
@@ -105,19 +105,19 @@ public final class ActivityMainAsdosBinding implements ViewBinding {
     int id;
     missingId: {
       id = R.id.btn_hist_presensi;
-      Button btnHistPresensi = rootView.findViewById(id);
+      MaterialButton btnHistPresensi = rootView.findViewById(id);
       if (btnHistPresensi == null) {
         break missingId;
       }
 
       id = R.id.btn_jadwal_asdos;
-      Button btnJadwalAsdos = rootView.findViewById(id);
+      MaterialButton btnJadwalAsdos = rootView.findViewById(id);
       if (btnJadwalAsdos == null) {
         break missingId;
       }
 
       id = R.id.btn_profil_asdos;
-      Button btnProfilAsdos = rootView.findViewById(id);
+      MaterialButton btnProfilAsdos = rootView.findViewById(id);
       if (btnProfilAsdos == null) {
         break missingId;
       }

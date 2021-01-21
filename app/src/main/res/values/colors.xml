@@ -9,6 +9,8 @@
 
     <color name="colorLight">#9C9C9C</color>
     <color name="colorDark">#4A4A4A</color>
+    <color name="yellow">#FFC107</color>
+    <color name="torques">#4CCEC6</color>
 
     <color name="colorCopyButton">#00897B</color>
     <color name="colorMLKitCard">#FFCCBC</color>
