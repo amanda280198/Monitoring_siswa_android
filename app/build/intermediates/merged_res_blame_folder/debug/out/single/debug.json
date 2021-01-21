@@ -112,8 +112,17 @@
         "source": "C:\\Users\\joefa\\AndroidStudioProjects\\My Github\\Non Kantor\\Monitoring_siswa_android\\app\\src\\main\\res\\font\\poppins_medium.ttf"
     },
     {
+<<<<<<< HEAD
         "merged": "C:\\Users\\joefa\\AndroidStudioProjects\\My Github\\Non Kantor\\Monitoring_siswa_android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\joefa\\AndroidStudioProjects\\My Github\\Non Kantor\\Monitoring_siswa_android\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+=======
+        "merged": "C:\\Users\\Amanda Ramadita\\Documents\\Monitoring_siswa_android\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_register.xml.flat",
+        "source": "C:\\Users\\Amanda Ramadita\\Documents\\Monitoring_siswa_android\\app\\src\\main\\res\\layout\\activity_register.xml"
+    },
+    {
+        "merged": "C:\\Users\\Amanda Ramadita\\Documents\\Monitoring_siswa_android\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main_user.xml.flat",
+        "source": "C:\\Users\\Amanda Ramadita\\Documents\\Monitoring_siswa_android\\app\\src\\main\\res\\layout\\activity_main_user.xml"
+>>>>>>> ui_manda
     },
     {
         "merged": "C:\\Users\\joefa\\AndroidStudioProjects\\My Github\\Non Kantor\\Monitoring_siswa_android\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_profil_user.xml.flat",

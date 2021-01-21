@@ -20,6 +20,133 @@
 14    <uses-permission android:name="android.permission.ACCESS_LOCATION" />
 14-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:9:5-74
 14-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:9:22-71
+<<<<<<< HEAD
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:10:5-67
+15-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:10:22-64
+16    <uses-permission android:name="com.sharingdisini.gosokasik.permission.MAPS_RECEIVE" />
+16-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:11:5-91
+16-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:11:22-88
+17    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+17-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:12:5-98
+17-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:12:22-95
+18    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+18-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:13:5-81
+18-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:13:22-78
+19    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+19-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:14:5-85
+19-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:14:22-82
+20
+21    <uses-feature
+21-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:16:5-18:35
+22        android:glEsVersion="0x00020000"
+22-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:17:9-41
+23        android:required="true" />
+23-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:18:9-32
+24
+<<<<<<< HEAD
+25    <uses-permission android:name="android.permission.WAKE_LOCK" />
+25-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\33ea633291b32997ea3f4d9543115aa4\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:25:5-68
+25-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\33ea633291b32997ea3f4d9543115aa4\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:25:22-65
+26    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+26-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\33ea633291b32997ea3f4d9543115aa4\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:26:5-110
+26-->[com.google.android.gms:play-services-measurement:18.0.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\33ea633291b32997ea3f4d9543115aa4\jetified-play-services-measurement-18.0.0\AndroidManifest.xml:26:22-107
+27
+28    <application
+28-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:20:5-64:19
+29        android:allowBackup="true"
+29-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:21:9-35
+30        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+30-->[androidx.core:core:1.3.2] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\d344523c0bed2f656efac8cdd793fb3a\core-1.3.2\AndroidManifest.xml:24:18-86
+31        android:debuggable="true"
+32        android:icon="@mipmap/ic_launcher"
+32-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:22:9-43
+33        android:label="@string/app_name"
+33-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:23:9-41
+34        android:roundIcon="@mipmap/ic_launcher_round"
+34-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:24:9-54
+35        android:supportsRtl="true"
+35-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:25:9-35
+36        android:testOnly="true"
+37        android:theme="@style/AppTheme"
+37-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:26:9-40
+38        android:usesCleartextTraffic="true" >
+38-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:27:9-44
+39        <activity android:name="com.example.testingskripsinew.ScheduleActivity" />
+39-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:29:9-63
+39-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:29:19-51
+40
+41        <meta-data
+41-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:31:9-33:55
+42            android:name="com.google.android.geo.API_KEY"
+42-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:32:13-58
+43            android:value="@string/google_maps_key" />
+43-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:33:13-52
+44
+45        <activity
+45-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:35:9-37:64
+46            android:name="com.example.testingskripsinew.ViewMapsActivity"
+46-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:36:13-45
+47            android:label="@string/title_activity_view_maps" />
+47-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:37:13-61
+48
+49        <receiver
+49-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:39:9-42:39
+50            android:name="com.example.testingskripsinew.GeofenceBroadcastReceiver"
+50-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:40:13-54
+51            android:enabled="true"
+51-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:41:13-35
+52            android:exported="true" />
+52-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:42:13-36
+53
+54        <activity android:name="com.example.testingskripsinew.ReaderScanActivity" />
+54-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:44:9-56
+54-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:44:19-53
+55        <activity android:name="com.example.testingskripsinew.HistoryUser" />
+55-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:45:9-49
+55-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:45:19-46
+56        <activity android:name="com.example.testingskripsinew.HistoryAsdos_Keluar" />
+56-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:46:9-57
+56-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:46:19-54
+57        <activity android:name="com.example.testingskripsinew.HistoryAsdos_Absen" />
+57-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:47:9-56
+57-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:47:19-53
+58        <activity android:name="com.example.testingskripsinew.HistoryAsdos_Izin" />
+58-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:48:9-55
+58-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:48:19-52
+59        <activity android:name="com.example.testingskripsinew.HistoryAsdos_Hadir" />
+59-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:49:9-56
+59-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:49:19-53
+60        <activity android:name="com.example.testingskripsinew.asdos.ProfilAsdos" />
+60-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:50:9-55
+60-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:50:19-52
+61        <activity android:name="com.example.testingskripsinew.user.ProfilUser" />
+61-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:51:9-53
+61-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:51:19-50
+62        <activity android:name="com.example.testingskripsinew.asdos.MainActivityAsdos" />
+62-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:52:9-61
+62-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:52:19-58
+63        <activity android:name="com.example.testingskripsinew.user.MainActivityUser" />
+63-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:53:9-59
+63-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:53:19-56
+64        <activity android:name="com.example.testingskripsinew.asdos.LoginAsdos" />
+64-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:54:9-54
+64-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:54:19-51
+65        <activity android:name="com.example.testingskripsinew.user.LoginUser" />
+65-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:55:9-52
+65-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:55:19-49
+66        <activity android:name="com.example.testingskripsinew.PilihAkunActivity" />
+66-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:56:9-55
+66-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:56:19-52
+67        <activity android:name="com.example.testingskripsinew.SplashScreen" >
+67-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:57:9-63:20
+67-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:57:19-47
+68            <intent-filter>
+68-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:58:13-62:29
+69                <action android:name="android.intent.action.MAIN" />
+69-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:59:17-69
+69-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:59:25-66
+=======
 15    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 15-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:10:5-79
 15-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:10:22-76
@@ -56,6 +183,109 @@
 29        </intent>
 30    </queries>
 31
+<<<<<<< HEAD
+32    <application
+32-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:21:5-70:19
+33        android:allowBackup="true"
+33-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:22:9-35
+34        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+34-->[androidx.core:core:1.3.2] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\d344523c0bed2f656efac8cdd793fb3a\core-1.3.2\AndroidManifest.xml:24:18-86
+35        android:debuggable="true"
+36        android:hardwareAccelerated="true"
+36-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:23:9-43
+37        android:icon="@mipmap/ic_launcher"
+37-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:24:9-43
+38        android:label="@string/app_name"
+38-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:25:9-41
+39        android:roundIcon="@mipmap/ic_launcher_round"
+39-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:26:9-54
+40        android:supportsRtl="true"
+40-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:27:9-35
+41        android:testOnly="true"
+42        android:theme="@style/AppTheme"
+42-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:28:9-40
+43        android:usesCleartextTraffic="true" >
+43-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:29:9-44
+44        <activity android:name="com.example.testingskripsinew.asdos.MonitoringKelasActivity" />
+44-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:31:9-67
+44-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:31:19-64
+45        <activity android:name="com.example.testingskripsinew.user.KelasActivity" />
+45-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:32:9-56
+45-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:32:19-53
+46        <activity android:name="com.example.testingskripsinew.riwayat.HistoryActivity" />
+46-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:33:9-61
+46-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:33:19-58
+47        <activity android:name="com.example.testingskripsinew.jadwal.DetailActivity" />
+47-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:34:9-59
+47-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:34:19-56
+48        <activity android:name="com.example.testingskripsinew.jadwal.ScheduleActivity" />
+48-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:35:9-61
+48-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:35:19-58
+49        <activity android:name="com.example.testingskripsinew.user.ReaderScanActivity" />
+49-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:36:9-61
+49-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:36:19-58
+50        <activity android:name="com.example.testingskripsinew.HistoryUser" />
+50-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:37:9-49
+50-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:37:19-46
+51        <activity android:name="com.example.testingskripsinew.HistoryAsdos_Keluar" />
+51-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:38:9-57
+51-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:38:19-54
+52        <activity android:name="com.example.testingskripsinew.HistoryAsdos_Absen" />
+52-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:39:9-56
+52-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:39:19-53
+53        <activity android:name="com.example.testingskripsinew.HistoryAsdos_Izin" />
+53-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:40:9-55
+53-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:40:19-52
+54        <activity android:name="com.example.testingskripsinew.HistoryAsdos_Hadir" />
+54-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:41:9-56
+54-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:41:19-53
+55        <activity android:name="com.example.testingskripsinew.asdos.ProfilAsdos" />
+55-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:42:9-55
+55-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:42:19-52
+56        <activity android:name="com.example.testingskripsinew.asdos.MainActivityAsdos" />
+56-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:43:9-61
+56-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:43:19-58
+57        <activity android:name="com.example.testingskripsinew.asdos.LoginAsdos" />
+57-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:44:9-54
+57-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:44:19-51
+58        <activity android:name="com.example.testingskripsinew.user.ProfilUser" />
+58-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:45:9-53
+58-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:45:19-50
+59        <activity android:name="com.example.testingskripsinew.user.JarakActivity" />
+59-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:46:9-56
+59-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:46:19-53
+60        <activity android:name="com.example.testingskripsinew.user.MainActivityUser" />
+60-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:47:9-59
+60-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:47:19-56
+61        <activity android:name="com.example.testingskripsinew.user.LoginUser" />
+61-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:48:9-52
+61-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:48:19-49
+62        <activity android:name="com.example.testingskripsinew.PilihAkunActivity" />
+62-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:49:9-55
+62-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:49:19-52
+63        <activity android:name="com.example.testingskripsinew.SplashScreen" >
+63-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:50:9-56:20
+63-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:50:19-47
+64            <intent-filter>
+64-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:51:13-55:29
+65                <action android:name="android.intent.action.MAIN" />
+65-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:52:17-69
+65-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:52:25-66
+66
+67                <category android:name="android.intent.category.LAUNCHER" />
+67-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:54:17-77
+67-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:54:27-74
+68            </intent-filter>
+69        </activity>
+>>>>>>> feature/schedule
+70
+71        <meta-data
+71-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:58:9-60:55
+72            android:name="com.google.android.geo.API_KEY"
+72-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:59:13-58
+73            android:value="@string/google_maps_key" />
+73-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:60:13-52
+=======
 32    <uses-permission android:name="android.permission.WAKE_LOCK" />
 32-->[com.google.android.gms:play-services-measurement-api:18.0.1] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\c2cc282de5a007d60f866eb9a422e8d6\jetified-play-services-measurement-api-18.0.1\AndroidManifest.xml:24:5-68
 32-->[com.google.android.gms:play-services-measurement-api:18.0.1] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\c2cc282de5a007d60f866eb9a422e8d6\jetified-play-services-measurement-api-18.0.1\AndroidManifest.xml:24:22-65
@@ -157,6 +387,7 @@
 71            </intent-filter>
 72        </activity>
 73
+>>>>>>> version_2
 74        <meta-data
 74-->C:\Users\joefa\AndroidStudioProjects\My Github\Non Kantor\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:58:9-60:55
 75            android:name="com.google.android.geo.API_KEY"
@@ -210,6 +441,264 @@
 100                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
 100-->[com.google.firebase:firebase-common-ktx:19.5.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\782b47caeb97fd1e0b19e8555a14e1b7\jetified-firebase-common-ktx-19.5.0\AndroidManifest.xml:16:17-113
 101                android:value="com.google.firebase.components.ComponentRegistrar" />
+<<<<<<< HEAD
+101-->[com.google.firebase:firebase-storage:19.2.1] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\978abe1b5533fc849d88fbfd7ae28b4e\jetified-firebase-storage-19.2.1\AndroidManifest.xml:35:17-82
+102            <!--
+103                This registrar is not defined in the dynamic-module-support sdk itself to allow non-firebase
+104                clients to use it as well, by defining this registrar in their own core/common library.
+105            -->
+106            <meta-data
+106-->[com.google.firebase:firebase-common:19.5.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\2798f072a4796436c552c8c929e22e83\jetified-firebase-common-19.5.0\AndroidManifest.xml:43:13-45:85
+107                android:name="com.google.firebase.components:com.google.firebase.dynamicloading.DynamicLoadingRegistrar"
+107-->[com.google.firebase:firebase-common:19.5.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\2798f072a4796436c552c8c929e22e83\jetified-firebase-common-19.5.0\AndroidManifest.xml:44:17-121
+108                android:value="com.google.firebase.components.ComponentRegistrar" />
+108-->[com.google.firebase:firebase-common:19.5.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\2798f072a4796436c552c8c929e22e83\jetified-firebase-common-19.5.0\AndroidManifest.xml:45:17-82
+109        </service> <!-- Needs to be explicitly declared on P+ -->
+110        <uses-library
+110-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\4ef1d41b8372c49a5651c8fd48bae511\jetified-play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
+111            android:name="org.apache.http.legacy"
+111-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\4ef1d41b8372c49a5651c8fd48bae511\jetified-play-services-maps-17.0.0\AndroidManifest.xml:34:13-50
+112            android:required="false" />
+112-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\4ef1d41b8372c49a5651c8fd48bae511\jetified-play-services-maps-17.0.0\AndroidManifest.xml:35:13-37
+113        <uses-library
+113-->[androidx.camera:camera-extensions:1.0.0-alpha20] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\c29cd382b4959da28e8839735d44578c\jetified-camera-extensions-1.0.0-alpha20\AndroidManifest.xml:31:9-33:40
+114            android:name="androidx.camera.extensions.impl"
+114-->[androidx.camera:camera-extensions:1.0.0-alpha20] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\c29cd382b4959da28e8839735d44578c\jetified-camera-extensions-1.0.0-alpha20\AndroidManifest.xml:32:13-59
+115            android:required="false" />
+115-->[androidx.camera:camera-extensions:1.0.0-alpha20] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\c29cd382b4959da28e8839735d44578c\jetified-camera-extensions-1.0.0-alpha20\AndroidManifest.xml:33:13-37
+116
+117        <service
+117-->[com.google.android.gms:play-services-mlkit-barcode-scanning:16.1.3] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\284b034bd7c06295f17b62bfe1694a38\jetified-play-services-mlkit-barcode-scanning-16.1.3\AndroidManifest.xml:9:9-15:19
+118            android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService"
+118-->[com.google.android.gms:play-services-mlkit-barcode-scanning:16.1.3] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\284b034bd7c06295f17b62bfe1694a38\jetified-play-services-mlkit-barcode-scanning-16.1.3\AndroidManifest.xml:10:13-91
+119            android:directBootAware="true"
+119-->[com.google.mlkit:common:17.1.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\4a0acf1790e34a71931de6af43c906c1\jetified-common-17.1.0\AndroidManifest.xml:17:13-43
+120            android:exported="false" >
+120-->[com.google.android.gms:play-services-mlkit-barcode-scanning:16.1.3] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\284b034bd7c06295f17b62bfe1694a38\jetified-play-services-mlkit-barcode-scanning-16.1.3\AndroidManifest.xml:11:13-37
+121            <meta-data
+121-->[com.google.android.gms:play-services-mlkit-barcode-scanning:16.1.3] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\284b034bd7c06295f17b62bfe1694a38\jetified-play-services-mlkit-barcode-scanning-16.1.3\AndroidManifest.xml:12:13-14:85
+122                android:name="com.google.firebase.components:com.google.mlkit.vision.barcode.internal.BarcodeRegistrar"
+122-->[com.google.android.gms:play-services-mlkit-barcode-scanning:16.1.3] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\284b034bd7c06295f17b62bfe1694a38\jetified-play-services-mlkit-barcode-scanning-16.1.3\AndroidManifest.xml:13:17-120
+123                android:value="com.google.firebase.components.ComponentRegistrar" />
+123-->[com.google.android.gms:play-services-mlkit-barcode-scanning:16.1.3] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\284b034bd7c06295f17b62bfe1694a38\jetified-play-services-mlkit-barcode-scanning-16.1.3\AndroidManifest.xml:14:17-82
+124            <meta-data
+124-->[com.google.mlkit:vision-common:16.2.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\7e5522cc1da7bd5c59d60f0c6d36c676\jetified-vision-common-16.2.0\AndroidManifest.xml:12:13-14:85
+125                android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar"
+125-->[com.google.mlkit:vision-common:16.2.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\7e5522cc1da7bd5c59d60f0c6d36c676\jetified-vision-common-16.2.0\AndroidManifest.xml:13:17-124
+126                android:value="com.google.firebase.components.ComponentRegistrar" />
+126-->[com.google.mlkit:vision-common:16.2.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\7e5522cc1da7bd5c59d60f0c6d36c676\jetified-vision-common-16.2.0\AndroidManifest.xml:14:17-82
+127            <meta-data
+127-->[com.google.mlkit:common:17.1.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\4a0acf1790e34a71931de6af43c906c1\jetified-common-17.1.0\AndroidManifest.xml:20:13-22:85
+128                android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar"
+128-->[com.google.mlkit:common:17.1.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\4a0acf1790e34a71931de6af43c906c1\jetified-common-17.1.0\AndroidManifest.xml:21:17-120
+129                android:value="com.google.firebase.components.ComponentRegistrar" />
+129-->[com.google.mlkit:common:17.1.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\4a0acf1790e34a71931de6af43c906c1\jetified-common-17.1.0\AndroidManifest.xml:22:17-82
+130        </service>
+131
+132        <provider
+132-->[com.google.mlkit:common:17.1.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\4a0acf1790e34a71931de6af43c906c1\jetified-common-17.1.0\AndroidManifest.xml:9:9-13:38
+133            android:name="com.google.mlkit.common.internal.MlKitInitProvider"
+133-->[com.google.mlkit:common:17.1.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\4a0acf1790e34a71931de6af43c906c1\jetified-common-17.1.0\AndroidManifest.xml:10:13-78
+134            android:authorities="com.example.testingskripsinew.mlkitinitprovider"
+134-->[com.google.mlkit:common:17.1.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\4a0acf1790e34a71931de6af43c906c1\jetified-common-17.1.0\AndroidManifest.xml:11:13-69
+135            android:exported="false"
+135-->[com.google.mlkit:common:17.1.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\4a0acf1790e34a71931de6af43c906c1\jetified-common-17.1.0\AndroidManifest.xml:12:13-37
+136            android:initOrder="99" />
+136-->[com.google.mlkit:common:17.1.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\4a0acf1790e34a71931de6af43c906c1\jetified-common-17.1.0\AndroidManifest.xml:13:13-35
+137
+138        <activity
+138-->[com.google.android.gms:play-services-base:17.4.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\da06390d70b2bff65741c61450d4b1c0\jetified-play-services-base-17.4.0\AndroidManifest.xml:23:9-26:75
+139            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+139-->[com.google.android.gms:play-services-base:17.4.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\da06390d70b2bff65741c61450d4b1c0\jetified-play-services-base-17.4.0\AndroidManifest.xml:24:13-79
+140            android:exported="false"
+140-->[com.google.android.gms:play-services-base:17.4.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\da06390d70b2bff65741c61450d4b1c0\jetified-play-services-base-17.4.0\AndroidManifest.xml:25:13-37
+141            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+141-->[com.google.android.gms:play-services-base:17.4.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\da06390d70b2bff65741c61450d4b1c0\jetified-play-services-base-17.4.0\AndroidManifest.xml:26:13-72
+142
+<<<<<<< HEAD
+143        <meta-data
+143-->[com.google.android.gms:play-services-basement:17.3.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\f3b7667ddfb3cbe1dabde091cef4cb96\jetified-play-services-basement-17.3.0\AndroidManifest.xml:23:9-25:69
+144            android:name="com.google.android.gms.version"
+144-->[com.google.android.gms:play-services-basement:17.3.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\f3b7667ddfb3cbe1dabde091cef4cb96\jetified-play-services-basement-17.3.0\AndroidManifest.xml:24:13-58
+145            android:value="@integer/google_play_services_version" />
+145-->[com.google.android.gms:play-services-basement:17.3.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\f3b7667ddfb3cbe1dabde091cef4cb96\jetified-play-services-basement-17.3.0\AndroidManifest.xml:25:13-66
+146    </application>
+147
+148</manifest>
+=======
+25    <application
+25-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:19:5-61:19
+26        android:allowBackup="true"
+26-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:20:9-35
+27        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+27-->[androidx.core:core:1.3.1] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\cdfea8f3da9d3d8e26bbb73a40c2de98\core-1.3.1\AndroidManifest.xml:24:18-86
+28        android:debuggable="true"
+29        android:icon="@mipmap/ic_launcher"
+29-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:21:9-43
+30        android:label="@string/app_name"
+30-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:22:9-41
+31        android:roundIcon="@mipmap/ic_launcher_round"
+31-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:23:9-54
+32        android:supportsRtl="true"
+32-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:24:9-35
+33        android:testOnly="true"
+34        android:theme="@style/AppTheme" >
+34-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:25:9-40
+35        <activity android:name="com.example.testingskripsinew.Register" />
+35-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:26:9-55
+35-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:26:19-43
+36
+37        <meta-data
+37-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:28:9-30:55
+38            android:name="com.google.android.geo.API_KEY"
+38-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:29:13-58
+39            android:value="@string/google_maps_key" />
+39-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:30:13-52
+40
+41        <activity
+41-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:32:9-34:64
+42            android:name="com.example.testingskripsinew.ViewMapsActivity"
+42-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:33:13-45
+43            android:label="@string/title_activity_view_maps" />
+43-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:34:13-61
+44
+45        <receiver
+45-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:36:9-39:39
+46            android:name="com.example.testingskripsinew.GeofenceBroadcastReceiver"
+46-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:37:13-54
+47            android:enabled="true"
+47-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:38:13-35
+48            android:exported="true" />
+48-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:39:13-36
+49
+50        <activity android:name="com.example.testingskripsinew.ReaderScanActivity" />
+50-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:41:9-56
+50-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:41:19-53
+51        <activity android:name="com.example.testingskripsinew.HistoryUser" />
+51-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:42:9-49
+51-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:42:19-46
+52        <activity android:name="com.example.testingskripsinew.HistoryAsdos_Keluar" />
+52-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:43:9-57
+52-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:43:19-54
+53        <activity android:name="com.example.testingskripsinew.HistoryAsdos_Absen" />
+53-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:44:9-56
+53-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:44:19-53
+54        <activity android:name="com.example.testingskripsinew.HistoryAsdos_Izin" />
+54-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:45:9-55
+54-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:45:19-52
+55        <activity android:name="com.example.testingskripsinew.HistoryAsdos_Hadir" />
+55-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:46:9-56
+55-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:46:19-53
+56        <activity android:name="com.example.testingskripsinew.ProfilAsdos" />
+56-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:47:9-49
+56-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:47:19-46
+57        <activity android:name="com.example.testingskripsinew.ProfilUser" />
+57-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:48:9-48
+57-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:48:19-45
+58        <activity android:name="com.example.testingskripsinew.MainActivityAsdos" />
+58-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:49:9-55
+58-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:49:19-52
+59        <activity android:name="com.example.testingskripsinew.MainActivityUser" />
+59-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:50:9-54
+59-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:50:19-51
+60        <activity android:name="com.example.testingskripsinew.LoginAsdos" />
+60-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:51:9-48
+60-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:51:19-45
+61        <activity android:name="com.example.testingskripsinew.LoginUser" />
+61-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:52:9-47
+61-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:52:19-44
+62        <activity android:name="com.example.testingskripsinew.PilihAkunActivity" />
+62-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:53:9-55
+62-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:53:19-52
+63        <activity android:name="com.example.testingskripsinew.SplashScreen" >
+63-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:54:9-60:20
+63-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:54:19-47
+64            <intent-filter>
+64-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:55:13-59:29
+65                <action android:name="android.intent.action.MAIN" />
+65-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:56:17-69
+65-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:56:25-66
+66
+67                <category android:name="android.intent.category.LAUNCHER" />
+67-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:58:17-77
+67-->C:\Users\Amanda Ramadita\Documents\Monitoring_siswa_android\app\src\main\AndroidManifest.xml:58:27-74
+68            </intent-filter>
+69        </activity>
+70
+71        <service
+71-->[com.google.firebase:firebase-database:19.6.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\1ac55671c19017fc13671c13ed97e475\jetified-firebase-database-19.6.0\AndroidManifest.xml:29:9-35:19
+72            android:name="com.google.firebase.components.ComponentDiscoveryService"
+72-->[com.google.firebase:firebase-database:19.6.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\1ac55671c19017fc13671c13ed97e475\jetified-firebase-database-19.6.0\AndroidManifest.xml:30:13-84
+73            android:directBootAware="true"
+73-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\d783eb5e4d25e462c5ff8a9ddfc544e8\jetified-firebase-common-19.5.0\AndroidManifest.xml:35:13-43
+74            android:exported="false" >
+74-->[com.google.firebase:firebase-database:19.6.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\1ac55671c19017fc13671c13ed97e475\jetified-firebase-database-19.6.0\AndroidManifest.xml:31:13-37
+75            <meta-data
+75-->[com.google.firebase:firebase-database:19.6.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\1ac55671c19017fc13671c13ed97e475\jetified-firebase-database-19.6.0\AndroidManifest.xml:32:13-34:85
+76                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+76-->[com.google.firebase:firebase-database:19.6.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\1ac55671c19017fc13671c13ed97e475\jetified-firebase-database-19.6.0\AndroidManifest.xml:33:17-109
+77                android:value="com.google.firebase.components.ComponentRegistrar" />
+77-->[com.google.firebase:firebase-database:19.6.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\1ac55671c19017fc13671c13ed97e475\jetified-firebase-database-19.6.0\AndroidManifest.xml:34:17-82
+78            <!--
+79                This registrar is not defined in the dynamic-module-support sdk itself to allow non-firebase
+80                clients to use it as well, by defining this registrar in their own core/common library.
+81            -->
+82            <meta-data
+82-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\d783eb5e4d25e462c5ff8a9ddfc544e8\jetified-firebase-common-19.5.0\AndroidManifest.xml:43:13-45:85
+83                android:name="com.google.firebase.components:com.google.firebase.dynamicloading.DynamicLoadingRegistrar"
+83-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\d783eb5e4d25e462c5ff8a9ddfc544e8\jetified-firebase-common-19.5.0\AndroidManifest.xml:44:17-121
+84                android:value="com.google.firebase.components.ComponentRegistrar" />
+84-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\d783eb5e4d25e462c5ff8a9ddfc544e8\jetified-firebase-common-19.5.0\AndroidManifest.xml:45:17-82
+85        </service> <!-- Needs to be explicitly declared on P+ -->
+86        <uses-library
+86-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\20c77c3286ed68db6c45d651dc5a413c\jetified-play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
+87            android:name="org.apache.http.legacy"
+87-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\20c77c3286ed68db6c45d651dc5a413c\jetified-play-services-maps-17.0.0\AndroidManifest.xml:34:13-50
+88            android:required="false" />
+88-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\20c77c3286ed68db6c45d651dc5a413c\jetified-play-services-maps-17.0.0\AndroidManifest.xml:35:13-37
+89
+90        <activity
+90-->[com.google.android.gms:play-services-base:17.3.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\00a2f9009d332c8b1187a270435bdde5\jetified-play-services-base-17.3.0\AndroidManifest.xml:23:9-26:75
+91            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+91-->[com.google.android.gms:play-services-base:17.3.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\00a2f9009d332c8b1187a270435bdde5\jetified-play-services-base-17.3.0\AndroidManifest.xml:24:13-79
+92            android:exported="false"
+92-->[com.google.android.gms:play-services-base:17.3.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\00a2f9009d332c8b1187a270435bdde5\jetified-play-services-base-17.3.0\AndroidManifest.xml:25:13-37
+93            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+93-->[com.google.android.gms:play-services-base:17.3.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\00a2f9009d332c8b1187a270435bdde5\jetified-play-services-base-17.3.0\AndroidManifest.xml:26:13-72
+94
+95        <provider
+95-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\d783eb5e4d25e462c5ff8a9ddfc544e8\jetified-firebase-common-19.5.0\AndroidManifest.xml:26:9-31:39
+96            android:name="com.google.firebase.provider.FirebaseInitProvider"
+96-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\d783eb5e4d25e462c5ff8a9ddfc544e8\jetified-firebase-common-19.5.0\AndroidManifest.xml:27:13-77
+97            android:authorities="com.example.testingskripsinew.firebaseinitprovider"
+97-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\d783eb5e4d25e462c5ff8a9ddfc544e8\jetified-firebase-common-19.5.0\AndroidManifest.xml:28:13-72
+98            android:directBootAware="true"
+98-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\d783eb5e4d25e462c5ff8a9ddfc544e8\jetified-firebase-common-19.5.0\AndroidManifest.xml:29:13-43
+99            android:exported="false"
+99-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\d783eb5e4d25e462c5ff8a9ddfc544e8\jetified-firebase-common-19.5.0\AndroidManifest.xml:30:13-37
+100            android:initOrder="100" />
+100-->[com.google.firebase:firebase-common:19.5.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\d783eb5e4d25e462c5ff8a9ddfc544e8\jetified-firebase-common-19.5.0\AndroidManifest.xml:31:13-36
+101
+102        <meta-data
+102-->[com.google.android.gms:play-services-basement:17.3.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\fbcd13b61b79d186a0add127294730b0\jetified-play-services-basement-17.3.0\AndroidManifest.xml:23:9-25:69
+103            android:name="com.google.android.gms.version"
+103-->[com.google.android.gms:play-services-basement:17.3.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\fbcd13b61b79d186a0add127294730b0\jetified-play-services-basement-17.3.0\AndroidManifest.xml:24:13-58
+104            android:value="@integer/google_play_services_version" />
+104-->[com.google.android.gms:play-services-basement:17.3.0] C:\Users\Amanda Ramadita\.gradle\caches\transforms-2\files-2.1\fbcd13b61b79d186a0add127294730b0\jetified-play-services-basement-17.3.0\AndroidManifest.xml:25:13-66
+105    </application>
+106
+107</manifest>
+>>>>>>> ui_manda
+=======
+143        <provider
+143-->[com.google.firebase:firebase-common:19.5.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\2798f072a4796436c552c8c929e22e83\jetified-firebase-common-19.5.0\AndroidManifest.xml:26:9-31:39
+144            android:name="com.google.firebase.provider.FirebaseInitProvider"
+144-->[com.google.firebase:firebase-common:19.5.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\2798f072a4796436c552c8c929e22e83\jetified-firebase-common-19.5.0\AndroidManifest.xml:27:13-77
+145            android:authorities="com.example.testingskripsinew.firebaseinitprovider"
+145-->[com.google.firebase:firebase-common:19.5.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\2798f072a4796436c552c8c929e22e83\jetified-firebase-common-19.5.0\AndroidManifest.xml:28:13-72
+146            android:directBootAware="true"
+146-->[com.google.firebase:firebase-common:19.5.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\2798f072a4796436c552c8c929e22e83\jetified-firebase-common-19.5.0\AndroidManifest.xml:29:13-43
+=======
 101-->[com.google.firebase:firebase-common-ktx:19.5.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\782b47caeb97fd1e0b19e8555a14e1b7\jetified-firebase-common-ktx-19.5.0\AndroidManifest.xml:17:17-82
 102            <meta-data
 102-->[com.google.firebase:firebase-storage:19.2.1] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\9fa492ae873f8d9bbde8917aa6c84605\jetified-firebase-storage-19.2.1\AndroidManifest.xml:33:13-35:85
@@ -293,11 +782,54 @@
 145-->[com.google.mlkit:common:17.1.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\5b0c9e8827f55d450f7a77f253fe417a\jetified-common-17.1.0\AndroidManifest.xml:10:13-78
 146            android:authorities="com.example.testingskripsinew.mlkitinitprovider"
 146-->[com.google.mlkit:common:17.1.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\5b0c9e8827f55d450f7a77f253fe417a\jetified-common-17.1.0\AndroidManifest.xml:11:13-69
+>>>>>>> version_2
 147            android:exported="false"
 147-->[com.google.mlkit:common:17.1.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\5b0c9e8827f55d450f7a77f253fe417a\jetified-common-17.1.0\AndroidManifest.xml:12:13-37
 148            android:initOrder="99" />
 148-->[com.google.mlkit:common:17.1.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\5b0c9e8827f55d450f7a77f253fe417a\jetified-common-17.1.0\AndroidManifest.xml:13:13-35
 149
+<<<<<<< HEAD
+150        <meta-data
+150-->[com.google.android.gms:play-services-basement:17.4.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\e6656e7ee595835778f13dded72a03c7\jetified-play-services-basement-17.4.0\AndroidManifest.xml:23:9-25:69
+151            android:name="com.google.android.gms.version"
+151-->[com.google.android.gms:play-services-basement:17.4.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\e6656e7ee595835778f13dded72a03c7\jetified-play-services-basement-17.4.0\AndroidManifest.xml:24:13-58
+152            android:value="@integer/google_play_services_version" />
+152-->[com.google.android.gms:play-services-basement:17.4.0] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\e6656e7ee595835778f13dded72a03c7\jetified-play-services-basement-17.4.0\AndroidManifest.xml:25:13-66
+153
+154        <service
+154-->[com.google.android.datatransport:transport-backend-cct:2.3.2] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\baaae943fa39187533e407b8baedafa7\jetified-transport-backend-cct-2.3.2\AndroidManifest.xml:29:9-35:19
+155            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+155-->[com.google.android.datatransport:transport-backend-cct:2.3.2] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\baaae943fa39187533e407b8baedafa7\jetified-transport-backend-cct-2.3.2\AndroidManifest.xml:30:13-103
+156            android:exported="false" >
+156-->[com.google.android.datatransport:transport-backend-cct:2.3.2] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\baaae943fa39187533e407b8baedafa7\jetified-transport-backend-cct-2.3.2\AndroidManifest.xml:31:13-37
+157            <meta-data
+157-->[com.google.android.datatransport:transport-backend-cct:2.3.2] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\baaae943fa39187533e407b8baedafa7\jetified-transport-backend-cct-2.3.2\AndroidManifest.xml:32:13-34:39
+158                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+158-->[com.google.android.datatransport:transport-backend-cct:2.3.2] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\baaae943fa39187533e407b8baedafa7\jetified-transport-backend-cct-2.3.2\AndroidManifest.xml:33:17-94
+159                android:value="cct" />
+159-->[com.google.android.datatransport:transport-backend-cct:2.3.2] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\baaae943fa39187533e407b8baedafa7\jetified-transport-backend-cct-2.3.2\AndroidManifest.xml:34:17-36
+160        </service>
+161        <service
+161-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\c59216d1a4589ed8c47592b2535be367\jetified-transport-runtime-2.2.5\AndroidManifest.xml:26:9-30:19
+162            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+162-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\c59216d1a4589ed8c47592b2535be367\jetified-transport-runtime-2.2.5\AndroidManifest.xml:27:13-117
+163            android:exported="false"
+163-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\c59216d1a4589ed8c47592b2535be367\jetified-transport-runtime-2.2.5\AndroidManifest.xml:28:13-37
+164            android:permission="android.permission.BIND_JOB_SERVICE" >
+164-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\c59216d1a4589ed8c47592b2535be367\jetified-transport-runtime-2.2.5\AndroidManifest.xml:29:13-69
+165        </service>
+166
+167        <receiver
+167-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\c59216d1a4589ed8c47592b2535be367\jetified-transport-runtime-2.2.5\AndroidManifest.xml:32:9-34:40
+168            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+168-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\c59216d1a4589ed8c47592b2535be367\jetified-transport-runtime-2.2.5\AndroidManifest.xml:33:13-132
+169            android:exported="false" />
+169-->[com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\c59216d1a4589ed8c47592b2535be367\jetified-transport-runtime-2.2.5\AndroidManifest.xml:34:13-37
+170    </application>
+171
+172</manifest>
+>>>>>>> feature/schedule
+=======
 150        <service
 150-->[com.google.android.datatransport:transport-backend-cct:2.3.2] C:\Users\joefa\.gradle\caches\transforms-2\files-2.1\a5c2db707ef364153eeeb5a51da58569\jetified-transport-backend-cct-2.3.2\AndroidManifest.xml:29:9-35:19
 151            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
@@ -389,3 +921,4 @@
 199    </application>
 200
 201</manifest>
+>>>>>>> version_2

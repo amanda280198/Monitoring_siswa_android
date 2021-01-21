@@ -1,5 +1,22 @@
+<<<<<<< HEAD
 #Fri Jan 22 02:37:56 ICT 2021
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+#Wed Jan 13 23:51:59 ICT 2021
+=======
+#Tue Jan 19 22:54:46 ICT 2021
+>>>>>>> feature/schedule
+=======
+#Fri Jan 22 02:16:16 ICT 2021
+>>>>>>> version_2
+>>>>>>> 48f2fc84ec466bf37abc9d32ec897aedb294a81b
 path.2=classes2.dex
+=======
+#Thu Jan 14 00:17:10 ICT 2021
+base.0=C\:\\Users\\Amanda Ramadita\\Documents\\Monitoring_siswa_android\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+>>>>>>> ui_manda
 path.1=classes.dex
 path.0=classes.dex
 renamed.2=classes3.dex
