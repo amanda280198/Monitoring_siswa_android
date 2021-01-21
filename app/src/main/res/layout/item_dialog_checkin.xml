@@ -6,42 +6,37 @@
     android:background="@color/colorPrimary"
     android:orientation="vertical">
 
-    <ImageButton
-        android:id="@+id/button_back"
+    <ImageView
+        android:id="@+id/imageView9"
         android:layout_width="50dp"
-        android:layout_height="45dp"
-        android:background="#2F2E2E"
-        android:src="@drawable/left_arrow"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/check"
         app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="@+id/guideline1"
         app:layout_constraintTop_toTopOf="@+id/guideline" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/cekin_oke"
-        android:background="#2f2e2e"/>
 
     <TextView
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Anda Telah Masuk Kelas"
+        android:layout_marginTop="8dp"
+        android:text="Anda berhasil Check-In"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Headline"
         android:textColor="#ffffff"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@id/textView10"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="@+id/guideline1"
-        app:layout_constraintTop_toTopOf="@+id/guideline3"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="@+id/guideline3" />
 
     <TextView
-        android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Terima Kasih"
+        android:layout_marginTop="8dp"
+        android:text="Selamat Belajar"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textColor="#ffffff"
@@ -76,12 +71,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.1" />
+        app:layout_constraintGuide_percent="0.16" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.94" />
+        app:layout_constraintGuide_percent="0.65" />
 </androidx.constraintlayout.widget.ConstraintLayout>
