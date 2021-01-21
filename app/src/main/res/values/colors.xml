@@ -3,4 +3,18 @@
     <color name="colorPrimary">#2f2e2e</color>
     <color name="colorPrimaryDark">#2f2e2e</color>
     <color name="colorAccent">#2f2e2e</color>
+
+    <color name="textColor">#272727</color>
+    <color name="textColorLight">#FAFAFA</color>
+
+    <color name="colorLight">#9C9C9C</color>
+    <color name="colorDark">#4A4A4A</color>
+    <color name="yellow">#FFC107</color>
+    <color name="torques">#4CCEC6</color>
+
+    <color name="colorCopyButton">#00897B</color>
+    <color name="colorMLKitCard">#FFCCBC</color>
+    <color name="colorZxingCard">#BBDEFB</color>
+    <color name="barcode_reticle_background">#99000000</color>
+    <color name="barcode_reticle_stroke">#ffffff</color>
 </resources>

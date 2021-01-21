@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context=".user.MainActivityUser">
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selamat Datang,"
+        android:textColor="@color/textColorLight"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/nama_user"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/nama_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Nama User"
+        android:textColor="@color/textColorLight"
+        app:layout_constraintBottom_toTopOf="@+id/view3"
+        app:layout_constraintStart_toStartOf="@+id/guideline1" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="290dp"
+        android:layout_height="1dp"
+        android:background="@color/colorLight"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline1" />
+
+    <TextView
+        android:id="@+id/titleDashboard2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:text="Dashboard"
+        android:textColor="@color/textColorLight"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btn_presensi"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintTop_toTopOf="@+id/guideline3"
+        app:layout_constraintVertical_bias="0.3"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_jadwal_user"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="8dp"
+        android:drawableEnd="@drawable/ic_logo_jadwal"
+        android:gravity="center"
+        android:onClick="btnJadwalUser"
+        android:paddingStart="10dp"
+        android:paddingEnd="20dp"
+        android:text="Jadwal Praktikum"
+        android:textColor="@color/textColorLight"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_histori_presensi_user"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintTop_toBottomOf="@id/btn_presensi"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:rippleColor="@color/torques"
+        app:strokeColor="@color/torques" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_presensi"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="8dp"
+        android:drawableEnd="@drawable/ic_logo_presensi"
+        android:gravity="center"
+        android:onClick="btnPresensiPribadi"
+        android:paddingStart="10dp"
+        android:paddingEnd="20dp"
+        android:text="Presensi"
+        android:textColor="@color/textColorLight"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_jadwal_user"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintTop_toBottomOf="@+id/titleDashboard2"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:rippleColor="@color/torques"
+        app:strokeColor="@color/torques" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_histori_presensi_user"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="8dp"
+        android:drawableEnd="@drawable/ic_logo_history"
+        android:gravity="center"
+        android:onClick="btnHistoryPribadi"
+        android:paddingStart="10dp"
+        android:paddingEnd="20dp"
+        android:text="History Presensi"
+        android:textColor="@color/textColorLight"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_profil_user"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintTop_toBottomOf="@id/btn_jadwal_user"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:rippleColor="@color/torques"
+        app:strokeColor="@color/torques" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_profil_user"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="8dp"
+        android:drawableEnd="@drawable/ic_logo_user"
+        android:gravity="center"
+        android:onClick="btnProfilPribadi"
+        android:paddingStart="10dp"
+        android:paddingEnd="20dp"
+        android:text="Profil User"
+        android:textColor="@color/textColorLight"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline5"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintTop_toBottomOf="@id/btn_histori_presensi_user"
+        app:rippleColor="@color/torques"
+        app:strokeColor="@color/torques" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.02" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.06" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.94" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.98" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

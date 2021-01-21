@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">1041754895385-h4dnc5m578r8qf1omv5fqu8tmst87f1d.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://aplikasi-presensi-online-2b4fa.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">1041754895385</string>
+    <string name="google_api_key" translatable="false">AIzaSyCEIPCBKWcQRDGr7CyJnUngU3AjWPoO9ho</string>
+    <string name="google_app_id" translatable="false">1:1041754895385:android:99c966e7924ec4a73b2688</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCEIPCBKWcQRDGr7CyJnUngU3AjWPoO9ho</string>
+    <string name="google_storage_bucket" translatable="false">aplikasi-presensi-online-2b4fa.appspot.com</string>
+    <string name="project_id" translatable="false">aplikasi-presensi-online-2b4fa</string>
+</resources>

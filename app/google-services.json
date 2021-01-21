@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "1041754895385",
+    "firebase_url": "https://aplikasi-presensi-online-2b4fa.firebaseio.com",
+    "project_id": "aplikasi-presensi-online-2b4fa",
+    "storage_bucket": "aplikasi-presensi-online-2b4fa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1041754895385:android:99c966e7924ec4a73b2688",
+        "android_client_info": {
+          "package_name": "com.example.testingskripsinew"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1041754895385-5rlagitaf39nr6g5aeqhsbmge9e2njc1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.testingskripsinew",
+            "certificate_hash": "606a8ef6f87d156510460b7aa407135ab081ed91"
+          }
+        },
+        {
+          "client_id": "1041754895385-jbpfkvg720jqqjtu463ocic4q3ane99b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.testingskripsinew",
+            "certificate_hash": "545ff8f140a5e59c7ce72cc91cc0d12b919982e6"
+          }
+        },
+        {
+          "client_id": "1041754895385-h4dnc5m578r8qf1omv5fqu8tmst87f1d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEIPCBKWcQRDGr7CyJnUngU3AjWPoO9ho"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1041754895385-h4dnc5m578r8qf1omv5fqu8tmst87f1d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
