@@ -77,7 +77,7 @@
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_izin"
         android:layout_width="150dp"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_marginBottom="8dp"
         android:background="@drawable/custom_buttom3"
         android:text="Izin"
@@ -95,7 +95,7 @@
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_checkout"
         android:layout_width="150dp"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_marginBottom="24dp"
         android:background="@drawable/custom_buttom3"
         android:text="Check-Out"

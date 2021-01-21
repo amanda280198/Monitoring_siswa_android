@@ -1,5 +1,5 @@
-com/example/testingskripsinew/databinding/ActivityLoginUserBinding.java
- com.example.testingskripsinew.databinding.ActivityLoginUserBinding
+com/example/testingskripsinew/HistoryAsdos_Keluar.java
+ com.example.testingskripsinew.HistoryAsdos_Keluar
 com/example/testingskripsinew/databinding/ActivityReaderScanBinding.java
  com.example.testingskripsinew.databinding.ActivityReaderScanBinding
 com/example/testingskripsinew/databinding/ActivityScheduleBinding.java
@@ -36,8 +36,8 @@ com/example/testingskripsinew/HistoryAsdos_Hadir.java
  com.example.testingskripsinew.HistoryAsdos_Hadir
 com/example/testingskripsinew/databinding/ActivityJarakBinding.java
  com.example.testingskripsinew.databinding.ActivityJarakBinding
-com/example/testingskripsinew/SplashScreen.java
- com.example.testingskripsinew.SplashScreen
+com/example/testingskripsinew/databinding/ActivityProfilUserBinding.java
+ com.example.testingskripsinew.databinding.ActivityProfilUserBinding
 com/example/testingskripsinew/databinding/ActivityProfilAsdosBinding.java
  com.example.testingskripsinew.databinding.ActivityProfilAsdosBinding
 com/example/testingskripsinew/databinding/BottomSheetBarcodeDataBinding.java
@@ -58,7 +58,7 @@ com/example/testingskripsinew/databinding/ItemJadwalBinding.java
  com.example.testingskripsinew.databinding.ItemJadwalBinding
 com/example/testingskripsinew/databinding/HistoryAsdosHadirBinding.java
  com.example.testingskripsinew.databinding.HistoryAsdosHadirBinding
-com/example/testingskripsinew/databinding/ActivityProfilUserBinding.java
- com.example.testingskripsinew.databinding.ActivityProfilUserBinding
-com/example/testingskripsinew/HistoryAsdos_Keluar.java
- com.example.testingskripsinew.HistoryAsdos_Keluar
+com/example/testingskripsinew/databinding/ActivityLoginUserBinding.java
+ com.example.testingskripsinew.databinding.ActivityLoginUserBinding
+com/example/testingskripsinew/SplashScreen.java
+ com.example.testingskripsinew.SplashScreen

@@ -4,7 +4,6 @@ package com.example.testingskripsinew.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -14,6 +13,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.constraintlayout.widget.Guideline;
 import androidx.viewbinding.ViewBinding;
 import com.example.testingskripsinew.R;
+import com.google.android.material.button.MaterialButton;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -23,7 +23,7 @@ public final class ActivityLoginUserBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final Button btnLoginUser;
+  public final MaterialButton btnLoginUser;
 
   @NonNull
   public final Guideline guideline;
@@ -58,11 +58,12 @@ public final class ActivityLoginUserBinding implements ViewBinding {
   @NonNull
   public final EditText usernameUser;
 
-  private ActivityLoginUserBinding(@NonNull ConstraintLayout rootView, @NonNull Button btnLoginUser,
-      @NonNull Guideline guideline, @NonNull Guideline guideline1, @NonNull Guideline guideline2,
-      @NonNull Guideline guideline3, @NonNull Guideline guideline4, @NonNull ImageView imageView4,
-      @NonNull EditText passUser, @NonNull TextView textView, @NonNull TextView textView2,
-      @NonNull TextView textView3, @NonNull EditText usernameUser) {
+  private ActivityLoginUserBinding(@NonNull ConstraintLayout rootView,
+      @NonNull MaterialButton btnLoginUser, @NonNull Guideline guideline,
+      @NonNull Guideline guideline1, @NonNull Guideline guideline2, @NonNull Guideline guideline3,
+      @NonNull Guideline guideline4, @NonNull ImageView imageView4, @NonNull EditText passUser,
+      @NonNull TextView textView, @NonNull TextView textView2, @NonNull TextView textView3,
+      @NonNull EditText usernameUser) {
     this.rootView = rootView;
     this.btnLoginUser = btnLoginUser;
     this.guideline = guideline;
@@ -106,7 +107,7 @@ public final class ActivityLoginUserBinding implements ViewBinding {
     int id;
     missingId: {
       id = R.id.btn_login_user;
-      Button btnLoginUser = rootView.findViewById(id);
+      MaterialButton btnLoginUser = rootView.findViewById(id);
       if (btnLoginUser == null) {
         break missingId;
       }
