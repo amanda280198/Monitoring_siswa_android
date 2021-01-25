@@ -13,7 +13,7 @@ import java.util.*
 
 class ListAdapter(private var dataList: ArrayList<DataMatKul>) :
     RecyclerView.Adapter<ListAdapter.ViewHolder>(), Filterable {
-    val userListFull: ArrayList<DataMatKul> = arrayListOf()
+    var userFilterList: ArrayList<DataMatKul> = arrayListOf()
 
     private lateinit var onItemClickCallback: OnItemClickCallback
 
@@ -28,11 +28,11 @@ class ListAdapter(private var dataList: ArrayList<DataMatKul>) :
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.bind(dataList[position])
+        holder.bind(userFilterList[position])
     }
 
     override fun getItemCount(): Int {
-        return dataList.size
+        return userFilterList.size
     }
 
     inner class ViewHolder(var binding: ItemJadwalBinding) : RecyclerView.ViewHolder(
@@ -70,34 +70,31 @@ class ListAdapter(private var dataList: ArrayList<DataMatKul>) :
 
     private var myFilter: Filter = object : Filter() {
         override fun performFiltering(charSequence: CharSequence): FilterResults {
-            val filteredList: ArrayList<DataMatKul> = arrayListOf()
-            if (charSequence.isEmpty()) {
-                filteredList.addAll(userListFull)
+            val charSearch = charSequence.toString()
+            userFilterList = if (charSequence.isEmpty()) {
+                dataList
             } else {
-                for (data in userListFull) {
-                    if (
-                        data.kelas?.toLowerCase(Locale.getDefault())?.contains(
-                            charSequence.toString().toLowerCase(Locale.getDefault())
-                        ) == true
-                    ) {
-                        filteredList.add(data)
+                val resultList: ArrayList<DataMatKul> = arrayListOf()
+                for (data in dataList) {
+                    if (data.kelas?.toLowerCase(Locale.ROOT)?.contains(charSearch.toLowerCase(Locale.ROOT)) == true) {
+                        resultList.add(data)
                     }
                 }
+                resultList
             }
             val filterResults = FilterResults()
-            filterResults.values = filteredList
+            filterResults.values = userFilterList
             return filterResults
         }
 
-        //Automatic on UI thread
+        @Suppress("UNCHECKED_CAST")
         override fun publishResults(charSequence: CharSequence, filterResults: FilterResults) {
-            dataList.clear()
-            dataList.addAll((filterResults.values as Collection<DataMatKul>))
+            userFilterList = filterResults.values as ArrayList<DataMatKul>
             notifyDataSetChanged()
         }
     }
 
     init {
-        userListFull.addAll(dataList)
+        userFilterList = dataList
     }
 }
