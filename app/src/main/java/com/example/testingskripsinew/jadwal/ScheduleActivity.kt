@@ -33,7 +33,7 @@ class ScheduleActivity : AppCompatActivity() {
         onGetData()
         onShowTime()
 
-        if (Data.status == "asdos"){
+        if (Data.status == "asdos") {
             binding.textJudul.text = getString(R.string.text_title)
         }
     }
@@ -53,12 +53,18 @@ class ScheduleActivity : AppCompatActivity() {
         myRef = database.getReference(Data.JADWAL_DATA)
         myRef.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
-                val dataSurvey: ArrayList<DataMatKul> = arrayListOf()
+                val dataList: ArrayList<DataMatKul> = arrayListOf()
                 for (dataSnapshot1 in snapshot.children) {
-                    val surveyor = dataSnapshot1.getValue(DataMatKul::class.java)
-                    surveyor?.let { dataSurvey.add(it) }
+                    val data = dataSnapshot1.getValue(DataMatKul::class.java)
+                    if (Data.status != "asdos") {
+                        if (data?.kelas.equals(Data.idKelas, ignoreCase = true)) {
+                            data?.let { dataList.add(it) }
+                        }
+                    } else {
+                        data?.let { dataList.add(it) }
+                    }
                 }
-                onShowData(dataSurvey)
+                onShowData(dataList)
             }
 
             override fun onCancelled(error: DatabaseError) {
@@ -74,16 +80,7 @@ class ScheduleActivity : AppCompatActivity() {
         listAdapter.setOnItemClickCallback(object : ListAdapter.OnItemClickCallback {
             override fun onClicked(dataMatKul: DataMatKul) {
                 val intent = Intent(this@ScheduleActivity, DetailActivity::class.java)
-                intent.putExtra(DetailActivity.EXTRA_MATA_KULIAH, dataMatKul.nama)
-                intent.putExtra(DetailActivity.EXTRA_PENGAJAR_1, dataMatKul.pengajar1)
-                intent.putExtra(DetailActivity.EXTRA_PENGAJAR_2, dataMatKul.pengajar2)
-                intent.putExtra(DetailActivity.EXTRA_NPM_PENGAJAR_1, dataMatKul.npmPengajar1)
-                intent.putExtra(DetailActivity.EXTRA_NPM_PENGAJAR_2, dataMatKul.npmPengajar2)
-                intent.putExtra(DetailActivity.EXTRA_HARI, dataMatKul.hari)
-                intent.putExtra(DetailActivity.EXTRA_JAM, dataMatKul.jam)
-                intent.putExtra(DetailActivity.EXTRA_KELAS, dataMatKul.kelas)
-                intent.putExtra(DetailActivity.EXTRA_KODE_MATKUL, dataMatKul.kode)
-                intent.putExtra(DetailActivity.EXTRA_STATUS, Data.status)
+                intent.putExtra(DetailActivity.EXTRA_DATA_MATKUL, dataMatKul)
                 startActivity(intent)
             }
         })
@@ -95,13 +92,13 @@ class ScheduleActivity : AppCompatActivity() {
         val searchView = itemMenu.actionView as SearchView
         searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
             override fun onQueryTextSubmit(query: String?): Boolean {
-
+                listAdapter.filter.filter(query)
                 return false
             }
 
             override fun onQueryTextChange(newText: String?): Boolean {
                 if (newText != null) {
-                    listAdapter.filter?.filter(newText)
+                    listAdapter.filter.filter(newText)
                 }
                 return false
             }
@@ -117,7 +114,8 @@ class ScheduleActivity : AppCompatActivity() {
                         sleep(1000)
                         runOnUiThread {
                             val date = System.currentTimeMillis()
-                            val sdf = SimpleDateFormat("EEEE, dd MMMM yyyy, h:mm a", Locale.getDefault())
+                            val sdf =
+                                SimpleDateFormat("EEEE, dd MMMM yyyy, h:mm a", Locale.getDefault())
                             val dateString = sdf.format(date)
                             binding.textView7.text = dateString
                         }

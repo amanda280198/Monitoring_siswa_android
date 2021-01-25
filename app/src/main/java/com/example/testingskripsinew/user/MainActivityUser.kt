@@ -12,6 +12,7 @@ import com.example.testingskripsinew.HistoryUser
 import com.example.testingskripsinew.jadwal.ScheduleActivity
 //import com.example.testingskripsinew.ViewMapsActivity
 import com.example.testingskripsinew.databinding.ActivityMainUserBinding
+import com.example.testingskripsinew.model.DataUser
 import com.example.testingskripsinew.utils.Data
 
 class MainActivityUser : AppCompatActivity() {
@@ -23,9 +24,7 @@ class MainActivityUser : AppCompatActivity() {
     private val cameraPermissionRequestCode = 1
 
     companion object {
-        const val EXTRA_USER = "data_user"
-        const val EXTRA_NPM = "data_npm"
-        const val EXTRA_STATUS = "status"
+        const val EXTRA_DATA_USER = "data_user"
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -33,9 +32,10 @@ class MainActivityUser : AppCompatActivity() {
         binding = ActivityMainUserBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        inUser = intent.getStringExtra(EXTRA_USER).toString()
-        inNpm = intent.getStringExtra(EXTRA_NPM).toString()
-        status = intent.getStringExtra(EXTRA_STATUS).toString()
+        val item = intent.getParcelableExtra<DataUser>(EXTRA_DATA_USER)
+        inUser = item?.nama.toString()
+        inNpm = item?.npm.toString()
+        status = item?.status.toString()
 
         binding.namaUser.text = inUser
     }

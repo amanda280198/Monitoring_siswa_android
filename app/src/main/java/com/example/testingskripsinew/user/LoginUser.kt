@@ -52,10 +52,12 @@ class LoginUser : AppCompatActivity() {
                 val value = snapshot.getValue(DataUser::class.java)
                 if (value?.npm == userName && value.pass == passUser) {
                     val intent = Intent(this@LoginUser, MainActivityUser::class.java)
-                    intent.putExtra(MainActivityUser.EXTRA_USER, value.nama)
-                    intent.putExtra(MainActivityUser.EXTRA_NPM, value.npm)
-                    intent.putExtra(MainActivityUser.EXTRA_STATUS, value.status)
+                    intent.putExtra(MainActivityUser.EXTRA_DATA_USER, value)
                     startActivity(intent)
+                    Data.npmUser = value.npm.toString()
+                    Data.status = value.status.toString()
+                    Data.idKelas = value.kelas.toString()
+                    Data.idNama = value.nama.toString()
                 } else {
                     Toast.makeText(this@LoginUser, "Maaf Data Tidak Tersedia", Toast.LENGTH_SHORT)
                         .show()

@@ -63,6 +63,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
+            android:onClick="fabCheckIn"
             android:backgroundTint="@android:color/white"
             android:src="@android:drawable/ic_dialog_map"
             android:tint="@color/colorPrimary"
@@ -177,20 +178,24 @@
         app:layout_constraintTop_toTopOf="@+id/txt_jarak"
         tools:ignore="MissingConstraints" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_checkin"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:background="@drawable/custom_buttom3"
+        android:layout_height="60dp"
+        android:layout_marginStart="@dimen/separator_size_10"
+        android:layout_marginEnd="@dimen/separator_size_10"
         android:text="Check-in"
         android:textColor="#ffffff"
+        app:backgroundTint="@color/torques"
+        app:cornerRadius="20dp"
+        android:onClick="btnCheckin"
         app:layout_constraintBottom_toTopOf="@+id/guideline4"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="@+id/guideline1"
         app:layout_constraintTop_toBottomOf="@+id/aler_text"
+        app:rippleColor="@color/colorDark"
         tools:ignore="MissingConstraints" />
-
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"

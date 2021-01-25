@@ -21,6 +21,9 @@ public final class ItemJadwalBinding implements ViewBinding {
   private final MaterialCardView rootView;
 
   @NonNull
+  public final MaterialCardView contenerItem;
+
+  @NonNull
   public final Guideline guideline1;
 
   @NonNull
@@ -65,13 +68,15 @@ public final class ItemJadwalBinding implements ViewBinding {
   @NonNull
   public final TextView txtNpm;
 
-  private ItemJadwalBinding(@NonNull MaterialCardView rootView, @NonNull Guideline guideline1,
+  private ItemJadwalBinding(@NonNull MaterialCardView rootView,
+      @NonNull MaterialCardView contenerItem, @NonNull Guideline guideline1,
       @NonNull Guideline guideline2, @NonNull Guideline guideline3, @NonNull Guideline guideline6,
       @NonNull Guideline guideline7, @NonNull TextView hari, @NonNull CircleImageView imageView,
       @NonNull TextView jam, @NonNull TextView kelas, @NonNull TextView namaMatkul,
       @NonNull TextView npmPengajar1, @NonNull TextView npmPengajar2, @NonNull TextView pengajar1,
       @NonNull TextView pengajar2, @NonNull TextView txtNpm) {
     this.rootView = rootView;
+    this.contenerItem = contenerItem;
     this.guideline1 = guideline1;
     this.guideline2 = guideline2;
     this.guideline3 = guideline3;
@@ -116,6 +121,8 @@ public final class ItemJadwalBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      MaterialCardView contenerItem = (MaterialCardView) rootView;
+
       id = R.id.guideline1;
       Guideline guideline1 = rootView.findViewById(id);
       if (guideline1 == null) {
@@ -206,9 +213,9 @@ public final class ItemJadwalBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ItemJadwalBinding((MaterialCardView) rootView, guideline1, guideline2, guideline3,
-          guideline6, guideline7, hari, imageView, jam, kelas, namaMatkul, npmPengajar1,
-          npmPengajar2, pengajar1, pengajar2, txtNpm);
+      return new ItemJadwalBinding((MaterialCardView) rootView, contenerItem, guideline1,
+          guideline2, guideline3, guideline6, guideline7, hari, imageView, jam, kelas, namaMatkul,
+          npmPengajar1, npmPengajar2, pengajar1, pengajar2, txtNpm);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

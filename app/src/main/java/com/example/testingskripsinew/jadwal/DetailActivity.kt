@@ -1,12 +1,16 @@
 package com.example.testingskripsinew.jadwal
 
+import android.content.Intent
 import android.graphics.Bitmap
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import com.example.testingskripsinew.R
+import com.example.testingskripsinew.asdos.MonitoringKelasActivity
 import com.example.testingskripsinew.databinding.ActivityDetailBinding
+import com.example.testingskripsinew.model.DataMatKul
 import com.example.testingskripsinew.utils.Data
 import com.google.zxing.BarcodeFormat
 import com.google.zxing.MultiFormatWriter
@@ -16,16 +20,7 @@ class DetailActivity : AppCompatActivity() {
     private lateinit var binding: ActivityDetailBinding
 
     companion object {
-        const val EXTRA_STATUS = "status"
-        const val EXTRA_KODE_MATKUL = "kode_matkul"
-        const val EXTRA_MATA_KULIAH = "matkul"
-        const val EXTRA_PENGAJAR_1 = "pengajar_1"
-        const val EXTRA_PENGAJAR_2 = "pengajar_2"
-        const val EXTRA_NPM_PENGAJAR_1 = "npm_pengajar_1"
-        const val EXTRA_NPM_PENGAJAR_2 = "npm_pengajar_1"
-        const val EXTRA_HARI = "hari"
-        const val EXTRA_JAM = "jam"
-        const val EXTRA_KELAS = "kelas"
+        const val EXTRA_DATA_MATKUL = "data_matkul"
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -33,16 +28,18 @@ class DetailActivity : AppCompatActivity() {
         binding = ActivityDetailBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val matkul = intent.getStringExtra(EXTRA_MATA_KULIAH).toString()
-        val pengajar1 = intent.getStringExtra(EXTRA_PENGAJAR_1).toString()
-        val pengajar2 = intent.getStringExtra(EXTRA_PENGAJAR_2).toString()
-        val npmPengajar1 = intent.getStringExtra(EXTRA_NPM_PENGAJAR_1).toString()
-        val npmPengajar2 = intent.getStringExtra(EXTRA_NPM_PENGAJAR_2).toString()
-        val hari = intent.getStringExtra(EXTRA_HARI).toString()
-        val jam = intent.getStringExtra(EXTRA_JAM).toString()
-        val kelas = intent.getStringExtra(EXTRA_KELAS).toString()
-        val kodeMatkul = intent.getStringExtra(EXTRA_KODE_MATKUL).toString()
-        val status = intent.getStringExtra(EXTRA_STATUS).toString()
+        val item = intent.getParcelableExtra<DataMatKul>(EXTRA_DATA_MATKUL)
+
+        val matkul = item?.nama
+        val pengajar1 = item?.pengajar1
+        val pengajar2 = item?.pengajar2
+        val npmPengajar1 = item?.npmPengajar1
+        val npmPengajar2 = item?.npmPengajar2
+        val hari = item?.hari
+        val jam = item?.jam
+        val kelas = item?.kelas
+        val kodeMatkul = item?.kode
+        val status = Data.status
 
         binding.mataKuliah.text = matkul
         binding.pengajar1.text = pengajar1
@@ -53,12 +50,19 @@ class DetailActivity : AppCompatActivity() {
         binding.jamTgl.text = jam
         binding.kelas.text = "Kelas $kelas"
 
-        if (status == Data.ASDOS){
-            val bitmap = generateQRCode(kodeMatkul)
+        val jsonString = "{\"data\":{\"kode\":\"$kodeMatkul\",\"nama\":\"$matkul\",\"kelas\":\"$kelas\"}}"
+
+        if (status == Data.ASDOS) {
+            val bitmap = generateQRCode(jsonString)
             binding.qrCodeImage.setImageBitmap(bitmap)
-        } else{
-            binding.qrCodeImage.visibility = View.GONE
+        } else {
+            binding.frameQrcode.visibility = View.GONE
         }
+
+        if (Data.npmAsdos == npmPengajar1 || Data.npmAsdos == npmPengajar2)
+            binding.btnLihatKelas.visibility = View.VISIBLE
+        else
+            binding.btnLihatKelas.visibility = View.GONE
     }
 
     fun btnBack(view: View) {
@@ -83,5 +87,8 @@ class DetailActivity : AppCompatActivity() {
         return bitmap
     }
 
-    fun btnLihatKelas(view: View) {}
+    fun btnLihatKelas(view: View) {
+        val intent = Intent(this, MonitoringKelasActivity::class.java)
+        startActivity(intent)
+    }
 }

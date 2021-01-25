@@ -51,10 +51,10 @@ class LoginAsdos : AppCompatActivity() {
                 val value = snapshot.getValue(DataAsdos::class.java)
                 if (value?.npm == userName && value.pass == passUser) {
                     val intent = Intent(this@LoginAsdos, MainActivityAsdos::class.java)
-                    intent.putExtra(MainActivityAsdos.EXTRA_USER, value.nama)
-                    intent.putExtra(MainActivityAsdos.EXTRA_NPM, value.npm)
-                    intent.putExtra(MainActivityAsdos.EXTRA_STATUS, value.status)
+                    intent.putExtra(MainActivityAsdos.EXTRA_DATA_ASDOS, value)
                     startActivity(intent)
+                    Data.npmAsdos = value.npm.toString()
+                    Data.status = value.status
                 } else {
                     Toast.makeText(this@LoginAsdos, "Maaf Data Tidak Tersedia", Toast.LENGTH_SHORT)
                         .show()

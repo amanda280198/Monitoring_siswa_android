@@ -6,6 +6,7 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.example.testingskripsinew.databinding.ActivityMainAsdosBinding
 import com.example.testingskripsinew.jadwal.ScheduleActivity
+import com.example.testingskripsinew.model.DataAsdos
 import com.example.testingskripsinew.user.MainActivityUser
 import com.example.testingskripsinew.utils.Data
 
@@ -16,18 +17,17 @@ class MainActivityAsdos : AppCompatActivity() {
     private lateinit var status: String
 
     companion object {
-        const val EXTRA_USER = "data_user"
-        const val EXTRA_NPM = "data_npm"
-        const val EXTRA_STATUS = "status"
+        const val EXTRA_DATA_ASDOS = "data_asdos"
     }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainAsdosBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        inUser = intent.getStringExtra(EXTRA_USER).toString()
-        inNpm = intent.getStringExtra(EXTRA_NPM).toString()
-        status = intent.getStringExtra(EXTRA_STATUS).toString()
+        val item = intent.getParcelableExtra<DataAsdos>(EXTRA_DATA_ASDOS)
+        inUser = item?.nama.toString()
+        inNpm = item?.npm.toString()
+        status = item?.status.toString()
 
         binding.namaAsdos.text = inUser
     }

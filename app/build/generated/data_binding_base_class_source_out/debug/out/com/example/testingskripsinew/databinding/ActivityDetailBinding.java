@@ -29,7 +29,7 @@ public final class ActivityDetailBinding implements ViewBinding {
   public final ImageView buttonBack;
 
   @NonNull
-  public final MaterialCardView frameMakanan;
+  public final MaterialCardView frameQrcode;
 
   @NonNull
   public final Guideline guideline;
@@ -93,7 +93,7 @@ public final class ActivityDetailBinding implements ViewBinding {
 
   private ActivityDetailBinding(@NonNull ConstraintLayout rootView,
       @NonNull MaterialButton btnLihatKelas, @NonNull ImageView buttonBack,
-      @NonNull MaterialCardView frameMakanan, @NonNull Guideline guideline,
+      @NonNull MaterialCardView frameQrcode, @NonNull Guideline guideline,
       @NonNull Guideline guideline1, @NonNull Guideline guideline2, @NonNull Guideline guideline3,
       @NonNull Guideline guideline4, @NonNull Guideline guideline5, @NonNull Guideline guideline6,
       @NonNull Guideline guideline7, @NonNull TextView hari, @NonNull TextView jamTgl,
@@ -104,7 +104,7 @@ public final class ActivityDetailBinding implements ViewBinding {
     this.rootView = rootView;
     this.btnLihatKelas = btnLihatKelas;
     this.buttonBack = buttonBack;
-    this.frameMakanan = frameMakanan;
+    this.frameQrcode = frameQrcode;
     this.guideline = guideline;
     this.guideline1 = guideline1;
     this.guideline2 = guideline2;
@@ -166,9 +166,9 @@ public final class ActivityDetailBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.frame_makanan;
-      MaterialCardView frameMakanan = rootView.findViewById(id);
-      if (frameMakanan == null) {
+      id = R.id.frame_qrcode;
+      MaterialCardView frameQrcode = rootView.findViewById(id);
+      if (frameQrcode == null) {
         break missingId;
       }
 
@@ -293,7 +293,7 @@ public final class ActivityDetailBinding implements ViewBinding {
       }
 
       return new ActivityDetailBinding((ConstraintLayout) rootView, btnLihatKelas, buttonBack,
-          frameMakanan, guideline, guideline1, guideline2, guideline3, guideline4, guideline5,
+          frameQrcode, guideline, guideline1, guideline2, guideline3, guideline4, guideline5,
           guideline6, guideline7, hari, jamTgl, kelas, mataKuliah, npmPengajar1, npmPengajar2,
           pengajar1, pengajar2, qrCodeImage, textPengajar1, textPengajar2, txtProfilAsdos);
     }

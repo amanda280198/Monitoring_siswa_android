@@ -10,6 +10,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import com.example.testingskripsinew.R
 import com.example.testingskripsinew.user.JarakActivity
+import com.example.testingskripsinew.utils.Data
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import org.json.JSONException
@@ -36,6 +37,7 @@ class BarcodeResultBottomSheet : BottomSheetDialogFragment() {
                 } else {
                     findViewById<TextView>(R.id.btn_absen)?.setOnClickListener {
                         val i = Intent(requireContext(), JarakActivity::class.java)
+                        Data.qrKode = kode
                         requireContext().startActivity(i)
                     }
                 }

@@ -1954,6 +1954,7 @@ id collapseActionView
 id compatible
 id confirm_button
 id container
+id contener_item
 id content
 id contentPanel
 id coordinator
@@ -2017,7 +2018,7 @@ id flip
 id floating
 id forever
 id fragment_container_view_tag
-id frame_makanan
+id frame_qrcode
 id front
 id ghost_view
 id ghost_view_holder

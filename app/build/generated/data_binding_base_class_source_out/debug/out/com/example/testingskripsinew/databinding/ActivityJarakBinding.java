@@ -4,7 +4,6 @@ package com.example.testingskripsinew.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -14,6 +13,7 @@ import androidx.constraintlayout.widget.Group;
 import androidx.constraintlayout.widget.Guideline;
 import androidx.viewbinding.ViewBinding;
 import com.example.testingskripsinew.R;
+import com.google.android.material.button.MaterialButton;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.skyfishjy.library.RippleBackground;
 import java.lang.NullPointerException;
@@ -28,7 +28,7 @@ public final class ActivityJarakBinding implements ViewBinding {
   public final TextView alerText;
 
   @NonNull
-  public final Button btnCheckin;
+  public final MaterialButton btnCheckin;
 
   @NonNull
   public final ImageView buttonBack;
@@ -79,7 +79,7 @@ public final class ActivityJarakBinding implements ViewBinding {
   public final TextView txtTitle;
 
   private ActivityJarakBinding(@NonNull ConstraintLayout rootView, @NonNull TextView alerText,
-      @NonNull Button btnCheckin, @NonNull ImageView buttonBack,
+      @NonNull MaterialButton btnCheckin, @NonNull ImageView buttonBack,
       @NonNull FloatingActionButton fabCheckIn, @NonNull Group group, @NonNull Guideline guideline,
       @NonNull Guideline guideline1, @NonNull Guideline guideline2, @NonNull Guideline guideline3,
       @NonNull Guideline guideline4, @NonNull RippleBackground rippleBackground,
@@ -141,7 +141,7 @@ public final class ActivityJarakBinding implements ViewBinding {
       }
 
       id = R.id.btn_checkin;
-      Button btnCheckin = rootView.findViewById(id);
+      MaterialButton btnCheckin = rootView.findViewById(id);
       if (btnCheckin == null) {
         break missingId;
       }

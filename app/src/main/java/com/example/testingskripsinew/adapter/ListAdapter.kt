@@ -5,11 +5,13 @@ import android.view.ViewGroup
 import android.widget.Filter
 import android.widget.Filterable
 import androidx.recyclerview.widget.RecyclerView
+import com.example.testingskripsinew.R
 import com.example.testingskripsinew.databinding.ItemJadwalBinding
 import com.example.testingskripsinew.model.DataMatKul
+import com.example.testingskripsinew.utils.Data
 import java.util.*
 
-class ListAdapter (private var dataList: ArrayList<DataMatKul>) :
+class ListAdapter(private var dataList: ArrayList<DataMatKul>) :
     RecyclerView.Adapter<ListAdapter.ViewHolder>(), Filterable {
     val userListFull: ArrayList<DataMatKul> = arrayListOf()
 
@@ -47,6 +49,10 @@ class ListAdapter (private var dataList: ArrayList<DataMatKul>) :
                 npmPengajar1.text = dataMatkul.npmPengajar1
                 npmPengajar2.text = dataMatkul.npmPengajar2
 
+                if (Data.npmAsdos == dataMatkul.npmPengajar1 || Data.npmAsdos == dataMatkul.npmPengajar2)
+                    contenerItem.setBackgroundResource(R.color.colorCopyButton)
+                else
+                    contenerItem.setBackgroundResource(R.color.colorDark)
             }
             itemView.setOnClickListener {
                 onItemClickCallback.onClicked(dataMatkul)
@@ -58,7 +64,7 @@ class ListAdapter (private var dataList: ArrayList<DataMatKul>) :
         fun onClicked(data: DataMatKul)
     }
 
-    override fun getFilter(): Filter? {
+    override fun getFilter(): Filter {
         return myFilter
     }
 
@@ -69,8 +75,10 @@ class ListAdapter (private var dataList: ArrayList<DataMatKul>) :
                 filteredList.addAll(userListFull)
             } else {
                 for (data in userListFull) {
-                    if (data.kelas?.toLowerCase(Locale.getDefault())
-                            ?.contains(charSequence.toString().toLowerCase(Locale.getDefault()))!!
+                    if (
+                        data.kelas?.toLowerCase(Locale.getDefault())?.contains(
+                            charSequence.toString().toLowerCase(Locale.getDefault())
+                        ) == true
                     ) {
                         filteredList.add(data)
                     }

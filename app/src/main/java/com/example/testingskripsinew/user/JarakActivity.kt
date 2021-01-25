@@ -22,6 +22,8 @@ import androidx.core.content.ContextCompat
 import com.example.testingskripsinew.R
 import com.example.testingskripsinew.databinding.ActivityJarakBinding
 import com.example.testingskripsinew.helper.GeofenceHelper
+import com.example.testingskripsinew.model.DataKelas
+import com.example.testingskripsinew.utils.Data
 import com.google.android.gms.location.Geofence
 import com.google.android.gms.location.GeofencingClient
 import com.google.android.gms.location.LocationServices
@@ -32,11 +34,16 @@ import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.CircleOptions
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
+import java.text.SimpleDateFormat
 import java.util.*
 import kotlin.math.*
 
 class JarakActivity : AppCompatActivity(), OnMapReadyCallback {
     private lateinit var binding: ActivityJarakBinding
+    private lateinit var database: FirebaseDatabase
+    private lateinit var myRef: DatabaseReference
 
     private lateinit var mMap: GoogleMap
     private lateinit var geofencingClient: GeofencingClient
@@ -61,18 +68,12 @@ class JarakActivity : AppCompatActivity(), OnMapReadyCallback {
         binding = ActivityJarakBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        database = FirebaseDatabase.getInstance()
+        myRef = database.getReference(Data.KELAS_DATA)
+
         initMap()
         checkPermissionLocation()
-        onClick()
-    }
-
-    private fun onClick() {
-        binding.fabCheckIn.setOnClickListener {
-            startScanLocation()
-            Handler(Looper.getMainLooper()).postDelayed({
-                getLocationCoordinat()
-            }, 4000)
-        }
+        onShowTime()
     }
 
     private fun startScanLocation() {
@@ -87,6 +88,38 @@ class JarakActivity : AppCompatActivity(), OnMapReadyCallback {
             rippleBackground.stopRippleAnimation()
             binding.fabCheckIn.visibility = View.GONE
         }
+    }
+
+    fun fabCheckIn(view: View) {
+        startScanLocation()
+        Handler(Looper.getMainLooper()).postDelayed({
+            getLocationCoordinat()
+        }, 4000)
+    }
+
+    fun btnCheckin(view: View) {
+        onPushData(
+            DataKelas(
+                "0",
+                "0",
+                Data.jam,
+                Data.jarak,
+                Data.qrKode,
+                "${Data.lon}, ${Data.lat}",
+                Data.idNama,
+                Data.npmUser,
+                "1",
+                "0"
+            )
+        )
+    }
+
+    private fun onPushData(dataKelas: DataKelas) {
+        myRef.child(Data.qrKode).child(Data.npmUser.toString()).setValue(dataKelas)
+            .addOnSuccessListener {
+                val i = Intent(this, KelasActivity::class.java)
+                startActivity(i)
+            }
     }
 
     private fun getLocationCoordinat() {
@@ -113,6 +146,7 @@ class JarakActivity : AppCompatActivity(), OnMapReadyCallback {
                     with(binding) {
                         group.visibility = View.VISIBLE
                         binding.statusJarak.text = jarak
+                        Data.jarak
                     }
 
                     stopScanLocation()
@@ -137,6 +171,8 @@ class JarakActivity : AppCompatActivity(), OnMapReadyCallback {
             binding.alerText.text = getString(R.string.alert_txt_succes)
             binding.txtTitle.text = getString(R.string.alert_txt_title_succes)
 
+            Data.lon = lon.toString()
+            Data.lat = lat.toString()
         } catch (e: Exception) {
             e.printStackTrace()
         }
@@ -272,7 +308,7 @@ class JarakActivity : AppCompatActivity(), OnMapReadyCallback {
         addCircle(latLng, GEOFENCE_RADIUS)
     }
 
-    private fun onSetLongMapClick() {
+/*    private fun onSetLongMapClick() {
         mMap.setOnMapLongClickListener { latLng ->
             if (Build.VERSION.SDK_INT >= 29) {
                 if (ContextCompat.checkSelfPermission(
@@ -314,7 +350,7 @@ class JarakActivity : AppCompatActivity(), OnMapReadyCallback {
             addCircle(latLng, GEOFENCE_RADIUS)
             addGeofence(latLng, GEOFENCE_RADIUS.toFloat())
         }
-    }
+    }*/
 
     private fun enableUserLocation() {
         if (ContextCompat.checkSelfPermission(
@@ -344,7 +380,7 @@ class JarakActivity : AppCompatActivity(), OnMapReadyCallback {
         }
     }
 
-    private fun addGeofence(latLng: LatLng, radius: Float) {
+/*    private fun addGeofence(latLng: LatLng, radius: Float) {
         val geofence = geofenceHelper.getGeofence(
             GEOFENCE_ID, latLng, radius,
             Geofence.GEOFENCE_TRANSITION_ENTER or Geofence.GEOFENCE_TRANSITION_DWELL or Geofence.GEOFENCE_TRANSITION_EXIT
@@ -369,7 +405,7 @@ class JarakActivity : AppCompatActivity(), OnMapReadyCallback {
                 Log.d(TAG, "Gagal Gan: $errorMessage")
             }
         }
-    }
+    }*/
 
     private fun addMarker(latLng: LatLng) {
         val markerOptions: MarkerOptions = MarkerOptions().position(latLng)
@@ -384,5 +420,31 @@ class JarakActivity : AppCompatActivity(), OnMapReadyCallback {
         circleOptions.fillColor(Color.argb(64, 0, 255, 0))
         circleOptions.strokeWidth(4F)
         mMap.addCircle(circleOptions)
+    }
+
+    private fun onShowTime() {
+        val thread = object : Thread() {
+            override fun run() {
+                try {
+                    while (!isInterrupted) {
+                        sleep(1000)
+                        runOnUiThread {
+                            val date = System.currentTimeMillis()
+                            val sdf = SimpleDateFormat("dd MM yyyy", Locale.getDefault())
+                            val jam = SimpleDateFormat("h:mm a", Locale.getDefault())
+                            val dateString = sdf.format(date)
+                            val timeString = jam.format(date)
+                            Data.tanggal = dateString
+                            Data.jam = timeString
+
+                            val tglformat = Data.tanggal
+                            tglformat.replace(' ', '_')
+                        }
+                    }
+                } catch (e: InterruptedException) {
+                }
+            }
+        }
+        thread.start()
     }
 }

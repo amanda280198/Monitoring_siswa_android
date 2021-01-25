@@ -160,7 +160,7 @@
         app:layout_constraintVertical_bias="0.3" />
 
     <com.google.android.material.card.MaterialCardView
-        android:id="@+id/frame_makanan"
+        android:id="@+id/frame_qrcode"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="@dimen/separator_size_16"
@@ -186,17 +186,18 @@
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_lihat_kelas"
         android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:background="@drawable/custom_buttom3"
+        android:layout_height="60dp"
         android:onClick="btnLihatKelas"
         android:text="lihat kelas"
         android:textColor="@color/textColorLight"
         app:backgroundTint="@color/torques"
+        app:cornerRadius="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="@+id/guideline1"
         app:layout_constraintTop_toTopOf="@+id/guideline6"
-        app:layout_constraintVertical_bias="0.32999998" />
+        app:layout_constraintVertical_bias="0.32999998"
+        app:rippleColor="@color/colorDark" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
