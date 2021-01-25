@@ -26,8 +26,10 @@ class ScheduleActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityScheduleBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        database = FirebaseDatabase.getInstance()
         setSupportActionBar(binding.toolbar)
+
+        database = FirebaseDatabase.getInstance()
+        myRef = database.getReference(Data.JADWAL_DATA)
 
         initData()
         onGetData()
@@ -50,7 +52,6 @@ class ScheduleActivity : AppCompatActivity() {
     }
 
     private fun onGetData() {
-        myRef = database.getReference(Data.JADWAL_DATA)
         myRef.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
                 val dataList: ArrayList<DataMatKul> = arrayListOf()

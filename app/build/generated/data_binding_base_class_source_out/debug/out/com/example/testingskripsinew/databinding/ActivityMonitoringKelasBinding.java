@@ -4,7 +4,6 @@ package com.example.testingskripsinew.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -15,6 +14,7 @@ import androidx.viewbinding.ViewBinding;
 import com.example.testingskripsinew.R;
 import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.appbar.MaterialToolbar;
+import com.google.android.material.button.MaterialButton;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -27,7 +27,7 @@ public final class ActivityMonitoringKelasBinding implements ViewBinding {
   public final AppBarLayout appBarLayout;
 
   @NonNull
-  public final Button btnIzin;
+  public final MaterialButton btnKelasSelesai;
 
   @NonNull
   public final Guideline guideline9;
@@ -48,12 +48,12 @@ public final class ActivityMonitoringKelasBinding implements ViewBinding {
   public final MaterialToolbar toolbar;
 
   private ActivityMonitoringKelasBinding(@NonNull ConstraintLayout rootView,
-      @NonNull AppBarLayout appBarLayout, @NonNull Button btnIzin, @NonNull Guideline guideline9,
-      @NonNull RecyclerView rvListMasuk, @NonNull TextView textJudul, @NonNull TextView textTotal,
-      @NonNull TextView textView7, @NonNull MaterialToolbar toolbar) {
+      @NonNull AppBarLayout appBarLayout, @NonNull MaterialButton btnKelasSelesai,
+      @NonNull Guideline guideline9, @NonNull RecyclerView rvListMasuk, @NonNull TextView textJudul,
+      @NonNull TextView textTotal, @NonNull TextView textView7, @NonNull MaterialToolbar toolbar) {
     this.rootView = rootView;
     this.appBarLayout = appBarLayout;
-    this.btnIzin = btnIzin;
+    this.btnKelasSelesai = btnKelasSelesai;
     this.guideline9 = guideline9;
     this.rvListMasuk = rvListMasuk;
     this.textJudul = textJudul;
@@ -95,9 +95,9 @@ public final class ActivityMonitoringKelasBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.btn_izin;
-      Button btnIzin = rootView.findViewById(id);
-      if (btnIzin == null) {
+      id = R.id.btn_kelas_selesai;
+      MaterialButton btnKelasSelesai = rootView.findViewById(id);
+      if (btnKelasSelesai == null) {
         break missingId;
       }
 
@@ -137,8 +137,8 @@ public final class ActivityMonitoringKelasBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityMonitoringKelasBinding((ConstraintLayout) rootView, appBarLayout, btnIzin,
-          guideline9, rvListMasuk, textJudul, textTotal, textView7, toolbar);
+      return new ActivityMonitoringKelasBinding((ConstraintLayout) rootView, appBarLayout,
+          btnKelasSelesai, guideline9, rvListMasuk, textJudul, textTotal, textView7, toolbar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

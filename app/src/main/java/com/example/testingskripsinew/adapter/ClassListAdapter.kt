@@ -4,6 +4,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.Filter
 import android.widget.Filterable
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.example.testingskripsinew.databinding.ItemHadirBinding
 import com.example.testingskripsinew.model.DataKelas
@@ -11,7 +12,7 @@ import java.util.*
 
 class ClassListAdapter(private var dataList: ArrayList<DataKelas>) :
     RecyclerView.Adapter<ClassListAdapter.ViewHolder>(), Filterable {
-    val userListFull: ArrayList<DataKelas> = arrayListOf()
+    var userFilterList: ArrayList<DataKelas> = arrayListOf()
 
     private lateinit var onItemClickCallback: OnItemClickCallback
 
@@ -43,15 +44,20 @@ class ClassListAdapter(private var dataList: ArrayList<DataKelas>) :
                 jamMasuk.text = dataKelas.jamMasuk
                 jamKeluar.text = dataKelas.jamKeluar
                 jamKeluar.text = dataKelas.jamKeluar
-            }
-            itemView.setOnClickListener {
-                onItemClickCallback.onClicked(dataKelas)
+
+                switchIzin.isOn = dataKelas.izin != "0"
+
+                switchIzin.setOnToggledListener { _, isOn ->
+                    if (isOn) {
+                        Toast.makeText(itemView.context, "izin", Toast.LENGTH_SHORT).show()
+                        onItemClickCallback.onSlide(dataKelas, "1")
+                    } else {
+                        Toast.makeText(itemView.context, "tidak izin", Toast.LENGTH_SHORT).show()
+                        onItemClickCallback.onSlide(dataKelas, "0")
+                    }
+                }
             }
         }
-    }
-
-    interface OnItemClickCallback {
-        fun onClicked(data: DataKelas)
     }
 
     override fun getFilter(): Filter {
@@ -60,34 +66,35 @@ class ClassListAdapter(private var dataList: ArrayList<DataKelas>) :
 
     private var myFilter: Filter = object : Filter() {
         override fun performFiltering(charSequence: CharSequence): FilterResults {
-            val filteredList: ArrayList<DataKelas> = arrayListOf()
-            if (charSequence.isEmpty()) {
-                filteredList.addAll(userListFull)
+            val charSearch = charSequence.toString()
+            userFilterList = if (charSequence.isEmpty()) {
+                dataList
             } else {
-                for (data in userListFull) {
-                    if (
-                        data.nama?.toLowerCase(Locale.getDefault())?.contains(
-                            charSequence.toString().toLowerCase(Locale.getDefault())
-                        ) == true
-                    ) {
-                        filteredList.add(data)
+                val resultList: ArrayList<DataKelas> = arrayListOf()
+                for (data in dataList) {
+                    if (data.nama?.toLowerCase(Locale.ROOT)?.contains(charSearch.toLowerCase(Locale.ROOT)) == true) {
+                        resultList.add(data)
                     }
                 }
+                resultList
             }
             val filterResults = FilterResults()
-            filterResults.values = filteredList
+            filterResults.values = userFilterList
             return filterResults
         }
 
-        //Automatic on UI thread
+        @Suppress("UNCHECKED_CAST")
         override fun publishResults(charSequence: CharSequence, filterResults: FilterResults) {
-            dataList.clear()
-            dataList.addAll((filterResults.values as Collection<DataKelas>))
+            userFilterList = filterResults.values as ArrayList<DataKelas>
             notifyDataSetChanged()
         }
     }
 
     init {
-        userListFull.addAll(dataList)
+        userFilterList = dataList
+    }
+
+    interface OnItemClickCallback {
+        fun onSlide(data: DataKelas, konfirmasi: String)
     }
 }

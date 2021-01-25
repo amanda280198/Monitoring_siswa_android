@@ -44,6 +44,7 @@ class JarakActivity : AppCompatActivity(), OnMapReadyCallback {
     private lateinit var binding: ActivityJarakBinding
     private lateinit var database: FirebaseDatabase
     private lateinit var myRef: DatabaseReference
+    private lateinit var myRef1: DatabaseReference
 
     private lateinit var mMap: GoogleMap
     private lateinit var geofencingClient: GeofencingClient
@@ -70,6 +71,7 @@ class JarakActivity : AppCompatActivity(), OnMapReadyCallback {
 
         database = FirebaseDatabase.getInstance()
         myRef = database.getReference(Data.KELAS_DATA)
+        myRef1 = database.getReference(Data.KELAS_STATUS)
 
         initMap()
         checkPermissionLocation()
@@ -120,6 +122,8 @@ class JarakActivity : AppCompatActivity(), OnMapReadyCallback {
                 val i = Intent(this, KelasActivity::class.java)
                 startActivity(i)
             }
+
+        myRef1.child(Data.qrKode).setValue("0")
     }
 
     private fun getLocationCoordinat() {

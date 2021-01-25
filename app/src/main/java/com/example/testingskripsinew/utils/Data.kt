@@ -5,6 +5,7 @@ object Data {
     const val ASDOS_DATA = "dataAsdos"
     const val JADWAL_DATA = "matKul"
     const val KELAS_DATA = "kelasMasuk"
+    const val KELAS_STATUS = "kelasStatus"
 
     const val ASDOS = "asdos"
 

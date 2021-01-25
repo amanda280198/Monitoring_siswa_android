@@ -1919,6 +1919,7 @@ id btn_histori_presensi_user
 id btn_izin
 id btn_jadwal_asdos
 id btn_jadwal_user
+id btn_kelas_selesai
 id btn_keluar
 id btn_lihat_kelas
 id btn_login_asdos

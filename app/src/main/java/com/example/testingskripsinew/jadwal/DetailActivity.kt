@@ -7,7 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
-import com.example.testingskripsinew.R
+import android.widget.Toast
 import com.example.testingskripsinew.asdos.MonitoringKelasActivity
 import com.example.testingskripsinew.databinding.ActivityDetailBinding
 import com.example.testingskripsinew.model.DataMatKul
@@ -50,7 +50,8 @@ class DetailActivity : AppCompatActivity() {
         binding.jamTgl.text = jam
         binding.kelas.text = "Kelas $kelas"
 
-        val jsonString = "{\"data\":{\"kode\":\"$kodeMatkul\",\"nama\":\"$matkul\",\"kelas\":\"$kelas\"}}"
+        val jsonString =
+            "{\"data\":{\"kode\":\"$kodeMatkul\",\"nama\":\"$matkul\",\"kelas\":\"$kelas\"}}"
 
         if (status == Data.ASDOS) {
             val bitmap = generateQRCode(jsonString)
@@ -63,6 +64,16 @@ class DetailActivity : AppCompatActivity() {
             binding.btnLihatKelas.visibility = View.VISIBLE
         else
             binding.btnLihatKelas.visibility = View.GONE
+
+        onBtnLihatKelas(item)
+    }
+
+    private fun onBtnLihatKelas(item: DataMatKul?) {
+        binding.btnLihatKelas.setOnClickListener {
+            val intent = Intent(this, MonitoringKelasActivity::class.java)
+            intent.putExtra(EXTRA_DATA_MATKUL, item)
+            startActivity(intent)
+        }
     }
 
     fun btnBack(view: View) {
@@ -87,8 +98,4 @@ class DetailActivity : AppCompatActivity() {
         return bitmap
     }
 
-    fun btnLihatKelas(view: View) {
-        val intent = Intent(this, MonitoringKelasActivity::class.java)
-        startActivity(intent)
-    }
 }
