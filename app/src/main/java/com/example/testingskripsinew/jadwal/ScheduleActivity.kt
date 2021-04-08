@@ -32,8 +32,6 @@ class ScheduleActivity : AppCompatActivity() {
         myRef = database.getReference(Data.JADWAL_DATA)
 
         initData()
-        onGetData()
-        onShowTime()
 
         if (Data.status == "asdos") {
             binding.textJudul.text = getString(R.string.text_title)
@@ -49,6 +47,9 @@ class ScheduleActivity : AppCompatActivity() {
             rvListjadwal.scheduleLayoutAnimation()
             rvListjadwal.setHasFixedSize(true)
         }
+
+        onGetData()
+        onShowTime()
     }
 
     private fun onGetData() {
@@ -79,9 +80,9 @@ class ScheduleActivity : AppCompatActivity() {
         binding.rvListjadwal.adapter = listAdapter
 
         listAdapter.setOnItemClickCallback(object : ListAdapter.OnItemClickCallback {
-            override fun onClicked(dataMatKul: DataMatKul) {
-                val intent = Intent(this@ScheduleActivity, DetailActivity::class.java)
-                intent.putExtra(DetailActivity.EXTRA_DATA_MATKUL, dataMatKul)
+            override fun onClicked(data: DataMatKul) {
+                val intent = Intent(this@ScheduleActivity, PertemuanActivity::class.java)
+                intent.putExtra(PertemuanActivity.EXTRA_DATA_MATKUL, data)
                 startActivity(intent)
             }
         })

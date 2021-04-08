@@ -44,6 +44,8 @@ class ClassListAdapter(private var dataList: ArrayList<DataKelas>) :
                 jamMasuk.text = dataKelas.jamMasuk
                 jamKeluar.text = dataKelas.jamKeluar
                 jamKeluar.text = dataKelas.jamKeluar
+                tvKoordinat.text = dataKelas.koordinat
+                tvJarak.text = dataKelas.jarak
 
                 switchIzin.isOn = dataKelas.izin != "0"
 

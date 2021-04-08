@@ -9,4 +9,8 @@
     <string name="alert_txt">pastikan posisi anda berada pada <br>area lingkaran hijau</br></string>
     <string name="alert_txt_succes">Anda bisa gabung di kelas</string>
     <string name="alert_txt_title_succes">Lokasi Anda Sesuai</string>
+    <string name="text_tidak_hadir">Tidak Hadir</string>
+    <string name="txt_hadir">Hadir</string>
+    <string name="txt_kelas_belum">Kelas Belum Mulai</string>
+    <string name="txt_kelas_sudah">Kelas Selesai</string>
 </resources>

@@ -11,7 +11,6 @@ import android.widget.TextView
 import com.example.testingskripsinew.R
 import com.example.testingskripsinew.user.JarakActivity
 import com.example.testingskripsinew.utils.Data
-import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import org.json.JSONException
 import org.json.JSONObject
@@ -27,7 +26,7 @@ class BarcodeResultBottomSheet : BottomSheetDialogFragment() {
 
 
     fun updateText(text: String) {
-        fetchTextMetaData(text) { kode, nama, kelas, title ->
+        fetchTextMetaData(text) { kode, nama, kelas, title, temu ->
             view?.apply {
                 findViewById<TextView>(R.id.text_view_title)?.text = title
                 findViewById<TextView>(R.id.text_view_matkul)?.text = nama
@@ -38,6 +37,7 @@ class BarcodeResultBottomSheet : BottomSheetDialogFragment() {
                     findViewById<TextView>(R.id.btn_absen)?.setOnClickListener {
                         val i = Intent(requireContext(), JarakActivity::class.java)
                         Data.qrKode = kode
+                        Data.temuKode = temu
                         requireContext().startActivity(i)
                     }
                 }
@@ -47,7 +47,7 @@ class BarcodeResultBottomSheet : BottomSheetDialogFragment() {
 
     private fun fetchTextMetaData(
         text: String,
-        callback: (kode: String, nama: String, kelas: String, title: String) -> Unit
+        callback: (kode: String, nama: String, kelas: String, title: String, temu : String) -> Unit
     ) {
         val executor = Executors.newSingleThreadExecutor()
         val handler = Handler(Looper.getMainLooper())
@@ -57,9 +57,10 @@ class BarcodeResultBottomSheet : BottomSheetDialogFragment() {
                 val kode = emp.getString("kode")
                 val nama = emp.getString("nama")
                 val kelas = emp.getString("kelas")
+                val temu = emp.getString("temu")
                 val title = "Jadwal Kelas"
                 handler.post {
-                    callback(kode, nama, kelas, title)
+                    callback(kode, nama, kelas, title, temu)
                 }
             } catch (e: JSONException) {
                 e.printStackTrace()
@@ -67,7 +68,7 @@ class BarcodeResultBottomSheet : BottomSheetDialogFragment() {
                 val noDetec = "Tidak Terdeteksi"
                 val alert = "Pastikan QR yang di scan benar"
                 handler.post {
-                    callback("0", noDetec, alert, title)
+                    callback("0", noDetec, alert, title, "0")
                 }
             }
         }

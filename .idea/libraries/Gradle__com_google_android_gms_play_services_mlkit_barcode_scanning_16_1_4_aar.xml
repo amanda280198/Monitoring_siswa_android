@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.android.gms:play-services-mlkit-barcode-scanning:16.1.4@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/aa86f85e1fbc032e4f8e597a9d50bd91/jetified-play-services-mlkit-barcode-scanning-16.1.4/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ed0d7a1147a4e6151f74efb84ddc199c/jetified-play-services-mlkit-barcode-scanning-16.1.4/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ed0d7a1147a4e6151f74efb84ddc199c/jetified-play-services-mlkit-barcode-scanning-16.1.4/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ed0d7a1147a4e6151f74efb84ddc199c/jetified-play-services-mlkit-barcode-scanning-16.1.4/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.android.gms/play-services-mlkit-barcode-scanning/16.1.4/9065fd449cc52fa51a2932993ebc999d08f0c9cb/play-services-mlkit-barcode-scanning-16.1.4-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>

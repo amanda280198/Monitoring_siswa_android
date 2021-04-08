@@ -22,6 +22,11 @@ class MonitoringKelasActivity : AppCompatActivity() {
     private lateinit var myRef1: DatabaseReference
     lateinit var classListAdapter: ClassListAdapter
 
+    companion object {
+        const val EXTRA_DATA_PERTEMUAN = "data_pertemuan"
+    }
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMonitoringKelasBinding.inflate(layoutInflater)
@@ -37,6 +42,7 @@ class MonitoringKelasActivity : AppCompatActivity() {
 
     private fun initData() {
         val item = intent.getParcelableExtra<DataMatKul>(DetailActivity.EXTRA_DATA_MATKUL)
+        val pertemuan = intent.getStringExtra(EXTRA_DATA_PERTEMUAN)
 
         val animationType = R.anim.layout_animation_fall_down
         val animation = AnimationUtils.loadLayoutAnimation(this, animationType)
@@ -47,41 +53,47 @@ class MonitoringKelasActivity : AppCompatActivity() {
             rvListMasuk.setHasFixedSize(true)
         }
 
-        onGetData(item)
+        onGetData(item, pertemuan)
     }
 
-    private fun onGetData(item: DataMatKul?) {
-        myRef.child(item?.kode.toString())
+    private fun onGetData(item: DataMatKul?, pertemuan: String?) {
+        myRef.child(item?.kode.toString()).child("pertemuan$pertemuan")
+//        myRef.child(item?.kode.toString())
             .addValueEventListener(object : ValueEventListener {
-            override fun onDataChange(snapshot: DataSnapshot) {
-                val dataList: ArrayList<DataKelas> = arrayListOf()
-                for (dataSnapshot1 in snapshot.children) {
-                    val data = dataSnapshot1.getValue(DataKelas::class.java)
-                    data?.let { dataList.add(it) }
+                override fun onDataChange(snapshot: DataSnapshot) {
+                    val dataList: ArrayList<DataKelas> = arrayListOf()
+                    for (dataSnapshot1 in snapshot.children) {
+                        val data = dataSnapshot1.getValue(DataKelas::class.java)
+                        data?.let { dataList.add(it) }
+                    }
+                    onShowData(dataList, pertemuan)
                 }
-                onShowData(dataList)
-            }
 
-            override fun onCancelled(error: DatabaseError) {
+                override fun onCancelled(error: DatabaseError) {
 
-            }
-        })
+                }
+            })
 
         binding.btnKelasSelesai.setOnClickListener {
-            myRef1.child(item?.kode.toString()).setValue("1")
+            myRef1.child(item?.kode.toString()).child("pertemuan$pertemuan").setValue("1")
+                .addOnSuccessListener {
+                    finish()
+                }
         }
     }
 
 
-    private fun onShowData(dataList: ArrayList<DataKelas>) {
+    private fun onShowData(dataList: ArrayList<DataKelas>, pertemuan: String?) {
         classListAdapter = ClassListAdapter(dataList)
         binding.rvListMasuk.adapter = classListAdapter
         val totalMhs = "Total Mahasiswa ${dataList.size}"
         binding.textTotal.text = totalMhs
 
-        classListAdapter.setOnItemClickCallback(object  : ClassListAdapter.OnItemClickCallback{
+        classListAdapter.setOnItemClickCallback(object : ClassListAdapter.OnItemClickCallback {
             override fun onSlide(data: DataKelas, konfirmasi: String) {
-                myRef.child(data.kode.toString()).child(data.npm.toString()).child("izin")
+                myRef.child(data.kode.toString()).child("pertemuan$pertemuan")
+//                myRef.child(data.kode.toString())
+                    .child(data.npm.toString()).child("izin")
                     .setValue(konfirmasi)
             }
         })

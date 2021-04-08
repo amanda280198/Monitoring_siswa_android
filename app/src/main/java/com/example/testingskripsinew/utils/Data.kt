@@ -22,6 +22,7 @@ object Data {
     var idNama: String = ""
 
     var qrKode: String = ""
+    var temuKode: String = ""
     var lon: String = ""
     var lat: String = ""
     var jarak: String = ""

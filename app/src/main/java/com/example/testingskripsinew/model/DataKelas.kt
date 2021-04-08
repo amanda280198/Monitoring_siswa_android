@@ -15,4 +15,5 @@ data class DataKelas(
     var npm: String? = null,
     var statusMasuk: String? = null,
     var statuskeluar: String? = null,
+    var pertemuan: String? = null,
 ) : Parcelable

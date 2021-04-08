@@ -8,7 +8,6 @@ import android.content.pm.PackageManager
 import android.graphics.Color
 import android.location.Geocoder
 import android.location.LocationManager
-import android.os.Build
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
@@ -23,7 +22,10 @@ import com.example.testingskripsinew.R
 import com.example.testingskripsinew.databinding.ActivityJarakBinding
 import com.example.testingskripsinew.helper.GeofenceHelper
 import com.example.testingskripsinew.model.DataKelas
+import com.example.testingskripsinew.model.DataStatus
 import com.example.testingskripsinew.utils.Data
+import com.firebase.geofire.GeoFire
+import com.firebase.geofire.GeoLocation
 import com.google.android.gms.location.Geofence
 import com.google.android.gms.location.GeofencingClient
 import com.google.android.gms.location.LocationServices
@@ -34,32 +36,38 @@ import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.CircleOptions
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
+import com.google.firebase.FirebaseError
+import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
+import org.greenrobot.eventbus.EventBus
+import org.greenrobot.eventbus.Subscribe
 import java.text.SimpleDateFormat
 import java.util.*
 import kotlin.math.*
+
 
 class JarakActivity : AppCompatActivity(), OnMapReadyCallback {
     private lateinit var binding: ActivityJarakBinding
     private lateinit var database: FirebaseDatabase
     private lateinit var myRef: DatabaseReference
-    private lateinit var myRef1: DatabaseReference
 
     private lateinit var mMap: GoogleMap
     private lateinit var geofencingClient: GeofencingClient
     private lateinit var geofenceHelper: GeofenceHelper
+    private lateinit var rumahAing: LatLng
 
     // lokasi statis berdasarkan Latitude dan Longitude -6.597723, 106.799559
-    private val baseLatitude = -6.569395464817481
-    private val baseLongitude = 106.77884033828049
+//    private val baseLatitude = -6.569395464817481
+//    private val baseLongitude = 106.77884033828049
+    private val baseLatitude = -6.595676766467622
+    private val baseLongitude = 106.76432823679038
 
     companion object {
         const val ID_LOCATION_PERMISSION = 0
 
         private const val FINE_LOCATION_ACCESS_REQUEST_CODE = 10001
-        private const val BACKGROUND_LOCATION_ACCESS_REQUEST_CODE = 10002
-        private const val GEOFENCE_RADIUS = 10.0
+        private const val GEOFENCE_RADIUS = 30.0
         private const val GEOFENCE_ID = "SOME_GEOFENCE_ID"
         const val TAG = "MapsActivity"
     }
@@ -71,11 +79,20 @@ class JarakActivity : AppCompatActivity(), OnMapReadyCallback {
 
         database = FirebaseDatabase.getInstance()
         myRef = database.getReference(Data.KELAS_DATA)
-        myRef1 = database.getReference(Data.KELAS_STATUS)
+
+        EventBus.getDefault().register(this)
 
         initMap()
         checkPermissionLocation()
         onShowTime()
+
+//        binding.fabCheckIn.setOnClickListener {
+//            startScanLocation()
+//            Handler(Looper.getMainLooper()).postDelayed({
+//                getLocationCoordinat()
+//            }, 4000)
+//        }
+
     }
 
     private fun startScanLocation() {
@@ -92,13 +109,6 @@ class JarakActivity : AppCompatActivity(), OnMapReadyCallback {
         }
     }
 
-    fun fabCheckIn(view: View) {
-        startScanLocation()
-        Handler(Looper.getMainLooper()).postDelayed({
-            getLocationCoordinat()
-        }, 4000)
-    }
-
     fun btnCheckin(view: View) {
         onPushData(
             DataKelas(
@@ -107,25 +117,27 @@ class JarakActivity : AppCompatActivity(), OnMapReadyCallback {
                 Data.jam,
                 Data.jarak,
                 Data.qrKode,
-                "${Data.lon}, ${Data.lat}",
+                "${Data.lat}, ${Data.lon}",
                 Data.idNama,
                 Data.npmUser,
                 "1",
+                "0",
                 "0"
             )
         )
     }
 
     private fun onPushData(dataKelas: DataKelas) {
-        myRef.child(Data.qrKode).child(Data.npmUser.toString()).setValue(dataKelas)
+        myRef.child(Data.qrKode).child("pertemuan${Data.temuKode}").child(Data.npmUser.toString())
+//        myRef.child(Data.qrKode).child(Data.npmUser.toString())
+            .setValue(dataKelas)
             .addOnSuccessListener {
                 val i = Intent(this, KelasActivity::class.java)
                 startActivity(i)
             }
-
-        myRef1.child(Data.qrKode).setValue("0")
     }
 
+    // harversine start
     private fun getLocationCoordinat() {
         if (checkPermission()) {
             if (isLoactionEnable()) {
@@ -150,7 +162,7 @@ class JarakActivity : AppCompatActivity(), OnMapReadyCallback {
                     with(binding) {
                         group.visibility = View.VISIBLE
                         binding.statusJarak.text = jarak
-                        Data.jarak
+                        Data.jarak = jarak
                     }
 
                     stopScanLocation()
@@ -276,7 +288,6 @@ class JarakActivity : AppCompatActivity(), OnMapReadyCallback {
     }
 
     // enable load map google
-
     private fun initMap() {
         val mapFragment = supportFragmentManager.findFragmentById(R.id.map) as SupportMapFragment
         mapFragment.getMapAsync(this)
@@ -289,72 +300,22 @@ class JarakActivity : AppCompatActivity(), OnMapReadyCallback {
         mMap = googleMap
 
         // Add a marker in Sydney and move the camera
-        val rumahAing = LatLng(-6.56942189233, 106.778845096)
-//        mMap.addMarker(MarkerOptions().position(rumahAing).title("Marker in Rumah Aing"))
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(rumahAing, 20f))
+        rumahAing = LatLng(baseLatitude, baseLongitude)
+
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(rumahAing, 18f))
         enableUserLocation()
 
-        val zone1 = LatLng(-6.567361229824218, 106.77843511104584)
-        val zone2 = LatLng(-6.565359105532554, 106.78024895489216)
-        val zone3 = LatLng(-6.570681987174704, 106.7810794338584)
-
         testZona(rumahAing)
-//        testZona(zone2)
-//        testZona(zone3)
-
-//        onSetLongMapClick()
-
     }
 
-    private fun testZona(latLng: LatLng) {
-//        mMap.addMarker(MarkerOptions().position(latLng))
-        addMarker(latLng)
-        addCircle(latLng, GEOFENCE_RADIUS)
-    }
-
-/*    private fun onSetLongMapClick() {
-        mMap.setOnMapLongClickListener { latLng ->
-            if (Build.VERSION.SDK_INT >= 29) {
-                if (ContextCompat.checkSelfPermission(
-                        this,
-                        Manifest.permission.ACCESS_BACKGROUND_LOCATION
-                    ) == PackageManager.PERMISSION_GRANTED
-                ) {
-                    handleMapLongClick(latLng)
-                } else {
-                    if (ActivityCompat.shouldShowRequestPermissionRationale(
-                            this,
-                            Manifest.permission.ACCESS_BACKGROUND_LOCATION
-                        )
-                    ) {
-                        ActivityCompat.requestPermissions(
-                            this,
-                            arrayOf(Manifest.permission.ACCESS_BACKGROUND_LOCATION),
-                            BACKGROUND_LOCATION_ACCESS_REQUEST_CODE
-                        )
-                    } else {
-                        ActivityCompat.requestPermissions(
-                            this,
-                            arrayOf(Manifest.permission.ACCESS_BACKGROUND_LOCATION),
-                            BACKGROUND_LOCATION_ACCESS_REQUEST_CODE
-                        )
-                    }
-                }
-            } else {
-                handleMapLongClick(latLng)
-            }
-        }
-    }
-
-    private fun handleMapLongClick(latLng: LatLng?) {
-        Log.d(TAG, "LatLng = $latLng")
+    private fun testZona(latLng: LatLng?) {
         if (latLng != null) {
-            mMap.clear()
+//            mMap.clear()
             addMarker(latLng)
             addCircle(latLng, GEOFENCE_RADIUS)
             addGeofence(latLng, GEOFENCE_RADIUS.toFloat())
         }
-    }*/
+    }
 
     private fun enableUserLocation() {
         if (ContextCompat.checkSelfPermission(
@@ -384,13 +345,13 @@ class JarakActivity : AppCompatActivity(), OnMapReadyCallback {
         }
     }
 
-/*    private fun addGeofence(latLng: LatLng, radius: Float) {
+    @Suppress("SameParameterValue")
+    private fun addGeofence(latLng: LatLng, radius: Float) {
         val geofence = geofenceHelper.getGeofence(
             GEOFENCE_ID, latLng, radius,
             Geofence.GEOFENCE_TRANSITION_ENTER or Geofence.GEOFENCE_TRANSITION_DWELL or Geofence.GEOFENCE_TRANSITION_EXIT
         )
         val geofencingRequest = geofenceHelper.getGeofencingRequest(geofence)
-//        val pendingIntent = geofenceHelper.getPendingInten()
         val pendingIntent = geofenceHelper.geofencePendingIntent
 
         if (ActivityCompat.checkSelfPermission(
@@ -409,13 +370,14 @@ class JarakActivity : AppCompatActivity(), OnMapReadyCallback {
                 Log.d(TAG, "Gagal Gan: $errorMessage")
             }
         }
-    }*/
+    }
 
     private fun addMarker(latLng: LatLng) {
         val markerOptions: MarkerOptions = MarkerOptions().position(latLng)
         mMap.addMarker(markerOptions)
     }
 
+    @Suppress("SameParameterValue")
     private fun addCircle(latLng: LatLng, radius: Double) {
         val circleOptions = CircleOptions()
         circleOptions.center(latLng)
@@ -424,6 +386,26 @@ class JarakActivity : AppCompatActivity(), OnMapReadyCallback {
         circleOptions.fillColor(Color.argb(64, 0, 255, 0))
         circleOptions.strokeWidth(4F)
         mMap.addCircle(circleOptions)
+    }
+
+
+    @Subscribe
+    fun onMessageEvent(data: DataStatus?) {
+        binding.fabCheckIn.setOnClickListener {
+            startScanLocation()
+            Handler(Looper.getMainLooper()).postDelayed({
+                if (data != null) {
+                    if (data.geoStatus == "1" || data.geoStatus == "2") {
+                        getLocationCoordinat()
+                        Toast.makeText(this, "Kamu berada didalam zona", Toast.LENGTH_SHORT).show()
+                    } else if (data.geoStatus == "3") {
+                        Toast.makeText(this, "Kamu keluar zona", Toast.LENGTH_SHORT).show()
+                    }
+                } else {
+                    Toast.makeText(this, "Kamu berada diluar zona", Toast.LENGTH_SHORT).show()
+                }
+            }, 4000)
+        }
     }
 
     private fun onShowTime() {
@@ -451,4 +433,5 @@ class JarakActivity : AppCompatActivity(), OnMapReadyCallback {
         }
         thread.start()
     }
+
 }

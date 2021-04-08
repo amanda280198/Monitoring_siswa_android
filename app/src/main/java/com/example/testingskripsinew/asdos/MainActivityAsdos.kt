@@ -33,8 +33,7 @@ class MainActivityAsdos : AppCompatActivity() {
     }
 
     fun btnHistoryMhs(view: View?) {
-        val i = Intent(this, MainActivityUser::class.java)
-        this.startActivity(i)
+
     }
 
     fun btnProfilAsdos(view: View?) {

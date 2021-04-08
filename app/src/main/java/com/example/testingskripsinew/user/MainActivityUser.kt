@@ -8,7 +8,6 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
-import com.example.testingskripsinew.HistoryUser
 import com.example.testingskripsinew.jadwal.ScheduleActivity
 //import com.example.testingskripsinew.ViewMapsActivity
 import com.example.testingskripsinew.databinding.ActivityMainUserBinding
@@ -45,8 +44,7 @@ class MainActivityUser : AppCompatActivity() {
     }
 
     fun btnHistoryPribadi(view: View?) {
-        val i = Intent(this, HistoryUser::class.java)
-        this.startActivity(i)
+
     }
 
     fun btnProfilPribadi(view: View?) {
@@ -60,6 +58,7 @@ class MainActivityUser : AppCompatActivity() {
         val i = Intent(this, ScheduleActivity::class.java)
         this.startActivity(i)
         Data.status = status
+        Data.npmUser = inNpm
     }
 
     private fun startScanning() {

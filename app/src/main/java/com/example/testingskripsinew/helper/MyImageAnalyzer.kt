@@ -21,32 +21,6 @@ class MyImageAnalyzer(private val fragmentManager: FragmentManager) : ImageAnaly
         scanBarcode(imageProxy)
     }
 
-//    @ExperimentalGetImage
-//    private fun scanBarcode(imageProxy: ImageProxy) {
-//        imageProxy.image?.let { image ->
-//            val inputImage = InputImage.fromMediaImage(image, imageProxy.imageInfo.rotationDegrees)
-//            val scanner = BarcodeScanning.getClient()
-//
-//            isScanning = true
-//            scanner.process(inputImage)
-//                .addOnSuccessListener { barcodes ->
-//                    barcodes?.firstOrNull().let { barcode ->
-//                        val rawValue = barcode?.rawValue
-//                        rawValue?.let {
-//                            Log.d("Barcode", it)
-////                            listener.onScanned(it)
-//                        }
-//                    }
-//
-//                    isScanning = false
-//                    imageProxy.close()
-//                }.addOnFailureListener {
-//                    isScanning = false
-//                    imageProxy.close()
-//                }
-//        }
-//    }
-
     @SuppressLint("UnsafeExperimentalUsageError")
     private fun scanBarcode(imageProxy: ImageProxy) {
         imageProxy.image?.let { image ->
@@ -54,12 +28,18 @@ class MyImageAnalyzer(private val fragmentManager: FragmentManager) : ImageAnaly
             val scanner = BarcodeScanning.getClient()
             scanner.process(inputImage)
                 .addOnCompleteListener {
-                    imageProxy.close()
                     if (it.isSuccessful) {
                         readBarcodeData(it.result as List<Barcode>)
                     } else {
                         it.exception?.printStackTrace()
                     }
+
+                    isScanning = false
+                    imageProxy.close()
+                }
+                .addOnFailureListener {
+                    isScanning = false
+                    imageProxy.close()
                 }
         }
     }

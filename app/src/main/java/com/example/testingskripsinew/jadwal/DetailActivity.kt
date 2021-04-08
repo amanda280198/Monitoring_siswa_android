@@ -7,7 +7,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
-import android.widget.Toast
 import com.example.testingskripsinew.asdos.MonitoringKelasActivity
 import com.example.testingskripsinew.databinding.ActivityDetailBinding
 import com.example.testingskripsinew.model.DataMatKul
@@ -21,6 +20,7 @@ class DetailActivity : AppCompatActivity() {
 
     companion object {
         const val EXTRA_DATA_MATKUL = "data_matkul"
+        const val EXTRA_DATA_PERTEMUAN = "data_pertemuan"
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -29,6 +29,7 @@ class DetailActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         val item = intent.getParcelableExtra<DataMatKul>(EXTRA_DATA_MATKUL)
+        val pertemuan = intent.getStringExtra(EXTRA_DATA_PERTEMUAN)
 
         val matkul = item?.nama
         val pengajar1 = item?.pengajar1
@@ -39,7 +40,6 @@ class DetailActivity : AppCompatActivity() {
         val jam = item?.jam
         val kelas = item?.kelas
         val kodeMatkul = item?.kode
-        val status = Data.status
 
         binding.mataKuliah.text = matkul
         binding.pengajar1.text = pengajar1
@@ -48,31 +48,24 @@ class DetailActivity : AppCompatActivity() {
         binding.npmPengajar2.text = npmPengajar2
         binding.hari.text = hari
         binding.jamTgl.text = jam
-        binding.kelas.text = "Kelas $kelas"
+        binding.kelas.text = "Kelas $kelas , $pertemuan"
 
         val jsonString =
-            "{\"data\":{\"kode\":\"$kodeMatkul\",\"nama\":\"$matkul\",\"kelas\":\"$kelas\"}}"
+            "{\"data\":{\"kode\":\"$kodeMatkul\",\"nama\":\"$matkul\",\"kelas\":\"$kelas\",\"temu\":\"$pertemuan\"}}"
 
-        if (status == Data.ASDOS) {
-            val bitmap = generateQRCode(jsonString)
-            binding.qrCodeImage.setImageBitmap(bitmap)
-        } else {
-            binding.frameQrcode.visibility = View.GONE
-        }
+        val bitmap = generateQRCode(jsonString)
+        binding.qrCodeImage.setImageBitmap(bitmap)
 
-        if (Data.npmAsdos == npmPengajar1 || Data.npmAsdos == npmPengajar2)
-            binding.btnLihatKelas.visibility = View.VISIBLE
-        else
-            binding.btnLihatKelas.visibility = View.GONE
-
-        onBtnLihatKelas(item)
+        onBtnLihatKelas(item, pertemuan)
     }
 
-    private fun onBtnLihatKelas(item: DataMatKul?) {
+    private fun onBtnLihatKelas(item: DataMatKul?, pertemuan: String?) {
         binding.btnLihatKelas.setOnClickListener {
             val intent = Intent(this, MonitoringKelasActivity::class.java)
             intent.putExtra(EXTRA_DATA_MATKUL, item)
+            intent.putExtra(MonitoringKelasActivity.EXTRA_DATA_PERTEMUAN, pertemuan)
             startActivity(intent)
+            finish()
         }
     }
 
@@ -97,5 +90,7 @@ class DetailActivity : AppCompatActivity() {
         }
         return bitmap
     }
+
+    fun btnLihatKelas(view: View) {}
 
 }
